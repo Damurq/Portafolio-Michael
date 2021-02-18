@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  background-color: #F7F3DE;
+  min-height: 100%;
+}
+
+.social-media-content {
+  height: 4.375rem;
+  width: 4.375rem;
+}
+.social-media-content img {
+  width: 100%;
+  border-radius: 30%;
+}
+
+.social-media-content--linkedin {
+  height: 5rem;
+  width: 5rem;
+}
+
+.menu-options-list {
+  list-style-type: none;
+}
+
+.menu-options__element {
+  text-decoration: none;
+  color: black;
+  transition: border-bottom 0.35s, font-size 0.35s;
+}
+
+.menu-options__element:hover {
+  border-bottom: 0.4rem solid #ECC0C3;
+}
+
+.menu-options__element:active {
+  font-size: 30px;
+}
+
+.dropdown-menu-button:focus {
+  outline: none;
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 25px;
+  }
+
+  header {
+    padding: 1.5rem 2rem;
+  }
+
+  .social-media-content {
+    margin-right: 3.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .dropdown-menu-button {
+    display: none;
+  }
+
+  .menu-options-list li {
+    margin: 0 1.5rem;
+  }
+
+  .header-socialMedia, .menu-options-list, header {
+    display: flex;
+  }
+
+  .header-socialMedia {
+    margin-left: auto;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 10px;
+  }
+
+  body {
+    font-size: 20px;
+  }
+
+  header {
+    padding: 1.5rem 2rem;
+  }
+
+  nav {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .social-media-content {
+    margin-right: 2rem;
+  }
+
+  .svg-inline--fa {
+    height: 100%;
+  }
+
+  .svg-inline--fa.fa-w-14, .svg-inline--fa.fa-w-11 {
+    width: 100%;
+  }
+
+  .header-socialMedia, header {
+    display: flex;
+  }
+
+  .header-socialMedia {
+    margin-left: auto;
+  }
+
+  .menu-options-list-dropdown--disable {
+    display: none;
+  }
+
+  .dropdown-menu-button {
+    border: none;
+    background-color: #F7F3DE;
+    display: inline-block;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .menu-options-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+  .menu-options-list li {
+    margin: 1.5rem auto;
+  }
+
+  .menu-options__element {
+    font-weight: bold;
+    transition: font-size 0.5s;
+  }
+
+  .menu-options__element:hover {
+    font-size: 28px;
+  }
+}
+
+/*# sourceMappingURL=Navbar.css.map */

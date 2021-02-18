@@ -1,0 +1,312 @@
+{
+  "projects": [
+    {
+      "title": "DamageControl",
+      "description": "DamageControl es un web site desarrollado como una plataforma de e-learning, por medio del cual los usuarios podrán registrarse como estudiantes o profesores para comprar ovender cursos en áreas determinadas.",
+      "typeId": 0,
+      "imgSrc": "projects/DamageControl.png",
+      "id": 1
+    },
+    {
+      "title": "Tuiphone",
+      "description": "Un e-commerce centrado en la venta de teléfonos nuevos y usados, con una interfaz agradable y moderna.",
+      "typeId": 0,
+      "imgSrc": "projects/Tuiphone.png",
+      "id": 2
+    },
+    {
+      "title": "Cines de Venezuela",
+      "description": "One Piece es un manga escrito e ilustrado por Eiichirō Oda y actualmente es el manga más comprado en el mundo. Comenzó a publicarse en la revista japonesa Weekly Shōnen Jump el 10 de octubre de 2011 se publicó los capítulos en volúmenes y actualmente se publicaron 96 volúmenes.",
+      "typeId": 1,
+      "imgSrc": "projects/Cines_de_Venezuela.png",
+      "id": 3
+    },
+    {
+      "title": "DamageControl",
+      "description": "new",
+      "typeId": 1,
+      "imgSrc": "projects/DamageControl.png",
+      "id": 4
+    },
+    {
+      "title": "Exploración y proyección de datos",
+      "description": "new",
+      "typeId": 2,
+      "imgSrc": "projects/Exploración_y_proyección_de_datos.png",
+      "id": 5
+    }
+  ],
+  "projectsTypes": [
+    {
+      "id": 0,
+      "description": "Sitios Web"
+    },
+    {
+      "id": 1,
+      "description": "Aplicaciones de Escitorio"
+    },
+    {
+      "id": 2,
+      "description": "Aplicaciones"
+    }
+  ],
+  "projectTecnology": [
+    {
+      "idProject": 1,
+      "idTecnology": 2
+    },
+    {
+      "idProject": 1,
+      "idTecnology": 2
+    }
+  ],
+  "tecnology": [
+    {
+      "id": 0,
+      "name": "Javascript",
+      "pothoSrc": "skill/Javascript.png",
+      "type": "0"
+    },
+    {
+      "id": 1,
+      "name": "Python",
+      "pothoSrc": "skill/Python.png",
+      "type": "0"
+    },
+    {
+      "id": 2,
+      "name": "Java",
+      "pothoSrc": "skill/Java.png",
+      "type": "0"
+    },
+    {
+      "id": 3,
+      "name": "C#",
+      "pothoSrc": "skill/C#.png",
+      "type": "0"
+    },
+    {
+      "id": 4,
+      "name": "C++",
+      "pothoSrc": "skill/C++.png",
+      "type": "0"
+    },
+    {
+      "id": 5,
+      "name": "R",
+      "pothoSrc": "skill/R.png",
+      "type": "0"
+    },
+    {
+      "id": 6,
+      "name": "Octave",
+      "pothoSrc": "skill/Octave.png",
+      "type": "0"
+    },
+    {
+      "id": 7,
+      "name": "Maple",
+      "pothoSrc": "skill/Maple.png",
+      "type": "0"
+    },
+    {
+      "id": 8,
+      "name": "React",
+      "type": "1",
+      "pothoSrc": "skill/React.png"      
+    },
+    {
+      "id": 9,
+      "name": "next.js",
+      "type": "1",
+      "pothoSrc": "skill/next_js.png"      
+    },
+    {
+      "id": 10,
+      "name": "Django",
+      "type": "1",
+      "pothoSrc": "skill/Django.png"      
+    },
+    {
+      "id": 11,
+      "name": "HTML5",
+      "type": "1",
+      "pothoSrc": "skill/HTML5.png"      
+    },
+    {
+      "id": 12,
+      "name": "CSS3",
+      "type": "1",
+      "pothoSrc": "skill/CSS3.png"      
+    },
+    {
+      "id": 13,
+      "name": "bootstrap",
+      "type": "1",
+      "pothoSrc": "skill/bootstrap.png"      
+    }
+  ],
+  "presentations": {
+    "home": {
+      "title": "Hola soy Michael Montero",
+      "description": "Un web developer especializado como frontend developer, con una gran capacidad de aprendizaje, una visión moderna y creativa."
+    },
+    "about": {
+      "title": "Hola soy Michael Montero",
+      "description": "Un web developer especializado como frontend developer, me apasiona el mundo de la programación y soy estudiante del octavo semestre de la carrera Ingeniería informática en la “Universidad Centroccidental Lisandro Alvarado”.",
+      "email": "michaeldamurq@gmail.com"
+    }
+  },
+  "skills": [
+    {
+      "name": "Lenguajes de programación",
+      "elements": [
+        {
+          "id": 0,
+          "description": "Javascript",
+          "pothoSrc": "skill/Javascript.png"
+        },
+        {
+          "id": 1,
+          "description": "Python",
+          "pothoSrc": "skill/Python.png"
+        },
+        {
+          "id": 2,
+          "description": "Java",
+          "pothoSrc": "skill/Java.png"
+        },
+        {
+          "id": 3,
+          "description": "C#",
+          "pothoSrc": "skill/C#.png"
+        },
+        {
+          "id": 4,
+          "description": "C++",
+          "pothoSrc": "skill/C++.png"
+        },
+        {
+          "id": 5,
+          "description": "R",
+          "pothoSrc": "skill/R.png"
+        },
+        {
+          "id": 6,
+          "description": "Octave",
+          "pothoSrc": "skill/Octave.png"
+        },
+        {
+          "id": 7,
+          "description": "Maple",
+          "pothoSrc": "skill/Maple.png"
+        }
+      ]
+    },
+    {
+      "name": "Bibliotecas, Frameworks y otros",
+      "elements": [
+        {
+          "id": 8,
+          "name": "React",
+          "pothoSrc": "skill/React.png"      
+        },
+        {
+          "id": 9,
+          "name": "next.js",
+          "pothoSrc": "skill/next_js.png"      
+        },
+        {
+          "id": 10,
+          "name": "Django",
+          "pothoSrc": "skill/Django.png"      
+        },
+        {
+          "id": 11,
+          "name": "HTML5",
+          "pothoSrc": "skill/HTML5.png"      
+        },
+        {
+          "id": 12,
+          "name": "CSS3",
+          "pothoSrc": "skill/CSS3.png"      
+        },
+        {
+          "id": 13,
+          "name": "bootstrap",
+          "pothoSrc": "skill/bootstrap.png"      
+        }
+      ]
+    },
+    {
+      "name": "Sistemas de gestión de base de datos",
+      "elements": [
+        {
+          "id": 14,
+          "pothoSrc": "skill/MySQL.png",
+          "description": "MySQL"
+        },
+        {
+          "id": 15,
+          "pothoSrc": "skill/SQLite.png",
+          "description": "SQLite"
+        },
+        {
+          "id": 16,
+          "pothoSrc": "skill/PostgreSQL.png",
+          "description": "PostgreSQL"
+        }
+      ]
+    },
+    {
+      "name": "Hobbies",
+      "elements": [
+        {
+          "id": 17,
+          "pothoSrc": "skill/videojuegos.png",
+          "description": "Jugar videojuegos."
+        },
+        {
+          "id": 18,
+          "pothoSrc": "skill/Dibujar.png",
+          "description": "Dibujar, probar y buscar diseños creativos."
+        },
+        {
+          "id": 19,
+          "pothoSrc": "skill/Investigar.png",
+          "description": "Investigar sobre las novedades tecnologicas del mundo."
+        }
+      ]
+    },
+    {
+      "name": "Estudios Realizados",
+      "elements": [
+        {
+          "id": 20,
+          "pothoSrc": "skill/UCLA.png",
+          "description": "Estudiante del octavo semestre de Ingeniería informática en la UCLA (“Universidad Centroccidental Lisandro Alvarado”) ."
+        }
+      ]
+    },
+    {
+      "name": "Otras habilidades",
+      "elements": [
+        {
+          "id": 21,
+          "pothoSrc": "skill/Web_developer.png",
+          "description": "Web developer Frontend developer Gran capacidad de aprendizaje"
+        },
+        {
+          "id": 22,
+          "pothoSrc": "skill/UML.png",
+          "description": "Conocimiento y manejo de UML"
+        },
+        {
+          "id": 23,
+          "pothoSrc": "skill/SCRUM.png",
+          "description": "Capacidad de liderazgo Empatía Trabajo de equipo SCRUM"
+        }
+      ]
+    }
+  ]
+}
