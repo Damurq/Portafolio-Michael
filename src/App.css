@@ -1,3 +1,11 @@
-.Content {
+body{
+    margin:0;
     background-color: #F7F3DE;
+    min-height: 100%;
+    font-family: 'Inter', 'Roboto', Arial;
 }
+.Content{
+    width: 100%;
+}
+
+

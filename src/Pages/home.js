@@ -10,7 +10,7 @@ const Home = ()=>{
     },[[],[],[]]);
     console.log(projectsType)
     return (
-        <div className="">
+        <div className="Content">
             <CardPresentation />
             { projectsType.map((projects , index)=> <Carousel key={index} projects = {projects}/>) }
         </div>
