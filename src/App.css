@@ -1,11 +1,53 @@
 body{
     margin:0;
-    background-color: #F7F3DE;
     min-height: 100%;
-    font-family: 'Inter', 'Roboto', Arial;
+    font-family: 'Poppins', sans-serif;
 }
 .Content{
     width: 100%;
+}
+.theme-dark-1{
+    background-color: #12191C;
+    color: #FFFFFF;
+}
+.theme-dark-2{
+    background-color: #161D20;
+    color: #FFFFFF;
+}
+.theme-ligth-1{
+    background-color: #FFFFFF;
+    color: #12191C;
+}
+.theme-ligth-2{
+    background-color: #F6F7F7;
+    color: #12191C;
+}
+
+
+/*Titles, subtitles and buttons*/
+.title{
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+.subtitle-yelow{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FECB23;
+}
+.subtitle{
+    font-size: 1,8rem;
+}
+.mini-title{
+    font-size: 1.3rem ;
+}
+.button-yellow{
+    font-size: 1.5rem;
+    outline: none;
+    border-radius: 30px;
+    background-color:#FECB23;  
+    color: #12191C;
+    padding: .5rem 3.5rem;
+    display: inline-block;
 }
 
 

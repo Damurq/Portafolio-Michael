@@ -1,0 +1,13 @@
+.CardAboutMe {
+  margin: 0;
+}
+.CardAboutMe .title {
+  margin-top: 0;
+  padding-top: 2rem;
+}
+
+.CardAboutMe-content {
+  display: flex;
+}
+
+/*# sourceMappingURL=cardaboutme.css.map */

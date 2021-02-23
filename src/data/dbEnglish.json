@@ -1,0 +1,53 @@
+{
+    "components": {
+        "Navbar": [
+            "Home",
+            "About",
+            "Portfolio",
+            "Contac"
+        ],
+        "CardPresentation": {
+            "title": "Michael Montero",
+            "subtitle": "Web Developer",
+            "description": "Specialized as Frontend Developer",
+            "button": "start"
+        },
+        "CarAboutMe": [
+            {
+                "title": "Hi, I am Michael Montero",
+                "description": "A web developer specialized as a frontend developer, I am passionate about the world of programming and the search for optimal solutions. An organized person, problem solver and with high attention to detail. "
+            },
+            {
+                "title": "Academic training",
+                "description": "I am a student in the eighth semester of the Computer Engineering career at the “Universidad Centroccidental Lisandro Alvarado”."
+            }
+        ],
+        "CardPortfolio": [
+            {
+                "type":"web-site",
+                "photosrc":"",
+                "path":""
+            },
+            {
+                "type":"web-site",
+                "photosrc":"",
+                "path":""
+            },
+            {
+                "type":"app-desk",
+                "photosrc":"",
+                "path":""
+            },
+            {
+                "type":"app-desk",
+                "photosrc":"",
+                "path":""
+            },
+            {
+                "type":"app",
+                "photosrc":"",
+                "path":""
+            }
+        ]
+    }
+}

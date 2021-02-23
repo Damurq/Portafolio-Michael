@@ -1,15 +1,16 @@
 import React from "react"
 import { useEffect, useState } from "react"
 import { useLocation } from "react-router-dom"
-import db from "../../data/db.json"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./CardPresentation.css"
+import dbEnglish from "../../data/dbEnglish.json"
 
 const CardPresentation = () => {
     const [section, setSection] = useState("")
     const [presentation, setPresentation] = useState({})
     const location = useLocation().pathname;
-    const data = db.presentations;
-    const photo = "presentation/foto.jpg"
+    const cardPresentation = dbEnglish.components.CardPresentation
+    const photo = "presentation/foto.jpg5"
 
     useEffect(() => {
         setSection("")
@@ -19,20 +20,33 @@ const CardPresentation = () => {
         else if (location === "/about") {
             setSection("about");
         }
-        setPresentation(data[section]);
+        //setPresentation(data[section]);
     });
 
     return (
         <div className="cardPresentation">
             { presentation && (
                 <React.Fragment>
-                    <div className={section + " cardPresentation-info"}>
-                        <h1 className={section}>{presentation.title}</h1>
-                        <p className={section}>{presentation.description}</p>
-                        {(section === "about") && <p className={section}>{presentation.email}</p>}
+                    <div className={section + " cardPresentation-info theme-dark-2"}>
+                        <div className="child-flex">
+                            <h1 className={section + " title"}>{cardPresentation.title}</h1>
+                            <h2 className="subtitle-yelow">{cardPresentation.subtitle}</h2>
+                            <p className={section + " mini-title"}>Specialized as  
+                                <b> Frontend Developer</b>
+                            </p>
+                            <button className="button-yellow"><b>{cardPresentation.button}</b></button>
+                            {(section === "about") && <p className={section}>{presentation.email}</p>}
+                        </div>
                     </div>
-                    <div className={section + " cardPresentation-image"}>
-                        <img src={photo} alt="Michael_Montero" className={section} />
+                    <div className={section + " cardPresentation-image theme-dark-1"}>
+                        <div className="child-flex">
+                            <div className=" ">
+                            <img src={photo} alt="Michael_Montero" className={section} />
+                            </div>
+                            <div className=" ">
+
+                            </div>
+                        </div>
                     </div>
                 </React.Fragment>
             )}

@@ -1,28 +1,30 @@
 .cardPresentation
-    padding: 1.5rem 2rem
-    margin: 0 3.5rem
     display: flex
+    width: 100%
+    min-height: 85vh
+.cardPresentation-info, .cardPresentation-image
+    width: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+.child-flex
+    .title, .subtitle-yelow
+        margin: .5rem 0
+    .mini-title
+        margin: 2rem 0
+    .button-yellow
+        margin: 0 1rem
 
-@media (min-width: 1439px) 
-    
-
-@media (min-width: 992px) and (max-width: 1439px)
-    .cardPresentation-info
-        width: 65%
-    .cardPresentation-image
-        width: 30%
-        img
-            width: 100%
-
-@media  (max-width: 992px)
+@media (min-width: 992px) and (max-width: 1024px)
     html
-        font-size: 10px
-    body
-        font-size: 20px
-    .cardPresentation 
-        margin: 0 auto
+        font-size: 12px
+
+@media  (max-width: 680px)
+    .cardPresentation
         flex-direction: column
-        div
-        width: 70%
-        img
-            width: 100%
+    .cardPresentation-info, .cardPresentation-image
+        min-height: 85vh
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center

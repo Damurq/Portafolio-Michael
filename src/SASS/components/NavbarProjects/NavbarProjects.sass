@@ -1,82 +1,62 @@
+.social-media-content
+    height: 4.375rem
+    width: 4.375rem
+    img
+        width: 100% 
+        border-radius: 30%
+.social-media-content--linkedin
+    height: 5rem
+    width: 5rem
 .menu-options-list
     list-style-type: none
-.logo
-    border: none
-    display: inline-block
-    font-weight: bold  
 .menu-options__element
     text-decoration: none
-    transition: border-bottom .35s, font-size .20s
+    color: black
+    transition: border-bottom .35s, font-size .35s
 .menu-options__element:hover
-    border-bottom: .4rem solid #FECB23
+    border-bottom: .4rem solid #ECC0C3
 .menu-options__element:active
     font-size: 30px
 .dropdown-menu-button:focus
     outline: none
-.logo:focus
-    outline: none
-header
-    min-width: 15vh
-    position: sticky
-    top: 0
-    
+
 @media (min-width: 992px)
     body
         font-size: 25px
-    header 
-        nav
-            width: 50%
-        .navbar-Container
-            width: 50%
-    .navbar
-        margin: 3rem
-        margin-left: 3rem
-    .menu-options
-        margin: 3rem 0
-    .logo
-        font-size: 30px  
+    header
+        padding: 1.5rem 2rem
+    .social-media-content
+        margin-right: 3.5rem 
+        margin-top: .5rem
     .dropdown-menu-button
         display: none
-    .menu-options-list
-        padding: 0
-        justify-content: center
-        li
-            margin: 0 1.5rem
-    .menu-options-list, header
+    .menu-options-list li
+        margin: 0 1.5rem
+    .header-socialMedia, .menu-options-list, header
         display: flex
-
-@media (min-width: 992px) and (max-width: 1024px)
-    body
-        font-size: 20px
-    .logo
-        font-size: 25px  
+    .header-socialMedia
+        margin-left: auto
 
 @media  (max-width: 992px)
     html
         font-size: 10px
     body
         font-size: 20px
+    header
+        padding: 1.5rem 2rem
     nav
         display: inline-block
         width: 100%
-    header
-        display: flex
-        flex-direction: column
-        nav
-            width: 100%
-        .navbar-Container
-            width: 100%
-    .navbar
-        margin: 3rem
-        margin-left: 3rem
-        display: flex
-        justify-content: space-between
-    .logo
-        font-size: 25px
+    .social-media-content
+        margin-right: 2rem
     .svg-inline--fa 
         height: 100%
     .svg-inline--fa.fa-w-14, .svg-inline--fa.fa-w-11
         width: 100%
+    .header-socialMedia, header
+        display: flex
+    .header-socialMedia
+        margin-left: auto
     .menu-options-list-dropdown--disable
         display: none
     .dropdown-menu-button

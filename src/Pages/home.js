@@ -1,18 +1,26 @@
 import CardPresentation from "../components/CardPresentation/CardPresentation"
-import Carousel from "../components/Carousel/Carousel"
+import CardAboutMe from "../components/CardAboutMe/CardAboutMe"
+import CardPortfolio from "../components/CardPortfolio/CardPortfolio"
+import Contact from "../components/Contact/Contact"
+import Footer from "../components/Footer/Footer"
 import db from "../data/db.json"
 
 const Home = ()=>{
-    const projects = db.projects;
+   /* const projects = db.projects;
     const projectsType = projects.reduce((acum,project)=>{
         acum[project.typeId].push(project)
         return acum
     },[[],[],[]]);
-    console.log(projectsType)
+    { projectsType.map((projects , index)=> <Carousel key={index} projects = {projects}/>) }*/
+
+
     return (
         <div className="Content">
             <CardPresentation />
-            { projectsType.map((projects , index)=> <Carousel key={index} projects = {projects}/>) }
+            <CardAboutMe />
+            <CardPortfolio />
+            <Contact />
+            <Footer />
         </div>
     )
 }
