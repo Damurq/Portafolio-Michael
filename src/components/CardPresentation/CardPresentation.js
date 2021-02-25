@@ -1,7 +1,7 @@
 import React from "react"
 import { useEffect, useState } from "react"
 import { useLocation } from "react-router-dom"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import CardIcon from "../CardIcon/CardIcon"
 import "./CardPresentation.css"
 import dbEnglish from "../../data/dbEnglish.json"
 
@@ -10,7 +10,7 @@ const CardPresentation = () => {
     const [presentation, setPresentation] = useState({})
     const location = useLocation().pathname;
     const cardPresentation = dbEnglish.components.CardPresentation
-    const photo = "presentation/foto.jpg5"
+    const photo = "presentation/descarga.jpg"
 
     useEffect(() => {
         setSection("")
@@ -25,6 +25,7 @@ const CardPresentation = () => {
 
     return (
         <div className="cardPresentation">
+
             { presentation && (
                 <React.Fragment>
                     <div className={section + " cardPresentation-info theme-dark-2"}>
@@ -40,11 +41,13 @@ const CardPresentation = () => {
                     </div>
                     <div className={section + " cardPresentation-image theme-dark-1"}>
                         <div className="child-flex">
-                            <div className=" ">
-                            <img src={photo} alt="Michael_Montero" className={section} />
+                            <div className="content-image">
+                                <img src={photo} alt="Michael_Montero" className={section} />
                             </div>
-                            <div className=" ">
-
+                            <div className="content-icon">
+                                <div className="line"></div>
+                                <CardIcon />
+                                <div className="line"></div>
                             </div>
                         </div>
                     </div>

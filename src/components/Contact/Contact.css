@@ -1,0 +1,81 @@
+.Contact {
+  margin: 0;
+  padding: 0 3rem;
+  padding-bottom: 6rem;
+}
+.Contact .title {
+  margin-top: 0;
+  padding-top: 4rem;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.Container-formContact {
+  border-radius: 20px;
+  padding-top: 2rem;
+}
+
+.formContact {
+  display: flex;
+}
+.formContact .subtitle {
+  margin: 2.5rem auto;
+}
+.formContact .input {
+  padding: 0.5rem 0.5rem;
+  margin: 2rem auto;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+}
+
+@media (min-width: 992px) {
+  .formContact {
+    max-width: 900px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  .formContact .label--single {
+    margin: 0;
+  }
+  .formContact .input {
+    width: 40%;
+  }
+  .formContact textarea.input {
+    width: 100%;
+  }
+  .formContact button.subtitle {
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .formContact {
+    flex-direction: column;
+  }
+  .formContact .subtitle {
+    margin: 1rem 10%;
+  }
+  .formContact .input, .formContact textarea.input {
+    width: 80%;
+    font-size: 2rem;
+  }
+  .formContact .button-yellow {
+    padding: 1rem 0;
+    font-weight: bolder;
+    font-size: 2rem;
+    width: 40%;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .formContact .button-yellow {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=Contact.css.map */

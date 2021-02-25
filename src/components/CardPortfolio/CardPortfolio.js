@@ -2,11 +2,13 @@ import { useEffect, useState } from "react"
 import { useLocation } from "react-router-dom"
 import { Link } from "react-router-dom"
 import dbEnglish from "../../data/dbEnglish.json"
+import "./CardPortfolio.css"
 
 const CardPortfolio = () => {
     const [section, setSection] = useState("")
     const [cardPortfolio, setCardPortfolio] = useState(dbEnglish.components.CardPortfolio)
-    const location = useLocation().pathname;
+    let location = useLocation().pathname;
+    const photo = "presentation/descarga.jpg"
 
     useEffect(() => {
         setSection("")
@@ -19,18 +21,20 @@ const CardPortfolio = () => {
             setCardPortfolio(dbEnglish.components.CardPortfolio);
         }
         //setPresentation(data[section]);
-    });
+    },[]);
 
     return (
-        <div className="">
-            <h2 className="">Portfolio</h2>
-            <div className="">
-                {cardPortfolio.map(() => {
-                    return (<Link to="/">
-                        <div className="">
-                            <img src="" alt="" className="" />
+        <div className="CardPortfolio theme-dark-2">
+            <h2 className="title">Portfolio</h2>
+            <div className="projects">
+                {cardPortfolio.map((project,index) => {
+                    return (
+                        <div key={"project-"+index} className="project">
+                            <Link  to="/" className="">
+                                <img src={photo} alt="" className={"project__img-"+index} />
+                            </Link>
                         </div>
-                    </Link>)
+                    )
                 })}
             </div>
             <div className="">

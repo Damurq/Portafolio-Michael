@@ -1,3 +1,9 @@
+/**/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body{
     margin:0;
     min-height: 100%;
@@ -38,16 +44,40 @@ body{
     font-size: 1,8rem;
 }
 .mini-title{
-    font-size: 1.3rem ;
+    font-size: 1rem ;
+}
+.mini-title-2{
+    font-size: .6rem;
 }
 .button-yellow{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     outline: none;
     border-radius: 30px;
     background-color:#FECB23;  
     color: #12191C;
     padding: .5rem 3.5rem;
     display: inline-block;
+    box-shadow: 6px 6px 20px -1px rgba(0, 0, 0, 0.15)
+}
+.button-yellow:hover {
+    box-shadow: inset 4px 4px 10px -1px rgba(0, 0, 0, 0.15),
+        inset -4px -4px 10px -1px #FECB23;
 }
 
 
+
+
+@media  (max-width: 992px){
+    .mini-title{
+        font-size: 1.5rem ;
+    }    
+}
+
+
+/*Modify text*/
+.text--center{
+    text-align: center
+}
+.text-dark{
+    color: #404242;
+}

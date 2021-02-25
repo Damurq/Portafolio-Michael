@@ -54,7 +54,7 @@ const Navbar = () => {
                 <div className="menu-options menu-options-list-dropdown--disable">
                     <ul className="menu-options-list">
                         {navbar.map((section, index) => {
-                            return index === 0 ? <li><Link className={liClass} to="/">{section}</Link></li> : <li><Link className={liClass} to="/{section}">{section}</Link></li>
+                            return index === 0 ? <li key={"nav-li-"+index} ><Link className={liClass} to="/">{section}</Link></li> : <li key={"nav-li-"+index}><Link className={liClass} to="/{section}">{section}</Link></li>
                         })}
                     </ul>
                 </div>

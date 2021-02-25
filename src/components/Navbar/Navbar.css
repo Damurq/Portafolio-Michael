@@ -14,7 +14,7 @@
 }
 
 .menu-options__element:hover {
-  border-bottom: 0.4rem solid #FECB23;
+  border-bottom: 0.2rem solid #FECB23;
 }
 
 .menu-options__element:active {
@@ -37,7 +37,7 @@ header {
 
 @media (min-width: 992px) {
   body {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   header nav {
@@ -48,16 +48,18 @@ header {
   }
 
   .navbar {
-    margin: 3rem;
+    margin: 2rem;
+    margin-bottom: 1rem;
     margin-left: 3rem;
   }
 
   .menu-options {
-    margin: 3rem 0;
+    margin: 2rem 0;
+    margin-bottom: 1rem;
   }
 
   .logo {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .dropdown-menu-button {
@@ -121,11 +123,11 @@ header {
     font-size: 25px;
   }
 
-  .svg-inline--fa {
+  button .svg-inline--fa {
     height: 100%;
   }
 
-  .svg-inline--fa.fa-w-14, .svg-inline--fa.fa-w-11 {
+  button .svg-inline--fa.fa-w-14, button .svg-inline--fa.fa-w-11 {
     width: 100%;
   }
 
