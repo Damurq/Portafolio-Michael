@@ -37,11 +37,9 @@ const CardPortfolio = () => {
                     )
                 })}
             </div>
-            <div className="">
-              <div className="">
-
-              </div>
-                <button>more</button>
+            <div className="seeMore">
+                <div className="line"></div>
+                <button className="theme-dark-1">more</button>
             </div>
         </div>
     );

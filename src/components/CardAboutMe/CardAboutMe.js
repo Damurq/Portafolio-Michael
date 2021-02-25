@@ -25,11 +25,11 @@ const CardAboutMe = () => {
                 </div>)
              }) }  
             </div>       
-            <div className="">
-              <div className="">
+            <div className="seeMore">
+              <div className="line">
 
               </div>
-                <button>more</button>
+                <button className="theme-dark-1">more</button>
             </div>
         </div>
     );

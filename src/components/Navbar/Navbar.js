@@ -25,15 +25,15 @@ const Navbar = () => {
     const handleClickTheme = () => {
         const changeTheme = document.querySelectorAll(`.theme-${theme}-1,.theme-${theme}-2`)
         if (theme === "dark") {
-            setTheme("ligth")
+            setTheme("light")
             changeTheme.forEach((element, index, objectNode) => {
-                objectNode[index].classList.contains("theme-dark-1") ? element.classList.replace("theme-dark-1", "theme-ligth-1") : element.classList.replace("theme-dark-2", `theme-ligth-2`)
+                objectNode[index].classList.contains("theme-dark-1") ? element.classList.replace("theme-dark-1", "theme-light-1") : element.classList.replace("theme-dark-2", `theme-light-2`)
             })
         }
         else {
             setTheme("dark")
             changeTheme.forEach((element) => {
-                element.classList.contains("theme-ligth-1") ? element.classList.replace("theme-ligth-1", "theme-dark-1") : element.classList.replace("theme-ligth-2", "theme-dark-2")
+                element.classList.contains("theme-light-1") ? element.classList.replace("theme-light-1", "theme-dark-1") : element.classList.replace("theme-light-2", "theme-dark-2")
             })
         }
     }
