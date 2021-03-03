@@ -10,7 +10,7 @@ const CardPresentation = () => {
     const [presentation, setPresentation] = useState({})
     const location = useLocation().pathname;
     const cardPresentation = dbEnglish.components.CardPresentation
-    const photo = "presentation/descarga.jpg"
+    const photo = "presentation/Michael_Montero_Dark.png"
 
     useEffect(() => {
         setSection("")

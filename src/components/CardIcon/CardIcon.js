@@ -7,16 +7,16 @@ const  CardIcon = () => {
     library.add(faFacebookF,faInstagram,faLinkedinIn,faGithub)
     return ( 
         <div className="icon--socialMedia">
-            <a className="facebook" href="http://" target="_blank" rel="noopener noreferrer">
+            <a className="facebook" href="https://es-la.facebook.com/michaeldavid.montero" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className="icon" icon={['fab', 'facebook-f']}/>
             </a>
-            <a className="instagram" href="http://" target="_blank" rel="noopener noreferrer">
+            <a className="instagram" href="https://www.instagram.com/mike.0408/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className="icon" icon={['fab', 'instagram']}/>
             </a>
             <a className="linkedin" href="http://" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className="icon" icon={['fab', 'linkedin-in']}/>
             </a>
-            <a className="github" href="http://" target="_blank" rel="noopener noreferrer">
+            <a className="github" href="https://github.com/Damurq?tab=repositories" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className="icon" icon={['fab', 'github']}/>                
             </a>
         </div>

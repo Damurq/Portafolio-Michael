@@ -25,16 +25,27 @@
   display: flex;
   justify-content: center;
 }
+.content-image img {
+  width: 62%;
+}
 
 .content-icon {
   display: flex;
   justify-content: space-between;
 }
+.content-icon .line:first-of-type {
+  margin-right: 0;
+  margin-left: auto;
+}
+.content-icon .line:last-of-type {
+  margin-left: 0;
+  margin-right: auto;
+}
 
 .line {
   height: 0;
-  width: 30%;
-  margin: 3.5rem 0;
+  width: 15%;
+  margin: 3.5rem;
   border-bottom: 1.5px solid #ffff;
 }
 
@@ -54,6 +65,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .content-image img {
+    width: 90%;
   }
 }
 

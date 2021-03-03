@@ -8,7 +8,7 @@ const CardPortfolio = () => {
     const [section, setSection] = useState("")
     const [cardPortfolio, setCardPortfolio] = useState(dbEnglish.components.CardPortfolio)
     let location = useLocation().pathname;
-    const photo = "presentation/descarga.jpg"
+    let photo = "portfolio/damageControl.png"
 
     useEffect(() => {
         setSection("")
@@ -28,6 +28,7 @@ const CardPortfolio = () => {
             <h2 className="title">Portfolio</h2>
             <div className="projects">
                 {cardPortfolio.map((project,index) => {
+                    photo = project.photosrc
                     return (
                         <div key={"project-"+index} className="project">
                             <Link  to="/" className="">

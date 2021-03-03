@@ -14,11 +14,12 @@
 }
 
 .project {
-  width: 40%;
+  width: 45%;
   margin: auto;
   padding: 2rem 0;
 }
 .project img {
+  max-width: 100%;
   opacity: 0.5;
   transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -27,7 +28,7 @@
 }
 
 .project img:hover {
-  transp: 1;
+  opacity: 1;
   -webkit-transform: scale(1.15);
   -moz-transform: scale(1.15);
   -ms-transform: scale(1.15);
@@ -40,6 +41,11 @@
   width: 100%;
 }
 
+@media (min-width: 800px) {
+  .CardPortfolio .title {
+    margin-bottom: 1rem;
+  }
+}
 @media (max-width: 800px) {
   .projects {
     flex-wrap: wrap;

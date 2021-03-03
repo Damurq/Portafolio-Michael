@@ -25,12 +25,12 @@
         "CardPortfolio": [
             {
                 "type":"web-site",
-                "photosrc":"",
+                "photosrc":"portfolio/damageControl.png",
                 "path":""
             },
             {
                 "type":"web-site",
-                "photosrc":"",
+                "photosrc":"portfolio/tuiphone.png",
                 "path":""
             },
             {
