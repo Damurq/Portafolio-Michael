@@ -31,6 +31,7 @@
 .CardAboutMe__sectionImage img {
   width: 40%;
   margin: 0 auto;
+  object-fit: contain;
 }
 
 @media (max-width: 992px) {

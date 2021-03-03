@@ -1,41 +1,106 @@
-.menu-options-list {
-  list-style-type: none;
+/*tag*/
+header {
+  min-width: 15vh;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 
+/*general estyle*/
 .logo {
   border: none;
   display: inline-block;
   font-weight: bold;
 }
 
+.logo:focus {
+  outline: none;
+}
+
+/*navbar style*/
+.menu-options-list {
+  list-style-type: none;
+}
+
 .menu-options__element {
+  position: relative;
   text-decoration: none;
   transition: border-bottom 0.35s, font-size 0.2s;
 }
 
-.menu-options__element:hover {
-  border-bottom: 0.2rem solid #FECB23;
+.menu-options__element::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #FECB23;
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
 }
 
-.menu-options__element:active {
-  font-size: 30px;
+.menu-options__element:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
 }
 
 .dropdown-menu-button:focus {
   outline: none;
 }
 
-.logo:focus {
-  outline: none;
+/*navbar - button dorpdown style*/
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header {
-  min-width: 15vh;
-  position: sticky;
-  top: 0;
-  z-index: 2;
+.menu__bar, .menu__bar::before, .menu__bar::after {
+  position: relative;
+  background-color: #ffff;
+  width: 4rem;
+  height: 8px;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+  left: 0;
 }
 
+.menu__bar::before, .menu__bar::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  background-color: #ffff;
+  transition: transform 0.3s ease;
+}
+
+.menu__bar::after {
+  top: 15px;
+  background-color: #ffff;
+}
+
+/*navbar - button dorpdown click style*/
+.open .menu__bar {
+  background-color: #12191C;
+  width: 55px;
+  height: 4rem;
+}
+
+.open .menu__bar::after {
+  transform: translateY(0px) rotate(45deg);
+}
+
+.open .menu__bar::before {
+  transform: translateY(30px) rotate(-45deg);
+}
+
+/*media query*/
 @media (min-width: 992px) {
   body {
     font-size: 20px;
@@ -46,6 +111,15 @@ header {
   }
   header .navbar-Container {
     width: 50%;
+  }
+  header button.logo--dropdown, header div.SocialMedia {
+    display: none;
+  }
+  header div.menu-options-list-dropdown--enable {
+    flex-direction: row;
+  }
+  header div.menu-options-list-dropdown--enable .open .menu__bar {
+    display: none;
   }
 
   .navbar {
@@ -94,7 +168,7 @@ header {
   }
 
   body {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   nav {
@@ -112,24 +186,34 @@ header {
   header .navbar-Container {
     width: 100%;
   }
+  header div.menu-options-list-dropdown--enable {
+    display: flex;
+    flex-direction: column;
+  }
+  header div.menu-options-list-dropdown--enable ul.menu-options-list {
+    margin: 5rem 0;
+  }
+  header div.menu-options {
+    padding: 3rem 5rem;
+    border: 1px solid #ffff;
+    margin: 0 3rem;
+    position: sticky;
+    margin-bottom: 15rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
 
   .navbar {
     margin: 3rem;
     margin-left: 3rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
   }
 
   .logo {
     font-size: 25px;
-  }
-
-  button .svg-inline--fa {
-    height: 100%;
-  }
-
-  button .svg-inline--fa.fa-w-14, button .svg-inline--fa.fa-w-11 {
-    width: 100%;
   }
 
   .menu-options-list-dropdown--disable {
@@ -141,7 +225,7 @@ header {
     background-color: #F7F3DE;
     display: inline-block;
     height: 4rem;
-    width: 4rem;
+    width: 6rem;
   }
 
   .menu-options-list {
@@ -161,6 +245,20 @@ header {
 
   .menu-options__element:hover {
     font-size: 28px;
+  }
+}
+@media (min-width: 500px) and (max-width: 900px) {
+  nav.menu-options-list-dropdown--enable {
+    min-height: 90vh;
+  }
+  nav.menu-options-list-dropdown--enable div.menu-options {
+    margin: 5rem 10rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 992px) {
+  nav.menu-options-list-dropdown--enable div.menu-options {
+    padding: 10rem 5rem;
+    margin: 5rem 10rem;
   }
 }
 

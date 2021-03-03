@@ -4,6 +4,7 @@ import About from "./pages/About"
 import Projects from "./pages/Projects/Projects"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import "./App.css"
+import "./Animations.css"
 import { useEffect } from "react"
 function App() {
   useEffect(() => {
@@ -12,9 +13,12 @@ function App() {
         let topScreen = document.documentElement.scrollTop;
         elements.forEach((element,index)=>{
             let top = element.offsetTop;
-            if(top - 420 < topScreen){
-                element.style.opacity = 1;
-                element.classList.add("animateTop")
+            if(top - 450 < topScreen){
+              if(element.classList.contains("animate-left"))
+                element.classList.add("scale-in-hor-left");
+            }
+            else{
+              element.classList.add("scale-in-hor-right");
             }
         })
     }

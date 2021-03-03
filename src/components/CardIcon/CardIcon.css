@@ -10,18 +10,17 @@
   text-align: center;
   margin: 0 0.5rem;
   color: #ffff;
-  border-radius: 5px;
-  transition: all 0.3s;
+  border-radius: 50%;
+  transition: transform 0.6s ease, background-color 0.6s ease;
+  -webkit-transition: transform 0.6s ease, background-color 0.6s ease;
+  -moz-transition: transform 0.6s ease, background-color 0.6s ease;
+  -o-transition: transform 0.6s ease, background-color 0.6s ease;
 }
 
 .icon--socialMedia a:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -o-transform: scale(1.2);
-  transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
   z-index: 5;
 }
 

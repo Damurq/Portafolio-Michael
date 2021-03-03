@@ -10,7 +10,7 @@ const CardAboutMe = () => {
             <h2 className="title">About Me</h2>
             <div className="CardAboutMe-content">
             { carAboutMe.map((section, index)=>{ 
-                return (<div key={"section-"+index} className={"animate CardAboutMe__section--" + index}>
+                return (<div key={"section-"+index} className={"animate animate-left CardAboutMe__section--" + index}>
                     <div className="CardAboutMe__section--first">
                         <h3 className="subtitle">{section.title}</h3>
                         <p className="mini-title">
