@@ -17,10 +17,9 @@ const Home = ()=>{
     return (
         <div className="Content">
             <CardPresentation />
-            <CardAboutMe />
-            <CardPortfolio />
+            <CardAboutMe sectionPage="home"/>
+            <CardPortfolio sectionPage="home"/>
             <Contact />
-            <Footer />
         </div>
     )
 }

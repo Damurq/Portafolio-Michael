@@ -59,9 +59,26 @@ body{
     display: inline-block;
     box-shadow: 6px 6px 20px -1px rgba(0, 0, 0, 0.15)
 }
+.button-dark{
+    font-size: 1.2rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    background-color:#12191C;  
+    color: #FFFFFF;
+    padding: .5rem 3.5rem;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 1s ease,color 1s ease;
+}
 .button-yellow:hover {
     box-shadow: inset 4px 4px 10px -1px rgba(0, 0, 0, 0.15),
         inset -4px -4px 10px -1px #FECB23;
+}
+.button-dark:hover {
+    border: 1px solid #12191C;
+    background-color:#FFFFFF;  
+    color: #12191C;
+
 }
 button.theme-dark-1{
     font-size: 1.2rem;

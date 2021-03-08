@@ -24,29 +24,500 @@
         ],
         "CardPortfolio": [
             {
-                "type":"web-site",
-                "photosrc":"portfolio/damageControl.png",
-                "path":""
+                "id":"01",
+                "type": "web-site",
+                "photosrc": "/portfolio/damageControl.png",
+                "path": "/"
             },
             {
-                "type":"web-site",
-                "photosrc":"portfolio/tuiphone.png",
-                "path":""
+                "id":"02",
+                "type": "web-site",
+                "photosrc": "/portfolio/tuiphone.png",
+                "path": ""
             },
             {
-                "type":"app-desk",
-                "photosrc":"",
-                "path":""
+                "id":"03",
+                "type": "app-desk",
+                "photosrc": "/portfolio/cinesVenezuela.png",
+                "path": ""
             },
             {
-                "type":"app-desk",
-                "photosrc":"",
-                "path":""
+                "id":"05",
+                "type": "app",
+                "photosrc": "/portfolio/dataExploration.png",
+                "path": ""
             },
             {
-                "type":"app",
-                "photosrc":"",
-                "path":""
+                "id":"04",
+                "type": "app-desk",
+                "photosrc": "/portfolio/damageControlDesk.png",
+                "path": ""
+            }
+        ],
+        "CardSkill": [
+            {
+                "name": "knowledge",
+                "content": [
+                    {
+                        "name": "Programming Languages",
+                        "content": [
+                            {
+                                "id": 0,
+                                "name": "Javascript",
+                                "pothoSrc": "skill/Javascript.png"
+                            },
+                            {
+                                "id": 1,
+                                "name": "Python",
+                                "pothoSrc": "skill/Python.png"
+                            },
+                            {
+                                "id": 2,
+                                "name": "Java",
+                                "pothoSrc": "skill/Java.png"
+                            },
+                            {
+                                "id": 3,
+                                "name": "C#",
+                                "pothoSrc": "skill/C#.png"
+                            },
+                            {
+                                "id": 4,
+                                "name": "C++",
+                                "pothoSrc": "skill/C++.png"
+                            },
+                            {
+                                "id": 5,
+                                "name": "R",
+                                "pothoSrc": "skill/R.png"
+                            },
+                            {
+                                "id": 6,
+                                "name": "Octave",
+                                "pothoSrc": "skill/Octave.png"
+                            },
+                            {
+                                "id": 7,
+                                "name": "Maple",
+                                "pothoSrc": "skill/Maple.png"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Libraries, Frameworks and others",
+                        "content": [
+                            {
+                                "id": 8,
+                                "name": "React",
+                                "pothoSrc": "skill/React.png"
+                            },
+                            {
+                                "id": 9,
+                                "name": "next.js",
+                                "pothoSrc": "skill/next_js.png"
+                            },
+                            {
+                                "id": 10,
+                                "name": "Django",
+                                "pothoSrc": "skill/Django.png"
+                            },
+                            {
+                                "id": 11,
+                                "name": "HTML5",
+                                "pothoSrc": "skill/HTML5.png"
+                            },
+                            {
+                                "id": 12,
+                                "name": "CSS3",
+                                "pothoSrc": "skill/CSS3.png"
+                            },
+                            {
+                                "id": 13,
+                                "name": "bootstrap",
+                                "pothoSrc": "skill/bootstrap.png"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Database management systems",
+                        "content": []
+                    }
+                ]
+            },
+            {
+                "name": "Hobbies",
+                "content": [
+
+                ]
+            },
+            {
+                "name": "Other Skills",
+                "content": [
+                    
+                ]
+            }
+        ],
+        "ProjectStartSection":[
+            {
+                "id":"01",
+                "role":"Front-end | Back-end | Scrum Master",
+                "name":"DamageControl",
+                "description":"A website designed as an e-learning platform. This will allow the creation and administration of courses for later sale, with different types of user.",
+                "imgsrc":"/ProjectStartSection/DamageControl/DamageControl.png"
+            },
+            {
+                "id":"02",
+                "role":"Front-end | Back-end | Scrum Master",
+                "name":"Tuiphone",
+                "description":"A website designed as an e-commerce platform. This will allow the management and sale of new and used phones by the Tuiphone store, greatly expanding the sales margin.",
+                "imgsrc":"/ProjectStartSection/Tuiphone/Tuiphone.png"
+            },
+            {
+                "id":"03",
+                "role":"Member of a development team | Desktop developer",
+                "name":"Cines de Venezuela",
+                "description":"A desktop application created in Java that allows the management of employees, users, sweets, movies, clients and rooms of the different branches of Cines de Venezuela, allowing invoicing both sweets and tickets as well as generating reports.",
+                "imgsrc":"/ProjectStartSection/CinesVenezuela/CinesVenezuela.png"
+            },
+            {
+                "id":"04",
+                "role":"Scrum Master | Desktop developer",
+                "name":"DamageControl - Desk",
+                "description":"A desktop application developed to manage the courses, students and professors of an institution, as well as generate reports.",
+                "imgsrc":"/ProjectStartSection/DamageControlDesk/DamageControlDesk.png"
+            },
+            {
+                "id":"05",
+                "role":"Project leader and organizer",
+                "name":"Data exploration and projection",
+                "description":"A script developed in python that takes a set of data from an excel file to perform an exploration of the data, analyzing each of the variables using different statistical tools, an analysis of the relationship of the variables, in addition to making a model of linear regression and future projections.",
+                "imgsrc":"/ProjectStartSection/DataExploration/DataExploration.png"
+            }
+        ],
+        "ProjectContentSection":[
+            {
+                "id":"01",
+                "content":[
+                    {
+                        "name":"User types",
+                        "content":[
+                            {
+                                "descrption":"Administrators: They can create study plans composed of several specializations, in turn these specializations will be composed of several courses that are managed by administrators",
+                                "imgsrc":"/ProjectContentSection/UserTypes/admin.png"
+                            },
+                            {
+                                "descrption":"Normal user: You can register on the platform as a student or as a teacher.",
+                                "imgsrc":"/ProjectContentSection/UserTypes/regular.png"
+                            },
+                            {
+                                "descrption":"Student: You can see the study plans, the spatialities, the courses that compose them, the prices and the teachers who teach them and in case you feel interested in one, make a purchase",
+                                "imgsrc":"/ProjectContentSection/UserTypes/student.png"
+                            },
+                            {
+                                "descrption":"Teacher: you can select any of the courses belonging to a specialty to teach, at the same time you can define various schedules and establish what these schedules will be for [consultations, consultancies, evaluations], place a price on the course and define the evaluations.",
+                                "imgsrc":"/ProjectContentSection/UserTypes/teacher.png"
+                            }
+                        ]
+                    },
+                    {
+                        "name":"Colors",
+                        "content":[
+                            {
+                                "color":"#1e062a"
+                            },
+                            {
+                                "color":"#23102d"
+                            },
+                            {
+                                "color":"#2cfafa"
+                            },
+                            {
+                                "color":"#2c93fb"
+                            }
+                        ]
+                    },
+                    {
+                        "name":"Interfaces and repository",
+                        "interface":"Some screenshots of the various interfaces.",
+                        "repository":"Repository link.",
+                        "content":[
+                            {
+                                "id":"dc01",
+                                "imgsrc":"/ProjectContentSection/Interface/DamageControl/Interface1.png",
+                                "imgClass":"vertical"
+                            },
+                            {
+                                "id":"dc02",
+                                "imgsrc":"/ProjectContentSection/Interface/DamageControl/Interface2.png",
+                                "imgClass":"vertical"
+                            },
+                            {
+                                "id":"dc03",
+                                "imgsrc":"/ProjectContentSection/Interface/DamageControl/Interface3.png",
+                                "imgClass":"horizontal"
+                            },
+                            {
+                                "id":"dc04",
+                                "imgsrc":"/ProjectContentSection/Interface/DamageControl/Interface4.png",
+                                "imgClass":"horizontal"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id":"02",
+                "content":[
+                    {
+                        "name":"User types",
+                        "content":[
+                            {
+                                "descrption":"Administrators: You can manage the phones that are sold on the platform, as well as restrict access to users and generate statistics with sales.",
+                                "imgsrc":"/ProjectContentSection/UserTypes/admin.png"
+                            },
+                            {
+                                "descrption":"Normal user: You can see the available phones, register, buy and rate a purchase",
+                                "imgsrc":"/ProjectContentSection/UserTypes/regular.png"
+                            }
+                        ]
+                    },
+                    {
+                        "name":"colors",
+                        "content":[
+                            {
+                                "color":"#053769"
+                            },
+                            {
+                                "color":"#2A84DD"
+                            },
+                            {
+                                "color":"#000000"
+                            },
+                            {
+                                "color":"#333745"
+                            }
+                        ]
+                    },
+                    {
+                        "name":"Responsive design",
+                        "imgsrc":"/ProjectContentSection/ResponsiveDesign/ResponsiveDesign.png"
+                    },
+                    {
+                        "name":"Repository",
+                        "repository":"Repository link."
+                    }
+                ]
+            },
+            {
+                "id":"03",
+                "content":[
+                    {
+                        "name":"User types",
+                        "content":[
+                            {
+                                "descrption":"Administrator: You can manage all entities of all branches, there is only one administrator user.",
+                                "imgsrc":"/ProjectContentSection/UserTypes/adminCV.png"
+                            },
+                            {
+                                "descrption":"Manager: You can manage the employees, the rooms, the stock of goodies and the available movies, as well as generate reports, all this only from the branch where you work, but you cannot observe or access the information of other branches.",
+                                "imgsrc":"/ProjectContentSection/UserTypes/managerCV.png"
+                            },
+                            {
+                                "descrption":"Candy seller: You can invoice candy and register customers.",
+                                "imgsrc":"/ProjectContentSection/UserTypes/candyCV.png"
+                            },
+                            {
+                                "descrption":"Ticket seller: You can invoice movie tickets and register customers.",
+                                "imgsrc":"/ProjectContentSection/UserTypes/ticketCV.png"
+                            }
+                        ]
+                    },
+                    {
+                        "name":"colors",
+                        "content":[
+                            {
+                                "color":"#280340"
+                            },
+                            {
+                                "color":"#620e64"
+                            },
+                            {
+                                "color":"#a340ba"
+                            },
+                            {
+                                "color":"#2c93fb"
+                            },
+                            {
+                                "color":"#f9f9f9"
+                            }
+                        ]
+                    },
+                    {
+                        "name":"Interfaces and repository",
+                        "interface":"Some screenshots of the various interfaces.",
+                        "repository":"Repository link.",
+                        "content":[
+                            {
+                                "id":"cv01",
+                                "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/1.png",
+                                "imgClass":"vertical"
+                            },
+                            {
+                                "id":"cv02",
+                                "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/2.png",
+                                "imgClass":"vertical"
+                            },
+                            {
+                                "id":"cv03",
+                                "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/3.png",
+                                "imgClass":"horizontal"
+                            },
+                            {
+                                "id":"cv04",
+                                "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/4.png",
+                                "imgClass":"horizontal"
+                            },
+                            {
+                                "id":"cv05",
+                                "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/5.png",
+                                "imgClass":"vertical"
+                            },
+                            {
+                                "id":"cv06",
+                                "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/6.png",
+                                "imgClass":"vertical"
+                            },
+                            {
+                                "id":"cv07",
+                                "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/7.png",
+                                "imgClass":"horizontal"
+                            },
+                            {
+                                "id":"cv08",
+                                "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/8.png",
+                                "imgClass":"horizontal"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id":"04",
+                "content":[
+                    {
+                        "name":"User types",
+                        "content":[
+                            {
+                                "descrption":"User Type 1: In charge of managing teachers, students and courses.",
+                                "imgsrc":"/ProjectContentSection/UserTypes/Type1.png"
+                            },
+                            {
+                                "descrption":"User Type 2: Has the ability to generate reports in pdf.",
+                                "imgsrc":"/ProjectContentSection/UserTypes/Type2.png"
+                            },
+                            {
+                                "descrption":"User Type 3: Super user who has the capabilities of Type 1 and 2 users",
+                                "imgsrc":"/ProjectContentSection/UserTypes/Type3.png"
+                            }
+                        ]
+                    },
+                    {
+                        "name":"colors",
+                        "content":[
+                            {
+                                "color":"#0000e1"
+                            },
+                            {
+                                "color":"#e5b34c"
+                            },
+                            {
+                                "color":"#f7f6f6"
+                            }
+                        ]
+                    },
+                    {
+                        "name":"Interfaces and repository",
+                        "interface":"Some screenshots of the various interfaces.",
+                        "repository":"Repository link.",
+                        "content":[
+                            {
+                                "id":"dc01",
+                                "imgsrc":"/ProjectContentSection/Interface/DamageControlDesk/2.png",
+                                "imgClass":"vertical"
+                            },
+                            {
+                                "id":"dc02",
+                                "imgsrc":"/ProjectContentSection/Interface/DamageControlDesk/3.png",
+                                "imgClass":"vertical"
+                            },
+                            {
+                                "id":"dc03",
+                                "imgsrc":"/ProjectContentSection/Interface/DamageControlDesk/4.png",
+                                "imgClass":"horizontal"
+                            },
+                            {
+                                "id":"dc04",
+                                "imgsrc":"/ProjectContentSection/Interface/DamageControlDesk/5.png",
+                                "imgClass":"horizontal"
+                            },
+                            {
+                                "id":"dc01",
+                                "imgsrc":"/ProjectContentSection/Interface/DamageControlDesk/6.png",
+                                "imgClass":"vertical"
+                            },
+                            {
+                                "id":"dc02",
+                                "imgsrc":"/ProjectContentSection/Interface/DamageControlDesk/7.png",
+                                "imgClass":"vertical"
+                            },
+                            {
+                                "id":"dc03",
+                                "imgsrc":"/ProjectContentSection/Interface/DamageControlDesk/8.png",
+                                "imgClass":"horizontal"
+                            },
+                            {
+                                "id":"dc04",
+                                "imgsrc":"/ProjectContentSection/Interface/DamageControlDesk/9.png",
+                                "imgClass":"horizontal"
+                            },
+                            {
+                                "id":"dc04",
+                                "imgsrc":"/ProjectContentSection/Interface/DamageControlDesk/10.png",
+                                "imgClass":"horizontal"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id":"05",
+                "content":[
+                    {
+                        "name":"Results obtained",
+                        "paragraph1":"A few small images of the results obtained and their analysis",
+                        "paragraph2":"Before starting to show the results, it should be clarified that the data set used consisted of:",
+                        "paragraph3":"Based on the results obtained in the statistical analysis of the age variable, we can say that the minimum registered age is 18 years, the maximum registered age is 64 years, and the average age of the group of individuals is also around 40 years old. On the other hand, the age that is repeated the most is 19 years with a total of 44 individuals of that age. The latter can also be seen in the histogram where we see that the bar that is positioned before the age of 20 is much higher than the other bars that symbolize the ages.",
+                        "paragraph4":"Values thrown by describe () method in Visual Studio Code",
+                        "paragraph5":"Representación gráfica de la variable sexo",
+                        "paragraph6":"GRAPHIC REPRESENTATION OF THE CORRELATION MATRIX",
+                        "paragraph7":"REPRESENTATION OF RELATIONSHIPS IN A DISPERSION DIAGRAM",
+                        "list":[
+                            "Age (Age)",
+                            "Sex",
+                            "BIM (Body Mass Index)",
+                            "Children",
+                            "Smoker",
+                            "Region",
+                            "Charges"
+                        ],
+                        "imgsrc1":"ProjectContentSection/Interface/DataExploration/1.png",
+                        "imgsrc2":"ProjectContentSection/Interface/DataExploration/2.png",
+                        "imgsrc3":"ProjectContentSection/Interface/DataExploration/3.png",
+                        "imgsrc4":"ProjectContentSection/Interface/DataExploration/4.png",
+                        "imgsrc5":"ProjectContentSection/Interface/DataExploration/5.png"
+                    }
+                ]
+
             }
         ]
     }

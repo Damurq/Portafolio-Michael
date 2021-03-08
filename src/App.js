@@ -1,7 +1,9 @@
 import Navbar from "./components/Navbar/Navbar"
+import Footer from "./components/Footer/Footer"
 import Home from "./pages/Home"
-import About from "./pages/About"
-import Projects from "./pages/Projects/Projects"
+import AboutMe from "./pages/AboutMe/AboutMe"
+import Project from "./pages/Project/Project"
+import Portfolio from "./pages/Portfolio/Portfolio"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import "./App.css"
 import "./Animations.css"
@@ -24,6 +26,8 @@ function App() {
     }
     window.addEventListener("scroll",scrollAnimation); 
   },[]);
+
+  
   return (
     <div className="Content">
     <Router>
@@ -32,20 +36,22 @@ function App() {
         <div className="Content">
           <Switch>
             <Route path="/Portfolio/:id">
+              <Project />
             </Route>
-            <Route path="/Portfolio">
-              <Projects />
+            <Route path="/Portfolio/">
+              <Portfolio />
             </Route>
             <Route path="/contact/">
             </Route>            
-            <Route path="/about/">
-              <About />
+            <Route path="/About-me/">
+              <AboutMe />
             </Route>   
             <Route exact path="/">
               <Home />
             </Route>         
           </Switch>
         </div>
+        <Footer />
       </div>
     </Router>
           
@@ -54,3 +60,5 @@ function App() {
 }
 
 export default App;
+
+/**sass --watch sass/pages:pages */

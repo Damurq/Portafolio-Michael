@@ -19,6 +19,7 @@
 }
 .child-flex .button-yellow {
   margin: 0 1rem;
+  text-decoration: none;
 }
 
 .content-image {

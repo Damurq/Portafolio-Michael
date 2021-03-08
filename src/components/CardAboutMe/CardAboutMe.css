@@ -1,3 +1,7 @@
+.aboutMe .title {
+  text-align: center;
+}
+
 .CardAboutMe {
   margin: 0;
   padding: 0 3rem;

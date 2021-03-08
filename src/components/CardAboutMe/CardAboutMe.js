@@ -1,12 +1,13 @@
 import dbEnglish from "../../data/dbEnglish.json"
 import "./CardAboutMe.css"
-const CardAboutMe = () => {
+
+const CardAboutMe = ({sectionPage}) => {
     const carAboutMe = dbEnglish.components.CarAboutMe
-    const photo = "presentation/Michael_Montero_Dark.png"
-    const photo2 = "aboutMe/ucla.png"
+    const photosrcMe = "presentation/Michael_Montero_Dark.png"
+    const photosrcUCLA = "aboutMe/ucla.png"
 
     return ( 
-        <div className="CardAboutMe theme-dark-1">
+        <div className={"CardAboutMe theme-dark-1 " + sectionPage} id="CardAboutMe">
             <h2 className="title">About Me</h2>
             <div className="CardAboutMe-content">
             { carAboutMe.map((section, index)=>{ 
@@ -19,18 +20,18 @@ const CardAboutMe = () => {
                     </div>
                     { index===0 &&
                         <div className="CardAboutMe__sectionImage">
-                            <img src={photo2} alt="" className=""/>
+                            { sectionPage=="aboutMe" && <img src={photosrcMe} alt="" className=""/>}
+                            <img src={photosrcUCLA} alt="" className=""/>
                         </div>
                     }
                 </div>)
              }) }  
             </div>       
-            <div className="seeMore">
-              <div className="line">
-
-              </div>
-                <button className="theme-dark-1">more</button>
-            </div>
+            { sectionPage=="home" && <div className="seeMore">
+                <div className="line">
+                </div>
+                    <button className="theme-dark-1">more</button>
+                </div> }
         </div>
     );
 }

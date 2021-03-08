@@ -13,7 +13,7 @@ const  CardIcon = () => {
             <a className="instagram" href="https://www.instagram.com/mike.0408/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className="icon" icon={['fab', 'instagram']}/>
             </a>
-            <a className="linkedin" href="http://" target="_blank" rel="noopener noreferrer">
+            <a className="linkedin" href="www.linkedin.com/in/michael-montero-urquiola-bb62b61b6" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className="icon" icon={['fab', 'linkedin-in']}/>
             </a>
             <a className="github" href="https://github.com/Damurq?tab=repositories" target="_blank" rel="noopener noreferrer">

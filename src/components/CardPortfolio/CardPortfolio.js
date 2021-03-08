@@ -1,47 +1,41 @@
 import { useEffect, useState } from "react"
-import { useLocation } from "react-router-dom"
 import { Link } from "react-router-dom"
 import dbEnglish from "../../data/dbEnglish.json"
 import "./CardPortfolio.css"
 
-const CardPortfolio = () => {
-    const [section, setSection] = useState("")
+const CardPortfolio = ({sectionPage}) => {
     const [cardPortfolio, setCardPortfolio] = useState(dbEnglish.components.CardPortfolio)
-    let location = useLocation().pathname;
     let photo = "portfolio/damageControl.png"
 
     useEffect(() => {
-        setSection("")
-        if (location === "/") {
-            setSection("home");
+        if (sectionPage === "home") {
             setCardPortfolio(cardPortfolio.filter(projects=> projects.type==="web-site" ));
         }
-        else if (location === "/Portfolio") {
-            setSection("Portfolio");
+        else if (sectionPage === "portfolio") {
             setCardPortfolio(dbEnglish.components.CardPortfolio);
         }
-        //setPresentation(data[section]);
     },[]);
 
     return (
-        <div className="CardPortfolio theme-dark-2">
+        <div className={"CardPortfolio theme-dark-2 "+ sectionPage}>
             <h2 className="title">Portfolio</h2>
             <div className="projects">
                 {cardPortfolio.map((project,index) => {
                     photo = project.photosrc
                     return (
                         <div key={"project-"+index} className="project">
-                            <Link  to="/" className="">
+                            <Link  to={"/Portfolio/"+project.id} className="">
                                 <img src={photo} alt="" className={"project__img-"+index} />
                             </Link>
                         </div>
                     )
                 })}
             </div>
-            <div className="seeMore">
-                <div className="line"></div>
-                <button className="theme-dark-1">more</button>
-            </div>
+            { sectionPage=="home" && <div className="seeMore">
+                <div className="line">
+                </div>
+                    <Link to="/Portfolio" className="button-dark">more</Link>
+                </div> }
         </div>
     );
 }
