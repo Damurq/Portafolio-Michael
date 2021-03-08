@@ -61,4 +61,6 @@ function App() {
 
 export default App;
 
-/**sass --watch sass/pages:pages */
+/**sass --watch sass/pages:pages 
+ sass --watch sass/components:components* 
+*/

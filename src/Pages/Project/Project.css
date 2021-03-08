@@ -1,64 +1,10 @@
-.colorList {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem;
-  flex-wrap: wrap;
-  background-color: #ffff;
-  border: 1px solid black;
-}
-.colorList .colorList__element {
-  width: 150px;
-  height: 150px;
-  margin: 2rem;
-  border: 1px solid black;
-}
-.colorList .colorList__name {
-  color: black;
-  text-align: center;
-  font-weight: bold;
-}
-
-.interface {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.interface .vertical {
-  width: 40%;
-}
-.interface .vertical img {
-  width: 100%;
-}
-
 .DamageControl {
   padding: 4rem;
   background-color: #532768;
   color: #ffff;
 }
-.DamageControl .sectionContent {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.DamageControl .userType {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  justify-content: center;
-  align-items: center;
-}
-.DamageControl .userType .userType__img {
-  width: 25%;
-  padding-right: 5%;
-}
-.DamageControl .userType .userType__paragraph {
-  align-self: baseline;
-  text-align: justify;
-  width: 65%;
+.DamageControl .title--section {
+  text-decoration: underline #2cfafa solid;
 }
 
 .projectDetail {
@@ -68,13 +14,12 @@
 }
 .projectDetail h1, .projectDetail h2, .projectDetail h3 {
   text-align: center;
-  margin: 3rem;
 }
 .projectDetail h1, .projectDetail h2 {
-  border-bottom: 4px solid #2CFAFA;
+  text-decoration: underline #2cfafa solid;
 }
 .projectDetail div img {
   width: 100%;
 }
 
-/*# sourceMappingURL=project.css.map */
+/*# sourceMappingURL=Project.css.map */

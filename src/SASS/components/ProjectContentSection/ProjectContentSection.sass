@@ -1,0 +1,53 @@
+.colorList
+    display: flex
+    flex-direction: column
+    margin: 2rem
+    flex-wrap: wrap
+    background-color: #ffff
+    border: 1px solid black
+    .colorList__element
+        width: 150px
+        height: 150px
+        margin: 2rem .5rem
+        border: 1px solid black
+    .colorList__name
+        color: black
+        text-align: center
+        font-weight: bold
+.interface 
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    div
+        margin: 2rem 0
+    .vertical
+        width: 45%
+        img
+            width: 100%
+
+.sectionContent--generate
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    .userType
+        width: 50%
+        display: flex
+        flex-direction: row
+        margin: 0
+        justify-content: center
+        align-items: center
+        .userType__img
+            width: 25%
+            padding-right: 5%
+        .userType__paragraph
+            align-self: baseline
+            text-align: justify
+            width: 65%
+  
+@media (max-with: 1000px) {
+    .vertical
+        width: 100%
+}

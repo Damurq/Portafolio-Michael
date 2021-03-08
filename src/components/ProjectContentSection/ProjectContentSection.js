@@ -1,3 +1,5 @@
+import "./ProjectContentSection.css"
+
 const ProjectContentSection = ({section}) => {
     let generateSection = () => {
         if (section.name === "User types") {
@@ -114,9 +116,9 @@ const ProjectContentSection = ({section}) => {
         }
     }
     return (
-                    <div className="">
-                        <h2 className="">{section.name}</h2>
-                        <div className="sectionContent">
+                    <div className="sectionContent">
+                        <h2 className="title--section">{section.name}</h2>
+                        <div className="sectionContent--generate">
                             {generateSection()}
                         </div>
                     </div>
