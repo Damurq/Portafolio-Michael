@@ -4,10 +4,11 @@ import Home from "./pages/Home"
 import AboutMe from "./pages/AboutMe/AboutMe"
 import Project from "./pages/Project/Project"
 import Portfolio from "./pages/Portfolio/Portfolio"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route, } from "react-router-dom"
 import "./App.css"
 import "./Animations.css"
 import { useEffect } from "react"
+
 function App() {
   useEffect(() => {
     const elements= document.querySelectorAll(".animate")
@@ -34,6 +35,7 @@ function App() {
       <div className="App">
         <Navbar />
         <div className="Content">
+
           <Switch>
             <Route path="/Portfolio/:id">
               <Project />
@@ -62,5 +64,6 @@ function App() {
 export default App;
 
 /**sass --watch sass/pages:pages 
- sass --watch sass/components:components* 
+ sass --watch sass/components:components
+ cd Documents\Codigos\Progra WEB\Practice\Javascript\React\Portafolio-Michael/src
 */

@@ -1,10 +1,26 @@
 {
     "components": {
         "Navbar": [
-            "Home",
-            "About me",
-            "Portfolio",
-            "Contact"
+            {
+                "name":"Home",
+                "type":"Link",
+                "href":"/"
+            },
+            {
+                "name":"About me",
+                "type":"a",
+                "href":"#AboutMe"
+            },
+            {
+                "name":"Portfolio",
+                "type":"Link",
+                "href":"/Portfolio"
+            },
+            {
+                "name":"Contact",
+                "type":"a",
+                "href":"#Contact"
+            }
         ],
         "CardPresentation": {
             "title": "Michael Montero",
@@ -163,35 +179,40 @@
                 "role":"Front-end | Back-end | Scrum Master",
                 "name":"DamageControl",
                 "description":"A website designed as an e-learning platform. This will allow the creation and administration of courses for later sale, with different types of user.",
-                "imgsrc":"/ProjectStartSection/DamageControl/DamageControl.png"
+                "imgsrc":"/ProjectStartSection/DamageControl/DamageControl.png",
+                "imgvector":"/ProjectStartSection/Vectores/DamageControl.png"
             },
             {
                 "id":"02",
                 "role":"Front-end | Back-end | Scrum Master",
                 "name":"Tuiphone",
                 "description":"A website designed as an e-commerce platform. This will allow the management and sale of new and used phones by the Tuiphone store, greatly expanding the sales margin.",
-                "imgsrc":"/ProjectStartSection/Tuiphone/Tuiphone.png"
+                "imgsrc":"/ProjectStartSection/Tuiphone/Tuiphone.png",
+                "imgvector":"/ProjectStartSection/Vectores/Tuiphone.png"
             },
             {
                 "id":"03",
                 "role":"Member of a development team | Desktop developer",
                 "name":"Cines de Venezuela",
                 "description":"A desktop application created in Java that allows the management of employees, users, sweets, movies, clients and rooms of the different branches of Cines de Venezuela, allowing invoicing both sweets and tickets as well as generating reports.",
-                "imgsrc":"/ProjectStartSection/CinesVenezuela/CinesVenezuela.png"
+                "imgsrc":"/ProjectStartSection/CinesVenezuela/CinesVenezuela.png",
+                "imgvector":"/ProjectStartSection/Vectores/CinesVenezuela.png"
             },
             {
                 "id":"04",
                 "role":"Scrum Master | Desktop developer",
                 "name":"DamageControl - Desk",
                 "description":"A desktop application developed to manage the courses, students and professors of an institution, as well as generate reports.",
-                "imgsrc":"/ProjectStartSection/DamageControlDesk/DamageControlDesk.png"
+                "imgsrc":"/ProjectStartSection/DamageControlDesk/DamageControlDesk.png",
+                "imgvector":"/ProjectStartSection/Vectores/DamageControlDesk.png"
             },
             {
                 "id":"05",
                 "role":"Project leader and organizer",
                 "name":"Data exploration and projection",
                 "description":"A script developed in python that takes a set of data from an excel file to perform an exploration of the data, analyzing each of the variables using different statistical tools, an analysis of the relationship of the variables, in addition to making a model of linear regression and future projections.",
-                "imgsrc":"/ProjectStartSection/DataExploration/DataExploration.png"
+                "imgsrc":"",
+                "imgvector":"/ProjectStartSection/Vectores/DataExploration.png"
             }
         ],
         "ProjectContentSection":[
@@ -282,7 +303,7 @@
                         ]
                     },
                     {
-                        "name":"colors",
+                        "name":"Colors",
                         "content":[
                             {
                                 "color":"#053769"
@@ -300,7 +321,7 @@
                     },
                     {
                         "name":"Responsive design",
-                        "imgsrc":"/ProjectContentSection/ResponsiveDesign/ResponsiveDesign.png"
+                        "imgsrc":"/ProjectContentSection/ResponsiveDesign/ResponsiveDesign2.png"
                     },
                     {
                         "name":"Repository",
@@ -333,7 +354,7 @@
                         ]
                     },
                     {
-                        "name":"colors",
+                        "name":"Colors",
                         "content":[
                             {
                                 "color":"#280340"
@@ -360,12 +381,32 @@
                             {
                                 "id":"cv01",
                                 "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/1.png",
-                                "imgClass":"vertical"
+                                "imgClass":"horizontal"
+                            },
+                            {
+                                "id":"cv08",
+                                "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/8.png",
+                                "imgClass":"horizontal"
                             },
                             {
                                 "id":"cv02",
                                 "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/2.png",
-                                "imgClass":"vertical"
+                                "imgClass":"horizontal"
+                            },
+                            {
+                                "id":"cv05",
+                                "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/5.png",
+                                "imgClass":"horizontal"
+                            },
+                            {
+                                "id":"cv06",
+                                "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/6.png",
+                                "imgClass":"horizontal"
+                            },
+                            {
+                                "id":"cv07",
+                                "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/7.png",
+                                "imgClass":"horizontal"
                             },
                             {
                                 "id":"cv03",
@@ -375,26 +416,6 @@
                             {
                                 "id":"cv04",
                                 "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/4.png",
-                                "imgClass":"horizontal"
-                            },
-                            {
-                                "id":"cv05",
-                                "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/5.png",
-                                "imgClass":"vertical"
-                            },
-                            {
-                                "id":"cv06",
-                                "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/6.png",
-                                "imgClass":"vertical"
-                            },
-                            {
-                                "id":"cv07",
-                                "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/7.png",
-                                "imgClass":"horizontal"
-                            },
-                            {
-                                "id":"cv08",
-                                "imgsrc":"/ProjectContentSection/Interface/CinesVenezuela/8.png",
                                 "imgClass":"horizontal"
                             }
                         ]
@@ -417,12 +438,12 @@
                             },
                             {
                                 "descrption":"User Type 3: Super user who has the capabilities of Type 1 and 2 users",
-                                "imgsrc":"/ProjectContentSection/UserTypes/Type3.png"
+                                "imgsrc":"/ProjectContentSection/UserTypes/a.png"
                             }
                         ]
                     },
                     {
-                        "name":"colors",
+                        "name":"Colors",
                         "content":[
                             {
                                 "color":"#0000e1"
@@ -446,9 +467,14 @@
                                 "imgClass":"vertical"
                             },
                             {
+                                "id":"dc09",
+                                "imgsrc":"/ProjectContentSection/Interface/DamageControlDesk/10.png",
+                                "imgClass":"vertical"
+                            },
+                            {
                                 "id":"dc02",
                                 "imgsrc":"/ProjectContentSection/Interface/DamageControlDesk/3.png",
-                                "imgClass":"vertical"
+                                "imgClass":"horizontal"
                             },
                             {
                                 "id":"dc03",
@@ -458,33 +484,29 @@
                             {
                                 "id":"dc04",
                                 "imgsrc":"/ProjectContentSection/Interface/DamageControlDesk/5.png",
-                                "imgClass":"horizontal"
+                                "imgClass":"vertical"
                             },
                             {
-                                "id":"dc01",
+                                "id":"dc05",
                                 "imgsrc":"/ProjectContentSection/Interface/DamageControlDesk/6.png",
                                 "imgClass":"vertical"
                             },
                             {
-                                "id":"dc02",
+                                "id":"dc06",
                                 "imgsrc":"/ProjectContentSection/Interface/DamageControlDesk/7.png",
-                                "imgClass":"vertical"
+                                "imgClass":"horizontal"
                             },
                             {
-                                "id":"dc03",
+                                "id":"dc07",
                                 "imgsrc":"/ProjectContentSection/Interface/DamageControlDesk/8.png",
                                 "imgClass":"horizontal"
                             },
                             {
-                                "id":"dc04",
+                                "id":"dc08",
                                 "imgsrc":"/ProjectContentSection/Interface/DamageControlDesk/9.png",
                                 "imgClass":"horizontal"
-                            },
-                            {
-                                "id":"dc04",
-                                "imgsrc":"/ProjectContentSection/Interface/DamageControlDesk/10.png",
-                                "imgClass":"horizontal"
                             }
+
                         ]
                     }
                 ]
@@ -510,11 +532,12 @@
                             "Region",
                             "Charges"
                         ],
-                        "imgsrc1":"ProjectContentSection/Interface/DataExploration/1.png",
-                        "imgsrc2":"ProjectContentSection/Interface/DataExploration/2.png",
-                        "imgsrc3":"ProjectContentSection/Interface/DataExploration/3.png",
-                        "imgsrc4":"ProjectContentSection/Interface/DataExploration/4.png",
-                        "imgsrc5":"ProjectContentSection/Interface/DataExploration/5.png"
+                        "imgsrc1":"/ProjectContentSection/Interface/DataExploration/1.png",
+                        "imgsrc2":"/ProjectContentSection/Interface/DataExploration/2.png",
+                        "imgsrc3":"/ProjectContentSection/Interface/DataExploration/3.png",
+                        "imgsrc4":"/ProjectContentSection/Interface/DataExploration/4.png",
+                        "imgsrc5":"/ProjectContentSection/Interface/DataExploration/5.png",
+                        "imgsrc6":"/ProjectContentSection/Interface/DataExploration/6.png"
                     }
                 ]
 

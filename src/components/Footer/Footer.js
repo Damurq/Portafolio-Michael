@@ -1,7 +1,8 @@
+import { useEffect, useState } from "react"
 import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import dbEnglish from "../../data/dbEnglish.json"
 import CardIcon from "../CardIcon/CardIcon"
 import "./Footer.css"
@@ -10,15 +11,26 @@ const Footer = () => {
     library.add(faPhoneAlt,faEnvelope)
     const navbar = dbEnglish.components.Navbar
     const liClass = "theme-dark-2 menu-options__element menu-options__element--footer "
-
+    const [footer, setfooter] = useState("theme-dark-1")
+    let location = useLocation();
+    useEffect(() => {
+        let length = location.pathname.length
+        if ((location.pathname==="/") || (length!==13)){
+            setfooter("theme-dark-2");
+        }
+        else{
+            let className = location.pathname.substring(1,length).replace("/","-")
+            setfooter( className );
+        }
+    }, [location]);
     return (
-    <footer className="theme-dark-2">
+    <footer className={footer}>
         <div className="footer-elements">
             <div className="footerSection--nav">
                 <ul className="menu-options-list">
                     {navbar.map((section, index) => {
-                        return index === 0 ? <li key={"nav-li-"+index}><Link className={liClass} to="/">{section}</Link></li> : <li key={"nav-li-"+index}><Link className={liClass} to="/{section}">{section}</Link></li>
-                    })}
+                            return section.type === "Link" ? <li key={"nav-li-"+index} ><Link className={liClass} to={section.href}>{section.name}</Link></li> : <li key={"nav-li-"+index}><a className={liClass} href={section.href}>{section.name}</a></li>
+                        })}
                 </ul>
             </div>
             <div className="footerSection--SocialMedia">

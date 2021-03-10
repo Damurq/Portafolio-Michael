@@ -7,12 +7,16 @@ import "./Project.css"
 const Project = () => {
     const { id } = useParams();
     const projectContent= dbEnglish.components.ProjectContentSection.filter(project=>project.id===id)[0];
-    const name = dbEnglish.components.ProjectStartSection.filter(project=>project.id===id)[0].name;
-    return ( <div className={name +" projectDetail"}>
+    const project = dbEnglish.components.ProjectStartSection.filter(project=>project.id===id)[0];
+    return ( <div className={project.name.replaceAll(" ","_") +" projectDetail"}>
+
         <ProjectStartSection id={id}/>
         {projectContent.content.map((section,index)=>{
-            return (<ProjectContentSection key={id + index} id={id} section={section}/>)
+            return (<ProjectContentSection key={id + project.name.replaceAll(" ","_") + index} id={id} section={section}/>)
         })}
+        <div className="absolute">
+            <img src={project.imgvector} alt=""/>
+        </div>
     </div> );
 }
  

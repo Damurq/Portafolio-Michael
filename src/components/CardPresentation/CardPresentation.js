@@ -37,7 +37,7 @@ const CardPresentation = () => {
                             <p className={" mini-title"}>Specialized as  
                                 <b> Frontend Developer</b>
                             </p>
-                            <a className="button-yellow" href="#CardAboutMe"><b>{cardPresentation.button}</b></a>
+                            <a className="button-yellow" href="#AboutMe"><b>{cardPresentation.button}</b></a>
                         </div>
                     </div>
                     <div className={"cardPresentation-image theme-dark-1"}>

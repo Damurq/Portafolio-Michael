@@ -38,7 +38,7 @@ const ProjectContentSection = ({section}) => {
             return (
             <div className=""> 
                 <div className="">
-                    <a href="" className="">{section.repository}</a>
+                    <a href="" className="link">{section.repository}</a>
                 </div>
                 <div className="">
                     <p className="">{section.interface}</p>
@@ -56,8 +56,8 @@ const ProjectContentSection = ({section}) => {
         }
         else if (section.name === "Repository") {
             return (
-                <div className="">
-                    <a href="" className="">{section.repository}</a>
+                <div className="repository">
+                    <a href="" className="link">{section.repository}</a>
                 </div>
             );
         }
@@ -70,37 +70,37 @@ const ProjectContentSection = ({section}) => {
         }
         else if (section.name === "Results obtained") {
             return (
-                <div className="">
+                <div className="resultsObtained">
                     <p className="">{section.paragraph1}</p>
                     <p className="">{section.paragraph2}</p>
                     <ul>
-                        {section.list.map((result)=>{
+                        {section.list.map((result,index)=>{
                             return (
-                                <li className="">
+                                <li key={result.replaceAll(" ","")+index}>
                                     {result}
                                 </li>
                             )
                         })}
                     </ul>
-                    <div className="">
+                    <div className="horizontal">
                         <img src={section.imgsrc1} alt="" className=""/>
                     </div>
                     <p className="">{section.paragraph3}</p>
                     <p className="">{section.paragraph4}</p>
-                    <div className="">
+                    <div className="horizontal">
                         <img src={section.imgsrc2} alt="" className=""/>
                     </div>
                     <p className="">{section.paragraph5}</p>
-                    <div className="">
+                    <div className="verticalContainer">
                         <img src={section.imgsrc3} alt="" className=""/>
                         <img src={section.imgsrc4} alt="" className=""/>
                     </div>
                     <p className="">{section.paragraph6}</p>
-                    <div className="">
+                    <div className="horizontal">
                         <img src={section.imgsrc5} alt="" className=""/>
                     </div>
                     <p className="">{section.paragraph7}</p>
-                    <div className="">
+                    <div className="horizontal">
                         <img src={section.imgsrc6} alt="" className=""/>
                     </div>
                 </div>
@@ -109,8 +109,8 @@ const ProjectContentSection = ({section}) => {
         else if (section.name === "Document and repository") {
             return (
                 <div className="">
-                    <a href="" className=""></a>
-                    <a href="" className=""></a>
+                    <a href="" className="link"></a>
+                    <a href="" className="link"></a>
                 </div>
             );
         }

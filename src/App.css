@@ -1,3 +1,6 @@
+.absolute{
+    display: none
+}
 /**/
 * {
     -webkit-box-sizing: border-box;

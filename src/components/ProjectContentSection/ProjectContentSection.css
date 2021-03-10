@@ -9,7 +9,8 @@
 .colorList .colorList__element {
   width: 150px;
   height: 150px;
-  margin: 2rem;
+  margin: 2rem 0.5rem;
+  margin-bottom: 0;
   border: 1px solid black;
 }
 .colorList .colorList__name {
@@ -24,8 +25,11 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.interface div {
+  margin: 2rem;
+}
 .interface .vertical {
-  width: 40%;
+  width: 45%;
 }
 .interface .vertical img {
   width: 100%;
@@ -54,6 +58,50 @@
   align-self: baseline;
   text-align: justify;
   width: 65%;
+}
+.sectionContent--generate .repository {
+  align-self: baseline;
+}
+
+.resultsObtained {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .interface .vertical {
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .sectionContent--generate .userType {
+    width: 100%;
+    flex-direction: column;
+  }
+  .sectionContent--generate .userType .userType__img {
+    width: 35%;
+  }
+  .sectionContent--generate .userType .userType__paragraph {
+    width: 100%;
+  }
+}
+@media (max-width: 490px) {
+  .colorList .colorList__element {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 375px) {
+  .colorList .colorList__element {
+    width: 85px;
+    height: 85px;
+  }
+}
+.Cines_de_Venezuela .interface {
+  justify-content: center;
 }
 
 /*# sourceMappingURL=ProjectContentSection.css.map */

@@ -9,6 +9,7 @@
         width: 150px
         height: 150px
         margin: 2rem .5rem
+        margin-bottom: 0
         border: 1px solid black
     .colorList__name
         color: black
@@ -20,7 +21,7 @@
     flex-wrap: wrap
     justify-content: space-around
     div
-        margin: 2rem 0
+        margin: 2rem
     .vertical
         width: 45%
         img
@@ -46,7 +47,39 @@
             align-self: baseline
             text-align: justify
             width: 65%
-  
-@media (max-with: 1000px) 
-    .vertical
+    .repository
+        align-self: baseline
+.resultsObtained
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+
+@media (max-width: 1000px)
+    .interface  .vertical
         width: 100%
+
+@media (max-width: 650px)
+    .sectionContent--generate
+        .userType
+            width: 100%
+            flex-direction: column
+            .userType__img
+                width: 35%
+            .userType__paragraph
+                width: 100%
+
+@media (max-width: 490px)
+    .colorList .colorList__element
+        width: 100px
+        height: 100px
+
+@media (max-width: 375px)
+    .colorList .colorList__element
+        width: 85px
+        height: 85px
+        
+
+.Cines_de_Venezuela .interface
+    justify-content: center

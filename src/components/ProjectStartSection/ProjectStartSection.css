@@ -1,3 +1,11 @@
+.headerProject h1, .headerProject h2, .headerProject h3, .headerProject p, .headerProject img {
+  position: relative;
+  z-index: 4;
+  margin: 3.5rem 0;
+}
 
+.headerProject p {
+  margin-bottom: 0;
+}
 
 /*# sourceMappingURL=ProjectStartSection.css.map */
