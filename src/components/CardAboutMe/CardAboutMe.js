@@ -25,7 +25,7 @@ const CardAboutMe = ({sectionPage}) => {
                         </div>
                     }
                 </div>)
-             }) }  
+            }) }  
             </div>       
             { sectionPage=="home" && <div className="seeMore">
                 <div className="line">
