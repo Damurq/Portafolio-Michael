@@ -35,6 +35,11 @@
   width: 100%;
 }
 
+.sectionContent h2, .sectionContent p, .sectionContent ul {
+  position: relative;
+  z-index: 4;
+}
+
 .sectionContent--generate {
   display: flex;
   flex-direction: row;
