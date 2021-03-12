@@ -10,9 +10,9 @@ const AboutMe = () => {
             {cards.map((card,index)=>{
                 if(index===0){
                     return(
-                        <div className="" key={index+"-"+card.namme}>
-                            <h2 className="">{card.name}</h2>
-                            <div className="">
+                        <div   key={index+"-"+card.namme}>
+                            <h2  >{card.name}</h2>
+                            <div  >
                                 {card.content.map((skills)=>{
                                     <CardSkill skills={skills}/>
                                 })}
