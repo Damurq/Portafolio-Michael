@@ -1,6 +1,6 @@
 import Navbar from "./components/Navbar/Navbar"
 import Footer from "./components/Footer/Footer"
-import Home from "./pages/Home"
+import Home from "./pages/Home/Home"
 import AboutMe from "./pages/AboutMe/AboutMe"
 import Project from "./pages/Project/Project"
 import Portfolio from "./pages/Portfolio/Portfolio"
@@ -66,4 +66,8 @@ export default App;
 /**sass --watch sass/pages:pages
  sass --watch sass/components:components
  cd Documents\Codigos\Progra WEB\Practice\Javascript\React\Portafolio-Michael/src
+ https://github.com/TemaHunter/DamegeControl
+ https://github.com/Damurq/Backend-tuiphone
+ https://github.com/Damurq/Frontend-tuiphone
+ https://github.com/gustavoerivero/CinesDeVenezuela
 */

@@ -3,13 +3,19 @@ import React, {useState} from 'react';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
+    //Objeto que almacena la informacion del formulario
     const frmContact = { name:'', email:'', message:'' };
+    //hooks
     const [contact,setContact] = useState(frmContact);
     const [showMessage, setShowMessage] = useState(false);
+
+    //Controla el cambio en los imputs
     const handleChange = e => { 
         const {name,value} = e.target;
         setContact({...contact,[name]:value}); 
     };
+
+    //Se encarga de enviar el correo
     const handleSubmit = e =>{
         e.preventDefault();
         //emailjs.send(serviceID, templateID, templateParams, userID);
@@ -22,6 +28,7 @@ const Contact = () => {
                     console.log('FAILED...', err);
         });
     }
+    
     return (
         <div id="Contact" className="Contact theme--1">
             <h2 className="title">Contact</h2>

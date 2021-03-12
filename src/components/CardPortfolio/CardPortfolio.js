@@ -7,6 +7,7 @@ const CardPortfolio = ({sectionPage}) => {
     const [cardPortfolio, setCardPortfolio] = useState(dbEnglish.components.CardPortfolio)
     let photo = "portfolio/damageControl.png"
 
+    /* Dependiendo de la seccion se cargan determinador proyectos */
     useEffect(() => {
         if (sectionPage === "home") {
             setCardPortfolio(cardPortfolio.filter(projects=> projects.type==="web-site" ));

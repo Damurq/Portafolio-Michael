@@ -5,36 +5,50 @@ import CardIcon from "../CardIcon/CardIcon"
 import dbEnglish from "../../data/dbEnglish.json"
 
 const Navbar = () => {
+    //Desclaracion de los Hook
     const [navLeft, setNavLeft] = useState("theme--2 navbar-Container")
     const [navRight, setNavRight] = useState("theme--1")
-    let location = useLocation();
-    const navbar = dbEnglish.components.Navbar
-    const liClass = "menu-options__element"
     const history = useHistory();
+    let location = useLocation();
+    //Archivo JSON donde se encuentra la informacion del componente
+    const navbar = dbEnglish.components.Navbar
+    //Clase que tendran los li de la barra de navegacion
+    const liClass = "menu-options__element"
+
+    /* Función encargada de redirigir en caso de hacer click en una etiqueta "a" con href "#" */
     function clickHandler(e) {
+        //redirigimos al inicio
         history.push("/");
+        //Obtenemos la altura superior del elemento
         const href = this.getAttribute("href");
         const offsetTop = document.querySelector(href).offsetTop;
+        //hacemos que se desplace al elemento de forma suave
         window.scroll({
             top: offsetTop-50,
             behavior: "smooth"
         });
-        const menuOptions = document.querySelector(".menu-options")
-        if(menuOptions.classList.contains('menu-options-list-dropdown--enable')){
-            handleClick();
-        }
-    }
-    function clickHandlerRender(e) {
-        window.scroll({
-            top: 0,
-            behavior: "smooth"
-        });
+        //En caso de que sea una pantalla con menu desplegable hacemos que el menu se recoja
         const menuOptions = document.querySelector(".menu-options")
         if(menuOptions.classList.contains('menu-options-list-dropdown--enable')){
             handleClick();
         }
     }
 
+    /* Función encargada de subir el scroll cuando se renderiza una pagina */
+    function clickHandlerRender(e) {
+        window.scroll({
+            top: 0,
+            behavior: "smooth"
+        });
+        //En caso de que sea una pantalla con menu desplegable hacemos que el menu se recoja
+        const menuOptions = document.querySelector(".menu-options")
+        if(menuOptions.classList.contains('menu-options-list-dropdown--enable')){
+            handleClick();
+        }
+    }
+    /*  - Añadimos el evento click a todos los link y asignamos la funcion correspondiente
+        - Comprobamos la ubicacion de la pagina para el color del navbar
+    */
     useEffect(() => {
         const links = document.querySelectorAll('a[href^="#"]');
         const linksRender = document.querySelectorAll('a[href^="/"]');
@@ -57,7 +71,7 @@ const Navbar = () => {
     }, [location]);
 
 
-    //menu dropdown
+    //Controla el menu desplegable
     const handleClick = () => {
         const menuOptions = document.querySelector(".menu-options")
         menuOptions.classList.toggle("menu-options-list-dropdown--disable"); 
@@ -67,7 +81,7 @@ const Navbar = () => {
         document.querySelector(".menu--X").classList.toggle("open");
         document.querySelector("button.logo").classList.toggle("menu-options-list-dropdown--disable");
     }
-    //Change theme
+    //Cambia el tema
     const handleClickTheme = () => {
         const changeTheme = document.querySelector('#theme');
         changeTheme.classList.toggle("DARK");

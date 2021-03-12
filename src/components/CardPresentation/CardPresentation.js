@@ -9,6 +9,7 @@ const CardPresentation = () => {
     const cardPresentation = dbEnglish.components.CardPresentation
     const photo = "presentation/Michael_Montero_Dark.png"
     const history = useHistory();
+    
     function clickHandler(e) {
         history.push("/");
         e.preventDefault();
@@ -38,7 +39,6 @@ const CardPresentation = () => {
 
     return (
         <div className="cardPresentation">
-
             { cardPresentation && (
                 <React.Fragment>
                     <div className={"cardPresentation-info theme--2"}>

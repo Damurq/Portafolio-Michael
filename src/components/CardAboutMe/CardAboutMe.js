@@ -20,18 +20,12 @@ const CardAboutMe = ({sectionPage}) => {
                     </div>
                     { index===0 &&
                         <div className="CardAboutMe__sectionImage">
-                            { sectionPage=="aboutMe" && <img src={photosrcMe} alt="" className=""/>}
                             <img src={photosrcUCLA} alt="" className=""/>
                         </div>
                     }
                 </div>)
             }) }  
             </div>       
-            { sectionPage=="" && <div className="seeMore">
-                <div className="line">
-                </div>
-                    <button className="theme--1">more</button>
-                </div> }
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import dbEnglish from "../../data/dbEnglish.json"
 
 const CardSkill = ({skills}) => {
+  //Se utilizara en un futuro
     const hola= "";
     console.log(skills)
     return (
