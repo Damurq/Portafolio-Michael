@@ -1,18 +1,53 @@
-import { Link, useLocation } from "react-router-dom"
+import { Link, useLocation, useHistory } from "react-router-dom"
 import { useEffect, useState } from "react"
 import "./Navbar.css";
 import CardIcon from "../CardIcon/CardIcon"
 import dbEnglish from "../../data/dbEnglish.json"
 
 const Navbar = () => {
-    const [navLeft, setNavLeft] = useState("theme-dark-2 navbar-Container")
-    const [navRight, setNavRight] = useState("theme-dark-1")
+    const [navLeft, setNavLeft] = useState("theme--2 navbar-Container")
+    const [navRight, setNavRight] = useState("theme--1")
     let location = useLocation();
+    const navbar = dbEnglish.components.Navbar
+    const liClass = "menu-options__element"
+    const history = useHistory();
+    function clickHandler(e) {
+        history.push("/");
+        const href = this.getAttribute("href");
+        const offsetTop = document.querySelector(href).offsetTop;
+        window.scroll({
+            top: offsetTop-50,
+            behavior: "smooth"
+        });
+        const menuOptions = document.querySelector(".menu-options")
+        if(menuOptions.classList.contains('menu-options-list-dropdown--enable')){
+            handleClick();
+        }
+    }
+    function clickHandlerRender(e) {
+        window.scroll({
+            top: 0,
+            behavior: "smooth"
+        });
+        const menuOptions = document.querySelector(".menu-options")
+        if(menuOptions.classList.contains('menu-options-list-dropdown--enable')){
+            handleClick();
+        }
+    }
+
     useEffect(() => {
+        const links = document.querySelectorAll('a[href^="#"]');
+        const linksRender = document.querySelectorAll('a[href^="/"]');
+        for (const link of links) {
+            link.addEventListener("click", clickHandler);
+        }
+        for (const linkR of linksRender) {
+            linkR.addEventListener("click", clickHandlerRender);
+        }
         let length = location.pathname.length
         if ((location.pathname==="/") || (length!==13)){
-            setNavLeft("theme-dark-2 navbar-Container");
-            setNavRight("theme-dark-1");
+            setNavLeft("theme--2 navbar-Container");
+            setNavRight("theme--1");
         }
         else{
             let className = location.pathname.substring(1,length).replace("/","-")
@@ -20,9 +55,7 @@ const Navbar = () => {
             setNavRight( className);
         }
     }, [location]);
-    const [theme, setTheme] = useState("dark")
-    const navbar = dbEnglish.components.Navbar
-    const liClass = "theme-dark-1 menu-options__element"
+
 
     //menu dropdown
     const handleClick = () => {
@@ -36,38 +69,28 @@ const Navbar = () => {
     }
     //Change theme
     const handleClickTheme = () => {
-        const changeTheme = document.querySelectorAll(`.theme-${theme}-1,.theme-${theme}-2`)
-        if (theme === "dark") {
-            setTheme("light")
-            changeTheme.forEach((element, index, objectNode) => {
-                objectNode[index].classList.contains("theme-dark-1") ? element.classList.replace("theme-dark-1", "theme-light-1") : element.classList.replace("theme-dark-2", `theme-light-2`)
-            })
-        }
-        else {
-            setTheme("dark")
-            changeTheme.forEach((element) => {
-                element.classList.contains("theme-light-1") ? element.classList.replace("theme-light-1", "theme-dark-1") : element.classList.replace("theme-light-2", "theme-dark-2")
-            })
-        }
+        const changeTheme = document.querySelector('#theme');
+        changeTheme.classList.toggle("DARK");
+        changeTheme.classList.toggle("LIGHT");
     }
 
     return (
         <header>
             <div className={navLeft}>
                 <div className="navbar">
-                    <button className="dropdown-menu-button theme-dark-2" onClick={handleClick}>
+                    <button className="dropdown-menu-button" onClick={handleClick}>
                         <div className="menu menu--X">
                             <span className="menu__bar"></span>
                         </div>
                     </button>
-                    <button className="logo theme-dark-2" onClick={handleClickTheme}>
+                    <button className="logo" onClick={handleClickTheme}>
                         Montero
                     </button>
                 </div>
             </div>
             <nav className={navRight}>
                 <div className="menu-options menu-options-list-dropdown--disable">
-                    <button className="logo--dropdown logo theme-dark-2 title" onClick={handleClickTheme}>
+                    <button className="logo--dropdown logo title" onClick={handleClickTheme}>
                         Montero
                     </button>   
                     <ul className="menu-options-list">

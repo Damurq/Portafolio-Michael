@@ -17,7 +17,7 @@ const CardPortfolio = ({sectionPage}) => {
     },[]);
 
     return (
-        <div className={"CardPortfolio theme-dark-2 "+ sectionPage}>
+        <div className={"CardPortfolio theme--2 "+ sectionPage}>
             <h2 className="title">Portfolio</h2>
             <div className="projects">
                 {cardPortfolio.map((project,index) => {

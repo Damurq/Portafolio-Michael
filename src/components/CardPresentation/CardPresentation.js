@@ -3,12 +3,14 @@ import { useEffect } from "react"
 import CardIcon from "../CardIcon/CardIcon"
 import dbEnglish from "../../data/dbEnglish.json"
 import "./CardPresentation.css"
+import { useHistory } from "react-router-dom";
 
 const CardPresentation = () => {
     const cardPresentation = dbEnglish.components.CardPresentation
     const photo = "presentation/Michael_Montero_Dark.png"
-
+    const history = useHistory();
     function clickHandler(e) {
+        history.push("/");
         e.preventDefault();
         const href = this.getAttribute("href");
         const offsetTop = document.querySelector(href).offsetTop;
@@ -17,11 +19,20 @@ const CardPresentation = () => {
             behavior: "smooth"
         });
     }
-
+    function clickHandlerRender(e) {
+        window.scroll({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
     useEffect(() => {
         const links = document.querySelectorAll('a[href^="#"]');
+        const linksRender = document.querySelectorAll('a[href^="/"]');
         for (const link of links) {
             link.addEventListener("click", clickHandler);
+        }
+        for (const linkR of linksRender) {
+            linkR.addEventListener("click", clickHandlerRender);
         }
     },[]);
 
@@ -30,7 +41,7 @@ const CardPresentation = () => {
 
             { cardPresentation && (
                 <React.Fragment>
-                    <div className={"cardPresentation-info theme-dark-2"}>
+                    <div className={"cardPresentation-info theme--2"}>
                         <div className="child-flex">
                             <h1 className={"title"}>{cardPresentation.title}</h1>
                             <h2 className="subtitle-yelow">{cardPresentation.subtitle}</h2>
@@ -40,7 +51,7 @@ const CardPresentation = () => {
                             <a className="button-yellow" href="#AboutMe"><b>{cardPresentation.button}</b></a>
                         </div>
                     </div>
-                    <div className={"cardPresentation-image theme-dark-1"}>
+                    <div className={"cardPresentation-image theme--1"}>
                         <div className="child-flex">
                             <div className="content-image">
                                 <img src={photo} alt="Michael_Montero" />

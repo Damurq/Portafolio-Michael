@@ -35,7 +35,7 @@
   width: 100%;
 }
 
-.sectionContent h2, .sectionContent p, .sectionContent ul {
+.sectionContent h2, .sectionContent p, .sectionContent ul, .sectionContent .horizontal {
   position: relative;
   z-index: 4;
 }

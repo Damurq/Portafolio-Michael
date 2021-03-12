@@ -1,28 +1,28 @@
-.Portfolio-01, .Portfolio-01 .theme-dark-1, .Portfolio-01 .theme-dark-2 {
+.Portfolio-01, .Portfolio-01 .theme--1, .Portfolio-01 .theme--2 {
   background-color: #1E062A;
   color: #ffff;
   transition: background-color 0.2, color 0.2s;
 }
 
-.Portfolio-02, .Portfolio-02 .theme-dark-1, .Portfolio-02 .theme-dark-2 {
+.Portfolio-02, .Portfolio-02 .theme--1, .Portfolio-02 .theme--2 {
   background-color: #2478cc;
   color: #ffff;
   transition: background-color 0.2, color 0.2s;
 }
 
-.Portfolio-03, .Portfolio-03 .theme-dark-1, .Portfolio-03 .theme-dark-2 {
+.Portfolio-03, .Portfolio-03 .theme--1, .Portfolio-03 .theme--2 {
   background-color: #8c34a3;
   color: #ffff;
   transition: background-color 0.2, color 0.2s;
 }
 
-.Portfolio-04, .Portfolio-04 .theme-dark-1, .Portfolio-04 .theme-dark-2 {
+.Portfolio-04, .Portfolio-04 .theme--1, .Portfolio-04 .theme--2 {
   background-color: #bbb6b6;
   color: black;
   transition: background-color 0.2, color 0.2s;
 }
 
-.Portfolio-05, .Portfolio-05 .theme-dark-1, .Portfolio-05 .theme-dark-2 {
+.Portfolio-05, .Portfolio-05 .theme--1, .Portfolio-05 .theme--2 {
   background-color: #434e66;
   color: #ffff;
   transition: background-color 0.2, color 0.2s;
@@ -140,6 +140,11 @@
 @media (max-width: 900px) {
   .Data_exploration_and_projection .sectionContent--generate .horizontal {
     width: 80%;
+  }
+
+  .projectDetail .absolute img {
+    height: 525px;
+    object-fit: cover;
   }
 }
 
