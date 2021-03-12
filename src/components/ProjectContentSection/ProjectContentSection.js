@@ -10,10 +10,10 @@ const ProjectContentSection = ({section}) => {
                 return(
                 <div key={section.name.replace(" ", "") + "-" + index} className="userType">
                     <div className="userType__img">
-                        <img src={photo} alt={photo} className="" />
+                        <img src={photo} alt={photo}   />
                     </div>
                     <div className="userType__paragraph">
-                        <p className="">{user.descrption}</p>
+                        <p  >{user.descrption}</p>
                     </div>
                 </div>
                 )
@@ -27,7 +27,7 @@ const ProjectContentSection = ({section}) => {
                     <div className="colorList__element" style={{background:clr}}>
                     </div>
                     <div className="colorList__name">
-                        <p className="">
+                        <p  >
                             {color.color}
                         </p>
                     </div>
@@ -36,12 +36,12 @@ const ProjectContentSection = ({section}) => {
         }
         else if (section.name === "Interfaces and repository") {
             return (
-            <div className=""> 
-                <div className="">
-                    <a href="" className="link">{section.repository}</a>
+            <div  > 
+                <div  >
+                    <a href={section.link}  target="_blank" className="link">{section.repository}</a>
                 </div>
-                <div className="">
-                    <p className="">{section.interface}</p>
+                <div  >
+                    <p  >{section.interface}</p>
                 </div>
                 <div className="interface">
                 {section.content.map((img) => {
@@ -57,22 +57,25 @@ const ProjectContentSection = ({section}) => {
         else if (section.name === "Repository") {
             return (
                 <div className="repository">
-                    <a href="" className="link">{section.repository}</a>
+                    <p>{section.repository}</p>
+                    {section.links.map((link,i)=>{ 
+                        return (<div key={link.name+i}><a href={link.href} target="_blank" className="link">{link.name}</a><br/><br/></div>)
+                    })}
                 </div>
             );
         }
         else if (section.name === "Responsive design") {
             return (
-                <div className="">
-                    <img src={section.imgsrc} alt="" className=""/>
+                <div  >
+                    <img src={section.imgsrc} alt=""  />
                 </div>
             );
         }
         else if (section.name === "Results obtained") {
             return (
                 <div className="resultsObtained">
-                    <p className="">{section.paragraph1}</p>
-                    <p className="">{section.paragraph2}</p>
+                    <p  >{section.paragraph1}</p>
+                    <p  >{section.paragraph2}</p>
                     <ul>
                         {section.list.map((result,index)=>{
                             return (
@@ -83,32 +86,32 @@ const ProjectContentSection = ({section}) => {
                         })}
                     </ul>
                     <div className="horizontal">
-                        <img src={section.imgsrc1} alt="" className=""/>
+                        <img src={section.imgsrc1} alt=""  />
                     </div>
-                    <p className="">{section.paragraph3}</p>
-                    <p className="">{section.paragraph4}</p>
+                    <p  >{section.paragraph3}</p>
+                    <p  >{section.paragraph4}</p>
                     <div className="horizontal">
-                        <img src={section.imgsrc2} alt="" className=""/>
+                        <img src={section.imgsrc2} alt=""  />
                     </div>
-                    <p className="">{section.paragraph5}</p>
+                    <p  >{section.paragraph5}</p>
                     <div className="verticalContainer">
-                        <img src={section.imgsrc3} alt="" className=""/>
-                        <img src={section.imgsrc4} alt="" className=""/>
+                        <img src={section.imgsrc3} alt=""  />
+                        <img src={section.imgsrc4} alt=""  />
                     </div>
-                    <p className="">{section.paragraph6}</p>
+                    <p  >{section.paragraph6}</p>
                     <div className="horizontal">
-                        <img src={section.imgsrc5} alt="" className=""/>
+                        <img src={section.imgsrc5} alt=""  />
                     </div>
-                    <p className="">{section.paragraph7}</p>
+                    <p  >{section.paragraph7}</p>
                     <div className="horizontal">
-                        <img src={section.imgsrc6} alt="" className=""/>
+                        <img src={section.imgsrc6} alt=""  />
                     </div>
                 </div>
             );
         }
         else if (section.name === "Document and repository") {
             return (
-                <div className="">
+                <div  >
                     <a href="" className="link"></a>
                     <a href="" className="link"></a>
                 </div>

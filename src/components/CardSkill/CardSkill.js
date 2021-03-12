@@ -1,12 +1,13 @@
 import dbEnglish from "../../data/dbEnglish.json"
 
 const CardSkill = ({skills}) => {
+  //Se utilizara en un futuro
     const hola= "";
     console.log(skills)
     return (
         <div className={skills.name}>
             <div className={`${skills.name}-title`}>
-                <h2 className="">
+                <h2  >
                     {skills.name}
                 </h2>
             </div>

@@ -32,6 +32,11 @@
   border: 2px solid #ffffff;
 }
 
+.LIGHT .formContact .input {
+  color: #12191C;
+  border: 2px solid #12191C;
+}
+
 @media (min-width: 992px) {
   .formContact {
     max-width: 900px;

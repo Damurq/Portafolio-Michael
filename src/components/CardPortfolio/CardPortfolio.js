@@ -7,6 +7,7 @@ const CardPortfolio = ({sectionPage}) => {
     const [cardPortfolio, setCardPortfolio] = useState(dbEnglish.components.CardPortfolio)
     let photo = "portfolio/damageControl.png"
 
+    /* Dependiendo de la seccion se cargan determinador proyectos */
     useEffect(() => {
         if (sectionPage === "home") {
             setCardPortfolio(cardPortfolio.filter(projects=> projects.type==="web-site" ));
@@ -17,14 +18,14 @@ const CardPortfolio = ({sectionPage}) => {
     },[]);
 
     return (
-        <div className={"CardPortfolio theme-dark-2 "+ sectionPage}>
+        <div className={"CardPortfolio theme--2 "+ sectionPage}>
             <h2 className="title">Portfolio</h2>
             <div className="projects">
                 {cardPortfolio.map((project,index) => {
                     photo = project.photosrc
                     return (
                         <div key={"project-"+index} className="project">
-                            <Link  to={"/Portfolio/"+project.id} className="">
+                            <Link  to={"/Portfolio/"+project.id}  >
                                 <img src={photo} alt="" className={"project__img-"+index} />
                             </Link>
                         </div>

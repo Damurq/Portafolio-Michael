@@ -261,6 +261,7 @@
                         "name":"Interfaces and repository",
                         "interface":"Some screenshots of the various interfaces.",
                         "repository":"Repository link.",
+                        "link": "https://github.com/TemaHunter/DamegeControl",
                         "content":[
                             {
                                 "id":"dc01",
@@ -325,7 +326,17 @@
                     },
                     {
                         "name":"Repository",
-                        "repository":"Repository link."
+                        "repository":"Repository link.",
+                        "links":[
+                            {
+                                "name": "Frontend",
+                                "href": "https://github.com/Damurq/Frontend-tuiphone"
+                            },
+                            {
+                                "name": "Backend",
+                                "href": "https://github.com/Damurq/Backend-tuiphone"
+                            }
+                        ]
                     }
                 ]
             },
@@ -377,6 +388,7 @@
                         "name":"Interfaces and repository",
                         "interface":"Some screenshots of the various interfaces.",
                         "repository":"Repository link.",
+                        "link":"https://github.com/gustavoerivero/CinesDeVenezuela",
                         "content":[
                             {
                                 "id":"cv01",
@@ -460,6 +472,7 @@
                         "name":"Interfaces and repository",
                         "interface":"Some screenshots of the various interfaces.",
                         "repository":"Repository link.",
+                        "link": "",
                         "content":[
                             {
                                 "id":"dc01",

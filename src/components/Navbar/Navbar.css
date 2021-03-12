@@ -3,7 +3,7 @@ header {
   min-width: 15vh;
   position: sticky;
   top: 0;
-  z-index: 5;
+  z-index: 50;
 }
 
 /*general estyle*/
@@ -87,17 +87,26 @@ header {
 
 /*navbar - button dorpdown click style*/
 .open .menu__bar {
-  background-color: #12191C;
+  background-color: inherit;
   width: 55px;
   height: 4rem;
 }
 
 .open .menu__bar::after {
+  background-color: #ffff;
   transform: translateY(0px) rotate(45deg);
 }
 
 .open .menu__bar::before {
   transform: translateY(30px) rotate(-45deg);
+  background-color: #ffff;
+}
+
+.LIGHT .menu__bar, .LIGHT .menu__bar::before, .LIGHT .menu__bar::after, .LIGHT .open .menu__bar::after, .LIGHT .open .menu__bar::before {
+  background-color: #12191C;
+}
+.LIGHT .open .menu__bar {
+  background-color: inherit;
 }
 
 /*media query*/
@@ -111,6 +120,7 @@ header {
   }
   header .navbar-Container {
     width: 50%;
+    transition: background-color 0.5s ease;
   }
   header button.logo--dropdown, header div.SocialMedia {
     display: none;
@@ -185,6 +195,7 @@ header {
   }
   header .navbar-Container {
     width: 100%;
+    transition: background-color 0.5s ease;
   }
   header div.menu-options-list-dropdown--enable {
     display: flex;

@@ -7,7 +7,7 @@ const CardAboutMe = ({sectionPage}) => {
     const photosrcUCLA = "aboutMe/ucla.png"
 
     return ( 
-        <div id="AboutMe" className={"CardAboutMe theme-dark-1 " + sectionPage}>
+        <div id="AboutMe" className={"CardAboutMe theme--1 " + sectionPage}>
             <h2 className="title">About Me</h2>
             <div className="CardAboutMe-content">
             { carAboutMe.map((section, index)=>{ 
@@ -20,18 +20,12 @@ const CardAboutMe = ({sectionPage}) => {
                     </div>
                     { index===0 &&
                         <div className="CardAboutMe__sectionImage">
-                            { sectionPage=="aboutMe" && <img src={photosrcMe} alt="" className=""/>}
-                            <img src={photosrcUCLA} alt="" className=""/>
+                            <img src={photosrcUCLA} alt=""  />
                         </div>
                     }
                 </div>)
             }) }  
             </div>       
-            { sectionPage=="" && <div className="seeMore">
-                <div className="line">
-                </div>
-                    <button className="theme-dark-1">more</button>
-                </div> }
         </div>
     );
 }

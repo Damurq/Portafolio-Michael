@@ -6,10 +6,10 @@ const ProjectStartSection = ({id}) => {
     const photo = project.imgsrc 
     return ( 
         <div className="headerProject">
-            <h3 className="">{project.role}</h3>
-            <h1 className="">{project.name}</h1>
-            <h2 className="">Description</h2>
-            <p className="">{project.description}</p>
+            <h3  >{project.role}</h3>
+            <h1  >{project.name}</h1>
+            <h2  >Description</h2>
+            <p  >{project.description}</p>
             {photo &&
             (<div className="imgProject">
                 <img src={photo} alt={project.name}/>

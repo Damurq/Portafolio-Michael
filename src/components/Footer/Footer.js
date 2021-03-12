@@ -10,13 +10,13 @@ import "./Footer.css"
 const Footer = () => {
     library.add(faPhoneAlt,faEnvelope)
     const navbar = dbEnglish.components.Navbar
-    const liClass = "theme-dark-2 menu-options__element menu-options__element--footer "
-    const [footer, setfooter] = useState("theme-dark-1")
+    const liClass = "menu-options__element menu-options__element--footer "
+    const [footer, setfooter] = useState("theme--1")
     let location = useLocation();
     useEffect(() => {
         let length = location.pathname.length
         if ((location.pathname==="/") || (length!==13)){
-            setfooter("theme-dark-2");
+            setfooter("theme--2");
         }
         else{
             let className = location.pathname.substring(1,length).replace("/","-")
@@ -38,21 +38,21 @@ const Footer = () => {
                 <CardIcon />
             </div>
             <div className="footerSection--contact">
-                    <div className="">
-                        <h3 className="">
+                    <div  >
+                        <h3  >
                             <FontAwesomeIcon className="icon" icon={['fas', 'envelope']}/> 
                             michaeldamurq@gmail.com
                         </h3>
                     </div>
-                    <div className="">
-                        <h3 className="">
+                    <div  >
+                        <h3  >
                             <FontAwesomeIcon className="icon" icon={['fas', 'phone-alt']}/> 
                             +58 416 654 16 76
                         </h3>
                     </div>
             </div>
         </div>
-        <div className="">
+        <div  >
             <h3 className="mini-title-2 text--center text-dark">Copyright Michael Montero 2021-Todos los derechos reservados</h3>
         </div>
     </footer>);
