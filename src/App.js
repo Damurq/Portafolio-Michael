@@ -1,15 +1,20 @@
+import React, { useEffect } from "react"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { useSelector } from 'react-redux'
+
+// Local
 import Navbar from "./components/Navbar/Navbar"
 import Footer from "./components/Footer/Footer"
 import Home from "./pages/Home/Home"
 import AboutMe from "./pages/AboutMe/AboutMe"
 import Project from "./pages/Project/Project"
 import Portfolio from "./pages/Portfolio/Portfolio"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+// Styles
 import "./App.css"
 import "./Animations.css"
-import { useEffect } from "react"
 
 function App() {
+  const theme = useSelector((state) => state.theme.currentTheme)
 
   useEffect(() => {
     const elements = document.querySelectorAll(".animate")
@@ -31,7 +36,7 @@ function App() {
 
 
   return (
-    <div className="DARK" id="theme">
+    <div className={theme} id="theme">
       <Router>
         <div className="App">
           <Navbar />
@@ -42,8 +47,6 @@ function App() {
               </Route>
               <Route path="/Portfolio/">
                 <Portfolio />
-              </Route>
-              <Route path="/contact/">
               </Route>
               <Route path="/About-me/">
                 <AboutMe />
@@ -56,17 +59,8 @@ function App() {
           <Footer />
         </div>
       </Router>
-
     </div>
   );
 }
 
 export default App;
-
-/**sass --watch sass/pages:pages
- sass --watch sass/components:components
- cd Documents\Codigos\Progra WEB\Practice\Javascript\React\Portafolio-Michael/src
- 
- 
- 
-*/

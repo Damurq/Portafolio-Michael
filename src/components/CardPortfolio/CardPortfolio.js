@@ -32,7 +32,7 @@ const CardPortfolio = ({sectionPage}) => {
                     )
                 })}
             </div>
-            { sectionPage=="home" && <div className="seeMore">
+            { sectionPage==="home" && <div className="seeMore">
                 <div className="line">
                 </div>
                     <Link to="/Portfolio" className="button-dark">more</Link>

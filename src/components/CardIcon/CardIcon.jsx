@@ -7,9 +7,9 @@ const  CardIcon = () => {
     library.add(faFacebookF,faInstagram,faLinkedinIn,faGithub)
     return ( 
         <div className="icon--socialMedia">
-            <a className="facebook" href="https://es-la.facebook.com/michaeldavid.montero" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon className="icon" icon={['fab', 'facebook-f']}/>
-            </a>
+            {/* <a className="facebook" href="https://es-la.facebook.com/michaeldavid.montero" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon className="icon" icon={faFacebookF}/>
+            </a> */}
             <a className="instagram" href="https://www.instagram.com/mike.0408/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className="icon" icon={['fab', 'instagram']}/>
             </a>

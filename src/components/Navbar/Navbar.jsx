@@ -1,10 +1,18 @@
 import { Link, useLocation, useHistory } from "react-router-dom"
 import { useEffect, useState } from "react"
+import { useDispatch, useSelector } from 'react-redux'
+import { changeTheme } from "../../features/theme/theme"
+import { faSun,faMoon  } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./Navbar.css";
-import CardIcon from "../CardIcon/CardIcon"
+import CardIcon from "../CardIcon/CardIcon.jsx"
 import dbEnglish from "../../data/dbEnglish.json"
 
 const Navbar = () => {
+    const theme = useSelector((state) => state.theme.currentTheme)
+    const dispatch = useDispatch()
+
+
     // Declaration of the Hooks
     const [navLeft, setNavLeft] = useState("theme--2 navbar-Container")
     const [navRight, setNavRight] = useState("theme--1")
@@ -19,7 +27,7 @@ const Navbar = () => {
      * Redirect in case of clicking on a tag "a" with href "#"
      * @param {object} e evento
      */
-     function clickHandler(e) {
+    function clickHandler(e) {
         if (!(location.pathname === "/")) {
             history.push("/");
         }
@@ -43,7 +51,7 @@ const Navbar = () => {
      * Function in charge of raising the scroll when a page is rendered
      * @param {*} e 
      */
-     function clickHandlerRender(e) {
+    function clickHandlerRender(e) {
         window.scroll({
             top: 0,
             behavior: "smooth"
@@ -69,14 +77,14 @@ const Navbar = () => {
             linkR.addEventListener("click", clickHandlerRender);
         }
         let length = location.pathname.length
-        if ((location.pathname==="/") || (length!==13)){
+        if ((location.pathname === "/") || (length !== 13)) {
             setNavLeft("theme--2 navbar-Container");
             setNavRight("theme--1");
         }
-        else{
-            let className = location.pathname.substring(1,length).replace("/","-")
-            setNavLeft( className + " navbar-Container" );
-            setNavRight( className);
+        else {
+            let className = location.pathname.substring(1, length).replace("/", "-")
+            setNavLeft(className + " navbar-Container");
+            setNavRight(className);
         }
     }, [location]);
 
@@ -84,19 +92,14 @@ const Navbar = () => {
     //Controla el menu desplegable
     const handleClick = () => {
         const menuOptions = document.querySelector(".menu-options")
-        menuOptions.classList.toggle("menu-options-list-dropdown--disable"); 
-        menuOptions.classList.toggle("slide-in-bottom"); 
-        menuOptions.classList.toggle("menu-options-list-dropdown--enable"); 
+        menuOptions.classList.toggle("menu-options-list-dropdown--disable");
+        menuOptions.classList.toggle("slide-in-bottom");
+        menuOptions.classList.toggle("menu-options-list-dropdown--enable");
         document.querySelector("nav").classList.toggle("menu-options-list-dropdown--enable");
         document.querySelector(".menu--X").classList.toggle("open");
         document.querySelector("button.logo").classList.toggle("menu-options-list-dropdown--disable");
     }
     //Cambia el tema
-    const handleClickTheme = () => {
-        const changeTheme = document.querySelector('#theme');
-        changeTheme.classList.toggle("DARK");
-        changeTheme.classList.toggle("LIGHT");
-    }
 
     return (
         <header>
@@ -107,20 +110,26 @@ const Navbar = () => {
                             <span className="menu__bar"></span>
                         </div>
                     </button>
-                    <button className="logo" onClick={handleClickTheme}>
+                    <button className="logo">
                         Montero
                     </button>
                 </div>
+
             </div>
             <nav className={navRight}>
                 <div className="menu-options menu-options-list-dropdown--disable">
-                    <button className="logo--dropdown logo title" onClick={handleClickTheme}>
+                    <button className="logo--dropdown logo title">
                         Montero
-                    </button>   
+                    </button>
                     <ul className="menu-options-list">
                         {navbar.map((section, index) => {
-                            return section.type === "Link" ? <li key={"nav-li-"+index} ><Link className={liClass} to={section.href}>{section.name}</Link></li> : <li key={"nav-li-"+index}><a className={liClass} href={section.href}>{section.name}</a></li>
+                            return section.type === "Link" ? <li key={"nav-li-" + index} ><Link className={liClass} to={section.href}>{section.name}</Link></li> : <li key={"nav-li-" + index}><a className={liClass} href={section.href}>{section.name}</a></li>
                         })}
+                        <li className={"theme-selector"} onClick={() => dispatch(changeTheme()) } >
+                            {theme === "DARK" 
+                            ? <FontAwesomeIcon icon={faSun} />
+                            : <FontAwesomeIcon icon={faMoon} />}  
+                        </li>
                     </ul>
                     <div className="SocialMedia">
                         <h3 className="text--center">Social Media</h3>

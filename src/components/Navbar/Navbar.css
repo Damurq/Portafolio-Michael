@@ -63,9 +63,9 @@ header {
 
 .menu__bar, .menu__bar::before, .menu__bar::after {
   position: relative;
-  background-color: #ffff;
+  background-color: white;
   width: 4rem;
-  height: 8px;
+  height: 6px;
   border-radius: 10px;
   padding: 0;
   margin: 0;
@@ -76,13 +76,13 @@ header {
   content: "";
   position: absolute;
   top: -15px;
-  background-color: #ffff;
+  background-color: white;
   transition: transform 0.3s ease;
 }
 
 .menu__bar::after {
   top: 15px;
-  background-color: #ffff;
+  background-color: white;
 }
 
 /*navbar - button dorpdown click style*/
@@ -93,13 +93,13 @@ header {
 }
 
 .open .menu__bar::after {
-  background-color: #ffff;
+  background-color: white;
   transform: translateY(0px) rotate(45deg);
 }
 
 .open .menu__bar::before {
   transform: translateY(30px) rotate(-45deg);
-  background-color: #ffff;
+  background-color: white;
 }
 
 .LIGHT .menu__bar, .LIGHT .menu__bar::before, .LIGHT .menu__bar::after, .LIGHT .open .menu__bar::after, .LIGHT .open .menu__bar::before {
@@ -114,7 +114,6 @@ header {
   body {
     font-size: 20px;
   }
-
   header nav {
     width: 50%;
   }
@@ -131,26 +130,21 @@ header {
   header div.menu-options-list-dropdown--enable .open .menu__bar {
     display: none;
   }
-
   .navbar {
     margin: 2rem;
     margin-bottom: 0.5rem;
     margin-left: 3rem;
   }
-
   .menu-options {
     margin: 2rem 0;
     margin-bottom: 0.5rem;
   }
-
   .logo {
     font-size: 25px;
   }
-
   .dropdown-menu-button {
     display: none;
   }
-
   .menu-options-list {
     padding: 0;
     justify-content: center;
@@ -158,7 +152,6 @@ header {
   .menu-options-list li {
     margin: 0 1.5rem;
   }
-
   .menu-options-list, header {
     display: flex;
   }
@@ -167,7 +160,6 @@ header {
   body {
     font-size: 20px;
   }
-
   .logo {
     font-size: 25px;
   }
@@ -176,16 +168,13 @@ header {
   html {
     font-size: 10px;
   }
-
   body {
     font-size: 15px;
   }
-
   nav {
     display: inline-block;
     width: 100%;
   }
-
   header {
     display: flex;
     flex-direction: column;
@@ -206,7 +195,7 @@ header {
   }
   header div.menu-options {
     padding: 3rem 5rem;
-    border: 1px solid #ffff;
+    border: 1px solid white;
     margin: 0 3rem;
     position: sticky;
     margin-bottom: 15rem;
@@ -214,7 +203,6 @@ header {
     justify-content: center;
     align-items: center;
   }
-
   .navbar {
     margin: 3rem;
     margin-left: 3rem;
@@ -222,15 +210,12 @@ header {
     display: flex;
     justify-content: space-between;
   }
-
   .logo {
     font-size: 25px;
   }
-
   .menu-options-list-dropdown--disable {
     display: none;
   }
-
   .dropdown-menu-button {
     border: none;
     background-color: #F7F3DE;
@@ -238,7 +223,6 @@ header {
     height: 4rem;
     width: 6rem;
   }
-
   .menu-options-list {
     display: flex;
     flex-direction: column;
@@ -248,12 +232,10 @@ header {
   .menu-options-list li {
     margin: 1.5rem auto;
   }
-
   .menu-options__element {
     font-weight: bold;
     transition: font-size 0.5s;
   }
-
   .menu-options__element:hover {
     font-size: 28px;
   }

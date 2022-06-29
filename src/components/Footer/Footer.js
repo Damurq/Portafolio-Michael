@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { Link, useLocation } from "react-router-dom"
 import dbEnglish from "../../data/dbEnglish.json"
-import CardIcon from "../CardIcon/CardIcon"
+import CardIcon from "../CardIcon/CardIcon.jsx"
 import "./Footer.css"
 
 const Footer = () => {

@@ -1,6 +1,6 @@
 import React from "react"
 import { useEffect } from "react"
-import CardIcon from "../CardIcon/CardIcon"
+import CardIcon from "../CardIcon/CardIcon.jsx"
 import dbEnglish from "../../data/dbEnglish.json"
 import "./CardPresentation.css"
 import { useHistory } from "react-router-dom";
