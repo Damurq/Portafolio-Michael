@@ -1,34 +1,12 @@
 {
     "components": {
-        "Navbar": [
-            {
-                "name": "Home",
-                "type": "Link",
-                "href": "/"
-            },
-            {
-                "name": "About me",
-                "type": "a",
-                "href": "#AboutMe"
-            },
-            {
-                "name": "Portfolio",
-                "type": "Link",
-                "href": "/Portfolio"
-            },
-            {
-                "name": "Contact",
-                "type": "a",
-                "href": "#Contact"
-            }
-        ],
         "CardPresentation": {
             "title": "Michael Montero",
             "subtitle": "Web Developer",
             "description": "Specialized as Frontend Developer",
             "button": "start"
         },
-        "CarAboutMe": [
+        "CardAboutMe": [
             {
                 "title": "Hi, I am Michael Montero",
                 "description": "A web developer specialized as a frontend developer, I am passionate about the world of programming and the search for optimal solutions. An organized person, problem solver and with high attention to detail. "

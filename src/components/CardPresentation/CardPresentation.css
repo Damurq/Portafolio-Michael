@@ -1,7 +1,7 @@
 .cardPresentation {
   display: flex;
   width: 100%;
-  min-height: 85vh;
+  min-height: 90vh;
 }
 
 .cardPresentation-info, .cardPresentation-image {
@@ -59,7 +59,6 @@
   .cardPresentation {
     flex-direction: column;
   }
-
   .cardPresentation-info, .cardPresentation-image {
     min-height: 85vh;
     width: 100%;
@@ -67,7 +66,6 @@
     justify-content: center;
     align-items: center;
   }
-
   .content-image img {
     width: 90%;
   }

@@ -1,25 +1,25 @@
-import { Link, useLocation, useHistory } from "react-router-dom"
-import { useEffect, useState } from "react"
-import { useDispatch, useSelector } from 'react-redux'
-import { changeTheme } from "../../features/theme/theme"
-import { faSun,faMoon  } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// Third party
+import { Link, useLocation, useHistory }    from "react-router-dom"
+import { useEffect, useState }              from "react"
+import { useDispatch, useSelector }         from 'react-redux'
+import { faSun, faMoon }                    from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon }                  from '@fortawesome/react-fontawesome'
+// Locals
+import { changeTheme }                      from "../../features/theme/theme"
+// Components
+import CardIcon                             from "../CardIcon/CardIcon.jsx"
+// Styles
 import "./Navbar.css";
-import CardIcon from "../CardIcon/CardIcon.jsx"
-import dbEnglish from "../../data/dbEnglish.json"
 
-const Navbar = () => {
+const Navbar = ({ data }) => {
+    // Declaration of the Hooks
     const theme = useSelector((state) => state.theme.currentTheme)
     const dispatch = useDispatch()
-
-
-    // Declaration of the Hooks
     const [navLeft, setNavLeft] = useState("theme--2 navbar-Container")
     const [navRight, setNavRight] = useState("theme--1")
     const history = useHistory();
     let location = useLocation();
-    //Archivo JSON donde se encuentra la informacion del componente
-    const navbar = dbEnglish.components.Navbar
+
     //Clase que tendran los li de la barra de navegacion
     const liClass = "menu-options__element"
 
@@ -63,7 +63,6 @@ const Navbar = () => {
         }
     }
 
-
     /*  - Añadimos el evento click a todos los link y asignamos la funcion correspondiente
         - Comprobamos la ubicacion de la pagina para el color del navbar
     */
@@ -76,6 +75,7 @@ const Navbar = () => {
         for (const linkR of linksRender) {
             linkR.addEventListener("click", clickHandlerRender);
         }
+        /* Cambiar el theme del navbar  */
         let length = location.pathname.length
         if ((location.pathname === "/") || (length !== 13)) {
             setNavLeft("theme--2 navbar-Container");
@@ -97,9 +97,8 @@ const Navbar = () => {
         menuOptions.classList.toggle("menu-options-list-dropdown--enable");
         document.querySelector("nav").classList.toggle("menu-options-list-dropdown--enable");
         document.querySelector(".menu--X").classList.toggle("open");
-        document.querySelector("button.logo").classList.toggle("menu-options-list-dropdown--disable");
+        document.querySelector("p.logo").classList.toggle("menu-options-list-dropdown--disable");
     }
-    //Cambia el tema
 
     return (
         <header>
@@ -110,25 +109,25 @@ const Navbar = () => {
                             <span className="menu__bar"></span>
                         </div>
                     </button>
-                    <button className="logo">
-                        Montero
-                    </button>
+                    <p className="logo">
+                        {data.name}
+                    </p>
                 </div>
 
             </div>
             <nav className={navRight}>
                 <div className="menu-options menu-options-list-dropdown--disable">
-                    <button className="logo--dropdown logo title">
-                        Montero
-                    </button>
+                    <p className="logo--dropdown logo title">
+                        {data.name}
+                    </p>
                     <ul className="menu-options-list">
-                        {navbar.map((section, index) => {
+                        {data.elements.map((section, index) => {
                             return section.type === "Link" ? <li key={"nav-li-" + index} ><Link className={liClass} to={section.href}>{section.name}</Link></li> : <li key={"nav-li-" + index}><a className={liClass} href={section.href}>{section.name}</a></li>
                         })}
-                        <li className={"theme-selector"} onClick={() => dispatch(changeTheme()) } >
-                            {theme === "DARK" 
-                            ? <FontAwesomeIcon icon={faSun} />
-                            : <FontAwesomeIcon icon={faMoon} />}  
+                        <li className={"theme-selector"} onClick={() => dispatch(changeTheme())} >
+                            {theme === "DARK"
+                                ? <FontAwesomeIcon icon={faSun} />
+                                : <FontAwesomeIcon icon={faMoon} />}
                         </li>
                     </ul>
                     <div className="SocialMedia">

@@ -1,9 +1,9 @@
 import CardAboutMe from "../../components/CardAboutMe/CardAboutMe"
 import CardSkill from "../../components/CardSkill/CardSkill"
-import dbEnglish from "../../data/dbEnglish.json"
+import data from "../../data/Home.json"
 
 const AboutMe = () => {
-    const cards= dbEnglish.components.CardSkill;
+    const cards= data.components.CardSkill;
     return ( 
         <div className="Content">
             <CardAboutMe sectionPage="aboutMe"/>

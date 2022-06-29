@@ -1,8 +1,6 @@
-import dbEnglish from "../../data/dbEnglish.json"
 
 const CardSkill = ({skills}) => {
   //Se utilizara en un futuro
-    const hola= "";
     console.log(skills)
     return (
         <div className={skills.name}>
@@ -24,7 +22,7 @@ const CardSkill = ({skills}) => {
                       if(index === 0){
                         return(
                         <div className="item active">
-                          <img src={pothoSrc}/>
+                          <img src={pothoSrc} />
                           <div className="carousel-caption">Grsel {index}</div>
                         </div>)
                       }

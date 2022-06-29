@@ -1,10 +1,10 @@
 import React from 'react'
-import dbEnglish from "../../data/dbEnglish.json"
+import data from "../../data/Home.json"
 // import "./AboutSection.css";
 import HeaderComponent from '../HeaderComponent/HeaderComponent'
 
 const AboutSection = () => {
-    const about_section = dbEnglish.components.AboutSection
+    const about_section = data.components.AboutSection
     const photo = "presentation/Michael_Montero_Dark.png"
 
     return (

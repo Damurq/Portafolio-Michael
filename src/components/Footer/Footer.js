@@ -3,13 +3,12 @@ import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { Link, useLocation } from "react-router-dom"
-import dbEnglish from "../../data/dbEnglish.json"
 import CardIcon from "../CardIcon/CardIcon.jsx"
 import "./Footer.css"
 
-const Footer = () => {
+const Footer = ({data}) => {
+
     library.add(faPhoneAlt,faEnvelope)
-    const navbar = dbEnglish.components.Navbar
     const liClass = "menu-options__element menu-options__element--footer "
     const [footer, setfooter] = useState("theme--1")
     let location = useLocation();
@@ -28,7 +27,7 @@ const Footer = () => {
         <div className="footer-elements">
             <div className="footerSection--nav">
                 <ul className="menu-options-list">
-                    {navbar.map((section, index) => {
+                    {data.map((section, index) => {
                             return section.type === "Link" ? <li key={"nav-li-"+index} ><Link className={liClass} to={section.href}>{section.name}</Link></li> : <li key={"nav-li-"+index}><a className={liClass} href={section.href}>{section.name}</a></li>
                         })}
                 </ul>

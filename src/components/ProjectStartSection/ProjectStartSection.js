@@ -1,8 +1,8 @@
-import dbEnglish from "../../data/dbEnglish.json"
+import data from "../../data/Home.json"
 import "./ProjectStartSection.css"
 
 const ProjectStartSection = ({id}) => {
-    const project= dbEnglish.components.ProjectStartSection.filter(project=>project.id===id)[0];
+    const project= data.components.ProjectStartSection.filter(project=>project.id===id)[0];
     const photo = project.imgsrc 
     return ( 
         <div className="headerProject">

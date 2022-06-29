@@ -1,12 +1,10 @@
 import React from "react"
 import { useEffect } from "react"
 import CardIcon from "../CardIcon/CardIcon.jsx"
-import dbEnglish from "../../data/dbEnglish.json"
 import "./CardPresentation.css"
 import { useHistory } from "react-router-dom";
 
-const CardPresentation = () => {
-    const cardPresentation = dbEnglish.components.CardPresentation
+const CardPresentation = ({data}) => {
     const photo = "presentation/Michael_Montero_Dark.png"
     const history = useHistory();
     
@@ -39,16 +37,16 @@ const CardPresentation = () => {
 
     return (
         <div className="cardPresentation">
-            { cardPresentation && (
+            { data && (
                 <React.Fragment>
                     <div className={"cardPresentation-info theme--2"}>
                         <div className="child-flex">
-                            <h1 className={"title"}>{cardPresentation.title}</h1>
-                            <h2 className="subtitle-yelow">{cardPresentation.subtitle}</h2>
+                            <h1 className={"title"}>{data.title}</h1>
+                            <h2 className="subtitle-yelow">{data.subtitle}</h2>
                             <p className={" mini-title"}>Specialized as  
                                 <b> Frontend Developer</b>
                             </p>
-                            <a className="button-yellow" href="#AboutMe"><b>{cardPresentation.button}</b></a>
+                            <a className="button-yellow" href="#AboutMe"><b>{data.button}</b></a>
                         </div>
                     </div>
                     <div className={"cardPresentation-image theme--1"}>

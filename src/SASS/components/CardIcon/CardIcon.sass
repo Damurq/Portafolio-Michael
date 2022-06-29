@@ -1,13 +1,15 @@
+@import "../../variables"
+
 .icon--socialMedia
     display: flex
     justify-content: space-between
     margin: 2.5rem 0
-    a
+    a.social
         width: 35px
         height: 35px
         line-height: 35px
         text-align: center
-        margin: 0 .5rem
+        margin: 0 1rem
         border-radius: 50%
         transition: transform .3s ease, background-color .3s ease
         -webkit-transition: transform .3s ease, background-color .3s ease
@@ -15,6 +17,7 @@
         -o-transition: transform .3s ease, background-color .3s ease
 
 .icon--socialMedia a:hover
+    color: $second-color
     -webkit-transform: scale(1.2)
     -moz-transform: scale(1.2)
     -o-transform: scale(1.2)

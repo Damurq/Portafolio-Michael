@@ -1,0 +1,27 @@
+{
+    "Navbar": {
+        "name": "Montero",
+        "elements": [
+            {
+                "name": "Home",
+                "type": "Link",
+                "href": "/"
+            },
+            {
+                "name": "About me",
+                "type": "a",
+                "href": "#AboutMe"
+            },
+            {
+                "name": "Portfolio",
+                "type": "Link",
+                "href": "/Portfolio"
+            },
+            {
+                "name": "Contact",
+                "type": "a",
+                "href": "#Contact"
+            }
+        ]
+    }
+}

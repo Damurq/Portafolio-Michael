@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import dbEnglish from "../../data/dbEnglish.json"
 import "./CardPortfolio.css"
 
-const CardPortfolio = ({sectionPage}) => {
-    const [cardPortfolio, setCardPortfolio] = useState(dbEnglish.components.CardPortfolio)
+const CardPortfolio = ({sectionPage, data}) => {
+    const [cardPortfolio, setCardPortfolio] = useState(data)
     let photo = "portfolio/damageControl.png"
 
     /* Dependiendo de la seccion se cargan determinador proyectos */
@@ -13,7 +12,7 @@ const CardPortfolio = ({sectionPage}) => {
             setCardPortfolio(cardPortfolio.filter(projects=> projects.type==="web-site" ));
         }
         else if (sectionPage === "portfolio") {
-            setCardPortfolio(dbEnglish.components.CardPortfolio);
+            setCardPortfolio(data);
         }
     },[]);
 
@@ -21,7 +20,7 @@ const CardPortfolio = ({sectionPage}) => {
         <div className={"CardPortfolio theme--2 "+ sectionPage}>
             <h2 className="title">Portfolio</h2>
             <div className="projects">
-                {cardPortfolio.map((project,index) => {
+                {cardPortfolio && cardPortfolio.map((project,index) => {
                     photo = project.photosrc
                     return (
                         <div key={"project-"+index} className="project">

@@ -1,22 +1,20 @@
 import { faFacebookF, faInstagram, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon }                                  from '@fortawesome/react-fontawesome'
+import { library }                                          from '@fortawesome/fontawesome-svg-core';
+// Style
 import "./CardIcon.css"
 
 const  CardIcon = () => {
     library.add(faFacebookF,faInstagram,faLinkedinIn,faGithub)
     return ( 
         <div className="icon--socialMedia">
-            {/* <a className="facebook" href="https://es-la.facebook.com/michaeldavid.montero" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon className="icon" icon={faFacebookF}/>
-            </a> */}
-            <a className="instagram" href="https://www.instagram.com/mike.0408/" target="_blank" rel="noopener noreferrer">
+            <a className="instagram social" href="https://www.instagram.com/mike.0408/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className="icon" icon={['fab', 'instagram']}/>
             </a>
-            <a className="linkedin" href="https://www.linkedin.com/in/michael-montero-urquiola-bb62b61b6" target="_blank" rel="noopener noreferrer">
+            <a className="linkedin social" href="https://www.linkedin.com/in/michael-montero-urquiola-bb62b61b6" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className="icon" icon={['fab', 'linkedin-in']}/>
             </a>
-            <a className="github" href="https://github.com/Damurq?tab=repositories" target="_blank" rel="noopener noreferrer">
+            <a className="github social" href="https://github.com/Damurq?tab=repositories" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className="icon" icon={['fab', 'github']}/>                
             </a>
         </div>

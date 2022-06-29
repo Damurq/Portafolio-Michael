@@ -1,16 +1,18 @@
+// Components
 import CardPresentation from "../../components/CardPresentation/CardPresentation"
 import CardAboutMe from "../../components/CardAboutMe/CardAboutMe"
 import CardPortfolio from "../../components/CardPortfolio/CardPortfolio"
 import Contact from "../../components/Contact/Contact"
-import Footer from "../../components/Footer/Footer"
-import db from "../../data/db.json"
+// Data
+import data from "../../data/Home.json"
 
 const Home = ()=>{
+
     return (
         <div className="Content">
-            <CardPresentation />
-            <CardAboutMe sectionPage="home"/>
-            <CardPortfolio sectionPage="home"/>
+            <CardPresentation data={data.components.CardPresentation} />
+            <CardAboutMe sectionPage="home" data={data.components.CardAboutMe} />
+            <CardPortfolio sectionPage="home" data={data.components.CardPortfolio}/>
             <Contact />
         </div>
     )
