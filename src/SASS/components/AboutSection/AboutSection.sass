@@ -1,0 +1,104 @@
+@import "../../variables"
+
+/*==================== ABOUT ====================*/
+.about__container
+    display: flex
+    justify-content: space-around
+    padding: 0 2rem
+    align-items: center
+
+.introduction--about
+    color: $alt-color
+
+.about__img
+    width: 200px
+    border-radius: .5rem
+    justify-self: center
+    align-self: center   
+
+
+.about__description
+    margin-bottom: $mb-2-5
+    font-size: $normal-font-size
+
+.about__info
+    display: flex
+    justify-content: space-evenly
+    flex-wrap: wrap
+    flex-direction: column
+    margin-bottom: $mb-2-5
+
+.about__info-experience
+    display: flex
+    justify-content: space-evenly
+    gap: 1rem
+
+.about__info-title
+    font-size: $h2-font-size
+    font-weight: $font-semi-bold
+
+
+.about__info-name
+    font-size: $smaller-font-size
+
+
+.about__info-title,
+.about__info-name
+    display: block
+    text-align: center
+
+
+.about__buttons
+    display: flex
+    justify-content: center
+    margin-top: $mb-2-5
+
+
+.down__icon
+    font-size: 1.5rem
+    margin-left: $mb-0-5
+
+.about__buttons
+    text-decoration: none
+    background-color: hsl(46deg, 99%, 57%)
+    cursor: pointer
+    border-width: 0
+    align-items: center
+    display: flex
+    justify-content: center
+    padding: 1rem 0
+    border-radius: 15px
+    grid-gap: 15px
+    gap: 15px
+    font-weight: bold
+    font-size: 1.25rem
+    color: $first-color
+    padding: 1rem 2rem
+    width: max-content
+
+/* For medium devices */
+@media screen and (min-width: 300px)
+    .about__img
+        width: 300px
+
+@media screen and (max-width: 568px)
+    .about__container
+        flex-wrap: wrap
+
+@media screen and (min-width: 568px)
+    .about__img
+        width: 350px
+
+@media screen and (min-width: 768px)
+    .about__container
+        padding: 0 8rem
+    .about__img
+        width: 350px
+    .about__description
+        text-align: initial
+    .about__info
+        justify-content: space-between
+    
+@media screen and (max-width: 768px)
+    .about__buttons
+        width: 100%

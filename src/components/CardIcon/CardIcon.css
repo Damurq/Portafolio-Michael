@@ -1,18 +1,9 @@
-/* sass --watch SASS/pages:pages */
-/* sass --watch SASS/components:components */
-/*========== Colors ==========*/
-/* Change favorite color */
-/* HSL color mode */
-/*First*/
-/*Second*/
-/*Alt*/
-/*========== Font and typography ==========*/
-/* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-/*========== Font weight ==========*/
-/*========== Margenes Bottom ==========*/
-/* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
-/*========== z index ==========*/
-/* Font size for large devices */
+.icon--socialMedia a {
+  background-color: inherit;
+  color: inherit;
+  margin: 0;
+}
+
 .icon--socialMedia {
   display: flex;
   justify-content: space-between;

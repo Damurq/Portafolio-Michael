@@ -23,5 +23,39 @@
                 "href": "#Contact"
             }
         ]
+    },
+    "Footer": {
+        "menu":[
+            {
+                "name": "Home",
+                "type": "Link",
+                "href": "/"
+            },
+            {
+                "name": "About me",
+                "type": "a",
+                "href": "#AboutMe"
+            },
+            {
+                "name": "Portfolio",
+                "type": "Link",
+                "href": "/Portfolio"
+            },
+            {
+                "name": "Contact",
+                "type": "a",
+                "href": "#Contact"
+            }
+        ],
+        "info":[
+            {
+                "icon":"envelope",
+                "data":"michaeldamurq@gmail.com"
+            },
+            {
+                "icon":"phone-alt",
+                "data":"+58 416 654 16 76"
+            }
+        ]
     }
 }

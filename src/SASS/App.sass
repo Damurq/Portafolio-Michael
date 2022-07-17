@@ -1,6 +1,6 @@
 @import "variables"
-/* Generals*/
 
+/* Generals*/
 .absolute
     display: none
 
@@ -14,18 +14,32 @@ body
     min-height: 100%
     font-family: 'Poppins', sans-serif
 
-/* Icons */
-.icon--socialMedia a, .logo, .menu-options__element, .dropdown-menu-button, .logo--dropdown
-    background-color: inherit
-    color: inherit
-    margin: 0
+/*==================== LAYOUT ====================*/
+.container
+    max-width: 768px
+    margin-left: $mb-1-5
+    margin-right: $mb-1-5
 
+
+.grid
+    display: grid
+    gap: 1.5rem
+
+
+.Content
+    width: 100%
+
+/* Themes */
 .DARK .theme--1
     background-color: $first-color
     color: $second-color
 
 .DARK .theme--2
     background-color: $first-color-second
+    color: $second-color
+
+.DARK .theme--3
+    background-color: $first-color-third
     color: $second-color
 
 .LIGHT .theme--1
@@ -36,9 +50,9 @@ body
     background-color: $second-color-second
     color: $first-color
 
-.Content
-    width: 100%
-
+.LIGHT .theme--3
+    background-color: $second-color-third
+    color: $first-color  
 
 /*Titles, subtitles and buttons*/
 .title
@@ -48,7 +62,7 @@ body
 .subtitle-yelow
     font-size: 2rem
     font-weight: bold
-    color: #FECB23
+    color: $alt-color
 
 .subtitle
     font-size: 1,8rem
@@ -59,22 +73,23 @@ body
 .mini-title-2
     font-size: .6rem
 
+/* Buttoms */
 .button-yellow
     font-size: 1.2rem
     outline: none
     border-radius: 30px
     background-color: hsl(46, 99%, 57%)
-    color: #12191C
+    color: $first-color
     padding: .5rem 3.5rem
     display: inline-block
     box-shadow: 6px 6px 20px -1px hsla(198, 0%, 0%, 0.15)
 
 .button-dark
     font-size: 1.2rem
-    border: 1px solid #FFFFFF
+    border: 1px solid $second-color
     border-radius: 30px
-    background-color: #12191C
-    color: #FFFFFF
+    background-color: $first-color
+    color: $second-color
     padding: .5rem 3.5rem
     display: inline-block
     text-decoration: none
@@ -84,16 +99,16 @@ body
     box-shadow: inset 4px 4px 10px -1px rgba(0, 0, 0, 0.15) inset -4px -4px 10px -1px #FECB23
 
 .button-dark:hover
-    border: 1px solid #12191C
-    background-color: #FFFFFF
-    color: #12191C
+    border: 1px solid $first-color
+    background-color: $second-color
+    color: $first-color
 
 button.theme--1
     font-size: 1.2rem
     outline: none
     border-radius: 30px
-    background-color: #12191C
-    color: #FFFFFF
+    background-color: $first-color
+    color: $second-color
     padding: .5rem 3.5rem
     display: inline-block
     box-shadow: 6px 6px 20px -1px rgba(0, 0, 0, 0.15)
@@ -102,8 +117,8 @@ button.theme--1
     font-size: 1.2rem
     outline: none
     border-radius: 30px
-    background-color: #FFFFFF
-    color: #12191C
+    background-color: $second-color
+    color: $first-color
     padding: .5rem 3.5rem
     display: inline-block
     box-shadow: 6px 6px 20px -1px rgba(0, 0, 0, 0.15)
@@ -117,19 +132,20 @@ button.theme--1
     text-align: center
 
 .text-dark
-    color: #404242
+    color: $alt-color-grey
 
-/*mover a home*/
-.seeMore
-    display: flex
-    margin-top: 2rem
-
-.seeMore .line
-    width: 70%
-    margin: 0 2rem
-    padding-top: 1.5rem
-    border-bottom: 1.5px solid #404242
-
+/* margins */
 .mv-0-5r
     margin-right: .5rem
     margin-left: .5rem
+
+@media screen and (max-width: 350px) 
+    .container
+        margin-left: var(--mb-1)
+        margin-right: var(--mb-1)
+    
+@media screen and (min-width: 768px)
+    .container
+        margin-left: auto
+        margin-right: auto
+    

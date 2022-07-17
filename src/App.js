@@ -1,21 +1,23 @@
 // Third party
-import React from "react"
+import React                                      from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import { useSelector } from 'react-redux'
+import { useSelector }                            from 'react-redux'
 // Local
-import Navbar from "./components/Navbar/Navbar"
-import Footer from "./components/Footer/Footer"
-import Home from "./pages/Home/Home.jsx"
-import AboutMe from "./pages/AboutMe/AboutMe"
-import Project from "./pages/Project/Project"
-import Portfolio from "./pages/Portfolio/Portfolio"
+import Navbar           from "./container/Navbar/Navbar"
+import Footer           from "./container/Footer/Footer"
+import Home             from "./pages/Home/Home"
+import AboutMe          from "./pages/AboutMe/AboutMe"
+import Project          from "./pages/Project/Project"
+import Portfolio        from "./pages/Portfolio/Portfolio"
 // Data
-import data from "./data/Components.json"
+import data             from "./data/Components.json"
 // Styles
 import "./App.css"
 
 function App() {
   const theme = useSelector((state) => state.theme.currentTheme)
+
+  
   return (
     <div className={theme} id="theme">
       <Router>
@@ -34,7 +36,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
-        <Footer data={data.Navbar.elements} />
+        <Footer data={data.Footer} />
       </Router>
     </div>
   );

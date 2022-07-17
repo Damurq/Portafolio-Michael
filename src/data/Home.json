@@ -1,5 +1,24 @@
 {
     "components": {
+        "Contact": {
+            "extra": [
+                {
+                    "icon": "phone",
+                    "label": "Call Me",
+                    "info": "0412-646-0129"
+                },
+                {
+                    "icon": "email",
+                    "label": "Email",
+                    "info": "michaeldamurq@gmail.com"
+                },
+                {
+                    "icon": "location",
+                    "label": "Location",
+                    "info": "Venezuela-Barquisimetos"
+                }
+            ]
+        },
         "CardPresentation": {
             "title": "Michael Montero",
             "subtitle": "Web Developer",

@@ -1,0 +1,85 @@
+@import "../../variables"
+
+$clr-neon: hsl(198deg 79% 50%)
+$clr-bg: hsl(198deg, 22%, 9%)
+
+.skills__close .skills__list
+    height: 0
+    overflow: hidden
+    
+.skills__header
+    display: flex
+    align-items: start
+    margin-bottom: $mb-2-5
+    cursor: pointer
+    gap:.5rem
+
+
+.skills__icon,
+.skills__arrow
+    font-size: 1.5rem
+    color: $clr-neon
+
+
+.skills__icon
+    margin-right: $mb-0-75
+
+
+
+.skills__icon
+    margin-right: $mb-0-75
+
+
+.skills__title
+    font-size: $h3-font-size
+    margin-top: 0
+
+.skills__subtitle
+    font-size: $small-font-size
+    color: hsl(180deg, 2%, 55%)
+
+.skills__arrow
+    margin-left: $mb-1
+    transition: .4s
+
+.skills__open .skills__arrow
+    transform: rotate(-180deg)
+
+
+.skills__list
+    row-gap: 1.5rem
+    padding-left: 2.7rem
+
+
+.skills__open .skills__list
+    height: max-content
+    margin-bottom: $mb-2-5
+
+
+.skills__titles
+    display: flex
+    justify-content: space-between
+    margin-bottom: $mb-0-25
+
+
+.skills__name
+    font-size: $normal-font-size
+    font-weight: $font-medium
+    margin: 0
+
+.skills__number
+    font-size: $normal-font-size
+
+.skills__bar,
+.skills__percentage
+    height: 5px
+    border-radius: .25rem
+
+
+.skills__bar
+    background-color: $first-color
+
+
+.skills__percentage
+    display: block
+    background-color: $clr-neon

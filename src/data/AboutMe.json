@@ -1,0 +1,202 @@
+{
+    "AboutSection": {
+        "HeaderComponent": {
+            "title": "About me",
+            "subtitle": "My introduction"
+        },
+        "header": "Hi I'm Michael Montero",
+        "description": "Web developer, with extensive knowledge, working in web technologies delivering quality work.",
+        "experience": [
+            {
+                "amount": "4+",
+                "description": "Years experience"
+            },
+            {
+                "amount": "15+",
+                "description": "Completed project"
+            }
+        ]
+    },
+    "sections": {
+        "skills": {
+            "name": "Skills",
+            "icon":"design",
+            "elements": {
+                "webDev": {
+                    "name": "Web development",
+                    "elements": {
+                        "front": {
+                            "name":"Frontend Skills",
+                            "icon":"brackets",
+                            "description":"More than 3 years",
+                            "options":[
+                                {
+                                    "title":"React",
+                                    "description":"More than 3 years"
+                                }
+                            ]
+                        },
+                        "back": {
+                            "name":"Backend Skills",
+                            "icon":"database",
+                            "description":"More than 3 years",
+                            "options":[
+                                {
+                                    "title":"React",
+                                    "description":"More than 3 years"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "progr": {
+                    "name": "Programing skills",
+                    "elements": {
+                        "front": {
+                            "name":"Automatización de tareas",
+                            "icon":"",
+                            "description":"More than 3 years",
+                            "options":[
+                                {
+                                    "title":"React",
+                                    "description":"More than 3 years"
+                                }
+                            ]
+                        },
+                        "back": {
+                            "name":"Analisis de datos",
+                            "icon":"",
+                            "description":"More than 3 years",
+                            "options":[
+                                {
+                                    "title":"React",
+                                    "description":"More than 3 years"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "education":{
+            "name": "Education",
+            "icon":"education",
+            "elements": {
+                "webDev": {
+                    "name": "Web development",
+                    "elements": {
+                        "front": {
+                            "name":"Frontend skills",
+                            "icon":"",
+                            "description":"More than 3 years",
+                            "options":[
+                                {
+                                    "title":"React",
+                                    "description":"More than 3 years"
+                                }
+                            ]
+                        },
+                        "back": {
+                            "name":"Backend Skill",
+                            "icon":"",
+                            "description":"More than 3 years",
+                            "options":[
+                                {
+                                    "title":"React",
+                                    "description":"More than 3 years"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "progr": {
+                    "name": "Programing skills",
+                    "elements": {
+                        "front": {
+                            "name":"Automatización de tareas",
+                            "icon":"",
+                            "description":"More than 3 years",
+                            "options":[
+                                {
+                                    "title":"React",
+                                    "description":"More than 3 years"
+                                }
+                            ]
+                        },
+                        "back": {
+                            "name":"Analisis de datos",
+                            "icon":"",
+                            "description":"More than 3 years",
+                            "options":[
+                                {
+                                    "title":"React",
+                                    "description":"More than 3 years"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "work":{
+            "name": "Work",
+            "icon":"work",
+            "elements": {
+                "webDev": {
+                    "name": "Web development",
+                    "elements": {
+                        "front": {
+                            "name":"Frontend skills",
+                            "icon":"",
+                            "description":"More than 3 years",
+                            "options":[
+                                {
+                                    "title":"React",
+                                    "description":"More than 3 years"
+                                }
+                            ]
+                        },
+                        "back": {
+                            "name":"Backend Skill",
+                            "icon":"",
+                            "description":"More than 3 years",
+                            "options":[
+                                {
+                                    "title":"React",
+                                    "description":"More than 3 years"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "progr": {
+                    "name": "Programing skills",
+                    "elements": {
+                        "front": {
+                            "name":"Automatización de tareas",
+                            "icon":"",
+                            "description":"More than 3 years",
+                            "options":[
+                                {
+                                    "title":"React",
+                                    "description":"More than 3 years"
+                                }
+                            ]
+                        },
+                        "back": {
+                            "name":"Analisis de datos",
+                            "icon":"",
+                            "description":"More than 3 years",
+                            "options":[
+                                {
+                                    "title":"React",
+                                    "description":"More than 3 years"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

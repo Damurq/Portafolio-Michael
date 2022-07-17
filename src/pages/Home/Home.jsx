@@ -1,10 +1,10 @@
 // Components
-import CardPresentation from "../../components/CardPresentation/CardPresentation"
-import CardAboutMe from "../../components/CardAboutMe/CardAboutMe"
-import CardPortfolio from "../../components/CardPortfolio/CardPortfolio"
-import Contact from "../../components/Contact/Contact"
+import CardPresentation from "../../container/CardPresentation/CardPresentation"
+import CardAboutMe      from "../../container/CardAboutMe/CardAboutMe"
+import CardPortfolio    from "../../components/CardPortfolio/CardPortfolio"
+import CardContact          from "../../container/CardContact/CardContact"
 // Data
-import data from "../../data/Home.json"
+import data             from "../../data/Home.json"
 
 const Home = ()=>{
 
@@ -13,7 +13,7 @@ const Home = ()=>{
             <CardPresentation data={data.components.CardPresentation} />
             <CardAboutMe sectionPage="home" data={data.components.CardAboutMe} />
             <CardPortfolio sectionPage="home" data={data.components.CardPortfolio}/>
-            <Contact />
+            <CardContact data={data.components.Contact} />
         </div>
     )
 }

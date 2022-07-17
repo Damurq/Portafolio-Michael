@@ -1,0 +1,56 @@
+@import "../../variables"
+
+.contact__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 1.5rem
+.contact__label
+    font-size: $h2-font-size
+    font-weight: bold
+.contact__input
+    width: 100%
+    font-family: $body-font
+    font-size: $h2-font-size
+    border: none
+    outline: none
+    padding: .25rem .5rem .5rem 0
+.contact__content
+    background-color: $input-color
+    border-radius: .5rem
+    padding: .75rem 1rem .25rem
+.button--contact
+    background-color: hsl(46, 99%, 57%)
+    cursor: pointer
+    border-width: 0
+    width: 100%
+    align-items: center
+    display: flex
+    justify-content: center
+    padding: 1rem 0
+    border-radius: 15px
+    gap: 15px
+    font-weight: bold
+    font-size: $h2-font-size
+.error
+    color:$alert-color
+    font-weight: bold
+    font-size: $small-font-size
+    margin-bottom: 1rem
+/* For large devices */
+@media screen and (min-width: 1024px)
+    .contact__form
+        min-width: 460px
+    .contact__input
+        grid-template-columns: repeat(2, 1fr)
+
+@media screen and (max-width: 568px)
+    .container-button--contact
+        display: flex
+        justify-content: center
+
+@media screen and (max-width: 992px)
+    .contact__form
+        margin: auto
+        min-width: 80%
+    
