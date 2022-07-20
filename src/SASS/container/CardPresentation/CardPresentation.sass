@@ -1,0 +1,55 @@
+.cardPresentation
+    display: flex
+    width: 100%
+    min-height: 90vh
+.cardPresentation-info, .cardPresentation-image
+    width: 50%
+    display: flex
+    justify-content: center
+    align-items: center 
+.child-flex
+    .title, .subtitle-yelow
+        margin: .5rem 0
+    .mini-title
+        margin: 2rem 0
+    .button-yellow
+        margin: 0 1rem
+        text-decoration: none
+.content-image
+    display: flex
+    justify-content: center
+    img 
+        width: 62%
+.content-icon
+    display: flex
+    justify-content: space-between
+    .line:first-of-type
+        margin-right: 0
+        margin-left: auto
+    .line:last-of-type
+        margin-left: 0
+        margin-right: auto
+    a.social
+        padding-top: 3px 
+        font-size: 20px
+.line
+    height: 0
+    width: 15%
+    margin: 3.5rem
+    border-bottom: 1.5px solid #404242
+
+@media (min-width: 992px) and (max-width: 1024px)
+    html
+        font-size: 12px
+
+@media  (max-width: 680px)
+    .cardPresentation
+        flex-direction: column
+    .cardPresentation-info, .cardPresentation-image
+        min-height: 85vh
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+    .content-image img 
+        width: 90%

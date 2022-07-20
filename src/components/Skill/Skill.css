@@ -1,0 +1,95 @@
+.skills__close .skills__list {
+  height: 0;
+  overflow: hidden;
+}
+
+.skills__header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+  cursor: pointer;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.skills__icon,
+.skills__arrow {
+  font-size: 1.5rem;
+  color: hsl(198deg, 79%, 50%);
+}
+
+.skills__icon {
+  margin-right: 0.75rem;
+}
+
+.skills__icon {
+  margin-right: 0.75rem;
+}
+
+.skills__title {
+  font-size: 1.125rem;
+  margin-top: 0;
+}
+
+.skills__subtitle {
+  font-size: 0.813rem;
+  color: hsl(180deg, 2%, 55%);
+}
+
+.skills__arrow {
+  margin-left: 1rem;
+  transition: 0.4s;
+}
+
+.skills__open .skills__arrow {
+  transform: rotate(-180deg);
+}
+
+.skills__list {
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+
+.skills__open .skills__list {
+  height: max-content;
+  margin-bottom: 2.5rem;
+}
+
+.skills__titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.skills__name {
+  font-size: 0.938rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.skills__number {
+  font-size: 0.938rem;
+}
+
+.skills__bar,
+.skills__percentage {
+  height: 5px;
+  border-radius: 0.25rem;
+}
+
+.skills__bar {
+  background-color: hsl(198deg, 22%, 9%);
+}
+
+.skills__percentage {
+  display: block;
+  background-color: hsl(198deg, 79%, 50%);
+}
+
+@media screen and (max-width: 1030px) {
+  .skills__title {
+    font-size: 1.15rem;
+  }
+}
+
+/*# sourceMappingURL=Skill.css.map */

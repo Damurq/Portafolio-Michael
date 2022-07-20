@@ -1,0 +1,94 @@
+.colorList
+    display: flex
+    flex-direction: column
+    margin: 2rem
+    flex-wrap: wrap
+    background-color: #ffff
+    border: 1px solid black
+    .colorList__element
+        width: 150px
+        height: 150px
+        margin: 2rem .5rem
+        margin-bottom: 0
+        border: 1px solid black
+    .colorList__name
+        color: black
+        text-align: center
+        font-weight: bold
+.interface 
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    div
+        margin: 2rem
+    .vertical
+        width: 45%
+        img
+            width: 100%
+.sectionContent
+    h2, p, ul, , .horizontal
+        position: relative
+        z-index: 4
+.sectionContent--generate
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    .userType
+        width: 50%
+        display: flex
+        flex-direction: row
+        margin: 0
+        justify-content: center
+        align-items: center
+        .userType__img
+            width: 25%
+            padding-right: 5%
+        .userType__paragraph
+            align-self: baseline
+            text-align: justify
+            width: 65%
+    .repository
+        align-self: baseline
+.resultsObtained
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+
+@media (max-width: 1408px)
+    .DamageControl .interface .vertical 
+        width: 80%
+        display: flex
+        justify-content: center
+
+@media (max-width: 1000px)
+    .interface  .vertical
+        width: 100%
+
+@media (max-width: 650px)
+    .sectionContent--generate
+        .userType
+            width: 100%
+            flex-direction: column
+            .userType__img
+                width: 35%
+            .userType__paragraph
+                width: 100%
+
+@media (max-width: 490px)
+    .colorList .colorList__element
+        width: 100px
+        height: 100px
+
+@media (max-width: 375px)
+    .colorList .colorList__element
+        width: 85px
+        height: 85px
+        
+
+.Cines_de_Venezuela .interface
+    justify-content: center

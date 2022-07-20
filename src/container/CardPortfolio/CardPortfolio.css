@@ -1,0 +1,59 @@
+.CardPortfolio {
+  margin: 0;
+  padding: 0 3rem;
+  padding-bottom: 2rem;
+}
+.CardPortfolio .title {
+  margin-top: 0;
+  padding-top: 4rem;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+}
+
+.project {
+  width: 45%;
+  margin: auto;
+  padding: 2rem 0;
+}
+.project img {
+  max-width: 100%;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
+
+.project img:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+/*Proyectos individuales*/
+.project__img-0, .project__img-1 {
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  .CardPortfolio .title {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .projects {
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=CardPortfolio.css.map */
