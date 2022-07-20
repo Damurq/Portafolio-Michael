@@ -6,7 +6,7 @@
                 {
                     "name": "Home",
                     "type": "Link",
-                    "href": "/"
+                    "href": "/Portafolio-Michael/"
                 },
                 {
                     "name": "About me",
@@ -16,7 +16,7 @@
                 {
                     "name": "Portfolio",
                     "type": "Link",
-                    "href": "/Portfolio"
+                    "href": "/Portafolio-Michael/Portfolio"
                 },
                 {
                     "name": "Contact",
@@ -39,7 +39,7 @@
                 {
                     "name": "Home",
                     "type": "Link",
-                    "href": "/"
+                    "href": "/Portafolio-Michael/"
                 },
                 {
                     "name": "About me",
@@ -49,7 +49,7 @@
                 {
                     "name": "Portfolio",
                     "type": "Link",
-                    "href": "/Portfolio"
+                    "href": "/Portafolio-Michael/Portfolio"
                 },
                 {
                     "name": "Contact",
@@ -76,7 +76,7 @@
                 {
                     "name": "Inicio",
                     "type": "Link",
-                    "href": "/"
+                    "href": "/Portafolio-Michael/"
                 },
                 {
                     "name": "Acerca de mi",
@@ -86,7 +86,7 @@
                 {
                     "name": "Portafolio",
                     "type": "Link",
-                    "href": "/Portfolio"
+                    "href": "/Portafolio-Michael/Portfolio"
                 },
                 {
                     "name": "Contacto",
@@ -109,7 +109,7 @@
                 {
                     "name": "Inicio",
                     "type": "Link",
-                    "href": "/"
+                    "href": "/Portafolio-Michael/"
                 },
                 {
                     "name": "Acerca de mi",
@@ -119,7 +119,7 @@
                 {
                     "name": "Portafolio",
                     "type": "Link",
-                    "href": "/Portfolio"
+                    "href": "/Portafolio-Michael/Portfolio"
                 },
                 {
                     "name": "Contacto",

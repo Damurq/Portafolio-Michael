@@ -7,7 +7,7 @@ import "./CardPortfolio.css"
 
 const CardPortfolio = ({sectionPage, data}) => {
     const [cardPortfolio, setCardPortfolio] = useState(data.content)
-    let photo = "portfolio/damageControl.png"
+    let photo = "/portfolio/damageControl.png"
 
     /* Dependiendo de la seccion se cargan determinador proyectos */
     useEffect(() => {
@@ -27,14 +27,14 @@ const CardPortfolio = ({sectionPage, data}) => {
                     photo = project.photosrc
                     return (
                         <div key={"project-"+index} className="project">
-                            <Link  to={"/Portfolio/"+project.id}  >
-                                <img src={photo} alt="" className={"project__img-"+index} />
+                            <Link  to={"/Portafolio-Michael/Portfolio/"+project.id}  >
+                                <img src={process.env.PUBLIC_URL + photo} alt="" className={"project__img-"+index} />
                             </Link>
                         </div>
                     )
                 })}
             </div>
-            { sectionPage==="home" && <SeeMore to="/Portfolio" /> }
+            { sectionPage==="home" && <SeeMore to="/Portafolio-Michael/Portfolio" /> }
         </div>
     );
 }

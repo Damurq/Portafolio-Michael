@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 import "./CardPresentation.css"
 
 const CardPresentation = ({data}) => {
-    const photo = "presentation/Michael_Montero_Dark.png"
+    const photo = "/presentation/Michael_Montero_Dark.png"
 
     React.useEffect(() => { 
         AOS.init({duration:2000});
@@ -30,7 +30,7 @@ const CardPresentation = ({data}) => {
                     <div  className={"cardPresentation-image theme--1"}>
                         <div data-aos="fade-left" className="child-flex">
                             <div className="content-image">
-                                <img src={photo} alt="Michael_Montero" />
+                                <img src={process.env.PUBLIC_URL + photo} alt="Michael_Montero" />
                             </div>
                             <div className="content-icon">
                                 <div className="line"></div>

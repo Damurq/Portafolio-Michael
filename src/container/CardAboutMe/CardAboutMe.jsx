@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 import "./CardAboutMe.css"
 
 const CardAboutMe = ({ sectionPage, data }) => {
-    const photosrcUCLA = "aboutMe/ucla.png"
+    const photosrcUCLA = "/aboutMe/ucla.png"
 
     React.useEffect(() => { 
         AOS.init({duration:1800});
@@ -28,13 +28,13 @@ const CardAboutMe = ({ sectionPage, data }) => {
                         </div>
                         {index === 0 &&
                             <div className="CardAboutMe__sectionImage">
-                                <img src={photosrcUCLA} alt="" />
+                                <img src={process.env.PUBLIC_URL + photosrcUCLA} alt="" />
                             </div>
                         }
                     </div>)
                 })}
             </div>
-            <SeeMore to="/About-me" />
+            <SeeMore to="/Portafolio-Michael/About-me" />
         </div>
     );
 }

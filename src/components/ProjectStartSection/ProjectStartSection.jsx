@@ -14,7 +14,7 @@ const ProjectStartSection = ({project}) => {
             <p  >{project.description}</p>
             {photo &&
             (<div className="imgProject">
-                <img src={photo} alt={project.name}/>
+                <img src={process.env.PUBLIC_URL + photo} alt={project.name}/>
             </div>)
             }
         </div>

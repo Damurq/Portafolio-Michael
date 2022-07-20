@@ -15,7 +15,7 @@ const ProjectContentSection = ({section}) => {
                 return(
                 <div key={section.name.replace(" ", "") + "-" + index} className="userType">
                     <div className="userType__img">
-                        <img src={photo} alt={photo}   />
+                        <img src={process.env.PUBLIC_URL + photo} alt={photo}   />
                     </div>
                     <div className="userType__paragraph">
                         <p  >{user.descrption}</p>
@@ -53,7 +53,7 @@ const ProjectContentSection = ({section}) => {
                     let imgsrc = img.imgsrc;
                     return (
                     <div className={img.imgClass} key={img.id}>
-                        <img className={img.imgClass} src={imgsrc} alt="" />
+                        <img className={img.imgClass} src={process.env.PUBLIC_URL + imgsrc} alt="" />
                     </div>)
                 })}
                 </div>
@@ -72,7 +72,7 @@ const ProjectContentSection = ({section}) => {
         else if (section.name === "Responsive design") {
             return (
                 <div  >
-                    <img src={section.imgsrc} alt=""  />
+                    <img src={process.env.PUBLIC_URL + section.imgsrc} alt=""  />
                 </div>
             );
         }
@@ -91,25 +91,25 @@ const ProjectContentSection = ({section}) => {
                         })}
                     </ul>
                     <div className="horizontal">
-                        <img src={section.imgsrc1} alt=""  />
+                        <img src={process.env.PUBLIC_URL + section.imgsrc1} alt=""  />
                     </div>
                     <p  >{section.paragraph3}</p>
                     <p  >{section.paragraph4}</p>
                     <div className="horizontal">
-                        <img src={section.imgsrc2} alt=""  />
+                        <img src={process.env.PUBLIC_URL + section.imgsrc2} alt=""  />
                     </div>
                     <p  >{section.paragraph5}</p>
                     <div className="verticalContainer">
-                        <img src={section.imgsrc3} alt=""  />
-                        <img src={section.imgsrc4} alt=""  />
+                        <img src={process.env.PUBLIC_URL + section.imgsrc3} alt=""  />
+                        <img src={process.env.PUBLIC_URL + section.imgsrc4} alt=""  />
                     </div>
                     <p  >{section.paragraph6}</p>
                     <div className="horizontal">
-                        <img src={section.imgsrc5} alt=""  />
+                        <img src={process.env.PUBLIC_URL + section.imgsrc5} alt=""  />
                     </div>
                     <p  >{section.paragraph7}</p>
                     <div className="horizontal">
-                        <img src={section.imgsrc6} alt=""  />
+                        <img src={process.env.PUBLIC_URL + section.imgsrc6} alt=""  />
                     </div>
                 </div>
             );

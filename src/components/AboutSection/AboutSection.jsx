@@ -10,7 +10,7 @@ import "./AboutSection.css";
 
 const AboutSection = ({ data }) => {
     const language = useSelector((state) => state.language.currentLanguage)
-    const photo = "presentation/Michael_Montero_Dark.png"
+    const photo = "/presentation/Michael_Montero_Dark.png"
 
     React.useEffect(() => { 
         AOS.init({duration:2000});
@@ -20,7 +20,7 @@ const AboutSection = ({ data }) => {
         <div className="about section theme--2" id="about">
             <HeaderComponent data={data.HeaderComponent} ></HeaderComponent>
             <div data-aos="fade-up" className="about__container">
-                <img src={photo} alt="" className="about__img" />
+                <img src={process.env.PUBLIC_URL + photo} alt="" className="about__img" />
                 <div className="about__data">
                     <h2 className='introduction--about'>{data.header}</h2>
                     <p className="about__description">

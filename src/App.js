@@ -23,17 +23,20 @@ function App() {
       <Router>
         <Navbar data={data[language.currentLanguage].Navbar} />
         <Switch>
-          <Route path="/Portfolio/:id">
+          <Route path="/Portafolio-Michael/Portfolio/:id">
             <Project />
           </Route>
-          <Route path="/Portfolio/">
+          <Route path="/Portafolio-Michael/Portfolio/">
             <Portfolio />
           </Route>
-          <Route path="/About-me/">
+          <Route path="/Portafolio-Michael/About-me/">
             <AboutMe />
           </Route>
-          <Route path="/">
+          <Route path="/Portafolio-Michael/">
             <Home />
+          </Route>
+          <Route path="/">
+            <Redirect to="/Portafolio-Michael/"  />
           </Route>
         </Switch>
         <Footer data={data[language.currentLanguage].Footer} />

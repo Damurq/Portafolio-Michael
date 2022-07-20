@@ -32,8 +32,8 @@ const Navbar = ({ data }) => {
      */
     function clickHandler(e) {
         e.preventDefault();
-        if (!(location.pathname === "/")) {
-            history.push("/");
+        if (!(location.pathname === "/Portafolio-Michael/")) {
+            history.push("/Portafolio-Michael/");
         }
         // Get the top height of the element
         const href = this.getAttribute("href");
@@ -79,13 +79,14 @@ const Navbar = ({ data }) => {
             linkR.addEventListener("click", clickHandlerRender);
         }
         /* Cambiar el theme del navbar  */
-        let length = location.pathname.length
-        if ((location.pathname === "/") || (length !== 13)) {
+        let path = location.pathname.replace("/Portafolio-Michael/", "/")
+        let length = path.length
+        if ((path === "/") || (length !== 13)) {
             setNavLeft("theme--2 navbar-Container");
             setNavRight("theme--1");
         }
         else {
-            let className = location.pathname.substring(1, length).replace("/", "-")
+            let className = path.substring(1, length).replace("/", "-")
             setNavLeft(className + " navbar-Container");
             setNavRight(className);
         }

@@ -16,12 +16,13 @@ const Footer = ({ data }) => {
     const liClass = "menu-options__element menu-options__element--footer "
 
     useEffect(() => {
-        let length = location.pathname.length
-        if ((location.pathname === "/") || (length !== 13)) {
+        let path = location.pathname.replace("/Portafolio-Michael/", "/")
+        let length = path.length
+        if ((path === "/") || (length !== 13)) {
             setfooter("theme--2");
         }
         else {
-            let className = location.pathname.substring(1, length).replace("/", "-")
+            let className = path.substring(1, length).replace("/", "-")
             setfooter(className);
         }
     }, [location]);
