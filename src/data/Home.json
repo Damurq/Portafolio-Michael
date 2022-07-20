@@ -74,6 +74,29 @@
                     "path": ""
                 }
             ]},
+            "ProjectHeader":{
+                "01" : {
+                    "start-color":"#1E062A",
+                    "stop-color":"#532768"
+                },
+                "02" : {
+                    "start-color":"#2478cc",
+                    "stop-color":"#053769"
+                },
+                "03" : {
+                    "start-color":"#8c34a3",
+                    "stop-color":"#280340"
+                },
+                "04" : {
+                    "start-color":"#bbb6b6",
+                    "stop-color":"#FFFFFF"
+                },
+                "05" : {
+                    "start-color":"#434e66",
+                    "stop-color":"#637395"
+                }
+                
+            },
             "ProjectStartSection": [
                 {
                     "id": "01",
@@ -532,6 +555,29 @@
                     "path": ""
                 }
             ]},
+            "ProjectHeader":{
+                "01" : {
+                    "start-color":"#1E062A",
+                    "stop-color":"#532768"
+                },
+                "02" : {
+                    "start-color":"#2478cc",
+                    "stop-color":"#053769"
+                },
+                "03" : {
+                    "start-color":"#8c34a3",
+                    "stop-color":"#280340"
+                },
+                "04" : {
+                    "start-color":"#bbb6b6",
+                    "stop-color":"#FFFFFF"
+                },
+                "05" : {
+                    "start-color":"#434e66",
+                    "stop-color":"#637395"
+                }
+                
+            },
             "ProjectStartSection": [
                 {
                     "id": "01",

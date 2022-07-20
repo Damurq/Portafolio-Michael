@@ -32,8 +32,6 @@
     top: 0
     left: 0
     z-index: 0
-    img
-        width: 100%
 
 .projectDetail
     width: 100%
@@ -105,12 +103,16 @@
     .DamageControl_-_Desk .headerProject .imgProject img
             width: 40%
 
+@media (max-width: 665px)
+    .projectDetail .svg-header
+        object-fit: cover
+
+
 @media (max-width: 900px)
     .Data_exploration_and_projection .sectionContent--generate  .horizontal
         width: 80%
-    .projectDetail .absolute img
+    .projectDetail .absolute
         height: 525px
-        object-fit: cover
 
 
 
