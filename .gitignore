@@ -24,6 +24,7 @@ yarn-error.log*
 
 #css y sass
 variables.css
+variables.css.map
 /.map
 .map
 /.css.map

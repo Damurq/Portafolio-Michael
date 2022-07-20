@@ -1,202 +1,687 @@
 {
-    "AboutSection": {
-        "HeaderComponent": {
-            "title": "About me",
-            "subtitle": "My introduction"
-        },
-        "header": "Hi I'm Michael Montero",
-        "description": "Web developer, with extensive knowledge, working in web technologies delivering quality work.",
-        "experience": [
-            {
-                "amount": "4+",
-                "description": "Years experience"
+    "EN":{
+        "AboutSection": {
+            "HeaderComponent": {
+                "title": "About me",
+                "subtitle": "My introduction"
             },
-            {
-                "amount": "15+",
-                "description": "Completed project"
+            "header": "Hi I'm Michael Montero",
+            "description": "Web developer, with extensive knowledge working in web technologies and delivering quality work. Specialized as a frontend developer, I am passionate about the world of programming and the search for optimal solutions.",
+            "experience": [
+                {
+                    "amount": "4+",
+                    "description": "Years experience"
+                },
+                {
+                    "amount": "15+",
+                    "description": "Completed project"
+                }
+            ]
+        },
+        "sections": {
+            "skills": {
+                "name": "Skills",
+                "icon":"design",
+                "elements": {
+                    "webDev": {
+                        "name": "Web development",
+                        "elements": {
+                            "front": {
+                                "name":"Frontend developer",
+                                "icon":"brackets",
+                                "description":"More than 4 years",
+                                "options":[
+                                    {
+                                        "title":"React",
+                                        "description":"+3 years"
+                                    },
+                                    {
+                                        "title":"HTML",
+                                        "description":"+4 years" 
+                                    },
+                                    {
+                                        "title":"CSS",
+                                        "description":"+4 years" 
+                                    },
+                                    {
+                                        "title":"JavaScript",
+                                        "description":"+4 years" 
+                                    },
+                                    {
+                                        "title":"Sass",
+                                        "description":"+1 years" 
+                                    },
+                                    {
+                                        "title":"Redux",
+                                        "description":"+2 years" 
+                                    }
+                                ]
+                            },
+                            "back": {
+                                "name":"Backend developer",
+                                "icon":"database",
+                                "description":"More than 4 years",
+                                "options":[
+                                    {
+                                        "title":"SQL DB",
+                                        "description":"+5 years"
+                                    },
+                                    {
+                                        "title":"Django",
+                                        "description":"+3 years"
+                                    },
+                                    {
+                                        "title":"Express",
+                                        "description":"+3 years"
+                                    },
+                                    {
+                                        "title":"Node.js",
+                                        "description":"+3 years"
+                                    },
+                                    {
+                                        "title":"Python",
+                                        "description":"+3 years"
+                                    },
+                                    {
+                                        "title":"NoSQL DB",
+                                        "description":"+1 years"
+                                    }
+                                ]
+                            },
+                            "design": {
+                                "name":"Designer",
+                                "icon":"design",
+                                "description":"More than 1 years",
+                                "options":[
+                                    {
+                                        "title":"Figma",
+                                        "description":"+1 years"
+                                    },
+                                    {
+                                        "title":"UI",
+                                        "description":"+2 months"
+                                    },
+                                    {
+                                        "title":"UX",
+                                        "description":"+2 months"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "progr": {
+                        "name": "Programing skills",
+                        "elements": {
+                            "area": {
+                                "name":"Other development areas",
+                                "icon":"area",
+                                "description":"More than 2 years",
+                                "options":[
+                                    {
+                                        "title":"Mobile development",
+                                        "description":"+5 months"
+                                    },
+                                    {
+                                        "title":"React Native",
+                                        "description":"+5 months"
+                                    },
+                                    {
+                                        "title":"Desktop development",
+                                        "description":"+8 months"
+                                    },
+                                    {
+                                        "title":"C#",
+                                        "description":"+4 months"
+                                    },
+                                    {
+                                        "title":"JAVA",
+                                        "description":"+4 months"
+                                    },
+                                    {
+                                        "title":"Task automation",
+                                        "description":"+2 years"
+                                    }
+                                ]
+                            },
+                            "data": {
+                                "name":"Datastructures and algorithms",
+                                "icon":"skills",
+                                "description":"More than 3 years",
+                                "options":[
+                                    {
+                                        "title":"Advanced topics",
+                                        "description":"+5 years"
+                                    }
+                                ]
+                            },
+                            "package": {
+                                "name":"Package managers and Version Control",
+                                "icon":"structure",
+                                "description":"More than 3 years",
+                                "options":[
+                                    {
+                                        "title":"Pip and PyPI",
+                                        "description":"+3 years"
+                                    },
+                                    {
+                                        "title":"NPM",
+                                        "description":"+3 years"
+                                    },
+                                    {
+                                        "title":"GIT and GitHub",
+                                        "description":"+3 years"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "otherSkill": {
+                        "name": "Other skills",
+                        "elements": {
+                            "conflict": {
+                                "name":"Soft skills",
+                                "icon":"puzzle",
+                                "description":"",
+                                "options":[
+                                    {
+                                        "title":"Conflict management",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Time management",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Stress management",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Personal productivity",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Orientation to results",
+                                        "description":""
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "education":{
+                "name": "Education",
+                "icon":"education",
+                "elements": {
+                    "estudies": {
+                        "name": "Applied studies",
+                        "elements": {
+                            "uni": {
+                                "name":"University education",
+                                "icon":"university",
+                                "description":"1 University Career",
+                                "options":[
+                                    {
+                                        "title":"Informatics Engineering - (Currently) Last semester",
+                                        "description":""
+                                    }
+                                ]
+                            },
+                            "cursos": {
+                                "name":"Courses",
+                                "icon":"",
+                                "description":"More than 13 courses completed",
+                                "options":[
+                                    {
+                                        "title":"Python Basic Course",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Basic C++ Course",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"ECMAScript 6+ Course",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"HTML and CSS Definitive Course",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Introduction to Backend Development Course",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Introduction to Computational Thinking with Python Course",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"OOP and Algorithms with Python Course",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Prework Course: Windows Development Environment Configuration",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Intermediate Python Course: Comprehensions, Lambdas, and Error Handling",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Redux Course",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"React.js Practical Course",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Python Professional Course",
+                                        "description":""
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "work":{
+                "name": "Work",
+                "icon":"work",
+                "elements": {
+                    "freelancer": {
+                        "name": "Freelancer",
+                        "elements": {
+                            "pythonDev": {
+                                "name":"Python developer",
+                                "icon":"python",
+                                "description":"More than 3 years",
+                                "options":[
+                                    {
+                                        "title":"Automation of repetitive tasks.",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Report automation",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Bots to interact with the Steem and Blurt blockchains",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Creation and maintenance of discord bots.",
+                                        "description":""
+                                    }
+                                ]
+                            },
+                            "javascriptDev": {
+                                "name":"Javascript developer",
+                                "icon":"js",
+                                "description":"More than 2 years",
+                                "options":[
+                                    {
+                                        "title":"Bots to interact with the Steem and Blurt blockchains",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Maintenance and correction of web pages.",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Maintenance and correction of servers.",
+                                        "description":""
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
             }
-        ]
+        }
     },
-    "sections": {
-        "skills": {
-            "name": "Skills",
-            "icon":"design",
-            "elements": {
-                "webDev": {
-                    "name": "Web development",
-                    "elements": {
-                        "front": {
-                            "name":"Frontend Skills",
-                            "icon":"brackets",
-                            "description":"More than 3 years",
-                            "options":[
-                                {
-                                    "title":"React",
-                                    "description":"More than 3 years"
-                                }
-                            ]
-                        },
-                        "back": {
-                            "name":"Backend Skills",
-                            "icon":"database",
-                            "description":"More than 3 years",
-                            "options":[
-                                {
-                                    "title":"React",
-                                    "description":"More than 3 years"
-                                }
-                            ]
-                        }
-                    }
+    "ES":{
+        "AboutSection": {
+            "HeaderComponent": {
+                "title": "Acerca de mi",
+                "subtitle": "Mi introducción"
+            },
+            "header": "Hola, soy Michael Montero",
+            "description": "Desarrollador web, con amplio conocimiento trabajando en tecnologías web y entregando un trabajo de calidad. Especializado como desarrollador frontend, me apasiona el mundo de la programación y la búsqueda de soluciones óptimas.",
+            "experience": [
+                {
+                    "amount": "4+",
+                    "description": "Años de experiencia"
                 },
-                "progr": {
-                    "name": "Programing skills",
-                    "elements": {
-                        "front": {
-                            "name":"Automatización de tareas",
-                            "icon":"",
-                            "description":"More than 3 years",
-                            "options":[
-                                {
-                                    "title":"React",
-                                    "description":"More than 3 years"
-                                }
-                            ]
-                        },
-                        "back": {
-                            "name":"Analisis de datos",
-                            "icon":"",
-                            "description":"More than 3 years",
-                            "options":[
-                                {
-                                    "title":"React",
-                                    "description":"More than 3 years"
-                                }
-                            ]
+                {
+                    "amount": "15+",
+                    "description": "Proyectos completados"
+                }
+            ]
+        },
+        "sections": {
+            "skills": {
+                "name": "Habilidades",
+                "icon":"design",
+                "elements": {
+                    "webDev": {
+                        "name": "Desarrollo web",
+                        "elements": {
+                            "front": {
+                                "name":"Desarrollador Frontend",
+                                "icon":"brackets",
+                                "description":"Más de 4 años",
+                                "options":[
+                                    {
+                                        "title":"React",
+                                        "description":"+3 años"
+                                    },
+                                    {
+                                        "title":"HTML",
+                                        "description":"+4 años" 
+                                    },
+                                    {
+                                        "title":"CSS",
+                                        "description":"+4 años" 
+                                    },
+                                    {
+                                        "title":"JavaScript",
+                                        "description":"+4 años" 
+                                    },
+                                    {
+                                        "title":"Sass",
+                                        "description":"+1 años" 
+                                    },
+                                    {
+                                        "title":"Redux",
+                                        "description":"+2 años" 
+                                    }
+                                ]
+                            },
+                            "back": {
+                                "name":"Desarrollador Backend",
+                                "icon":"database",
+                                "description":"Más de 4 años",
+                                "options":[
+                                    {
+                                        "title":"SQL DB",
+                                        "description":"+5 años"
+                                    },
+                                    {
+                                        "title":"Django",
+                                        "description":"+3 años"
+                                    },
+                                    {
+                                        "title":"Express",
+                                        "description":"+3 años"
+                                    },
+                                    {
+                                        "title":"Node.js",
+                                        "description":"+3 años"
+                                    },
+                                    {
+                                        "title":"Python",
+                                        "description":"+3 años"
+                                    },
+                                    {
+                                        "title":"NoSQL DB",
+                                        "description":"+1 años"
+                                    }
+                                ]
+                            },
+                            "design": {
+                                "name":"Diseñador",
+                                "icon":"design",
+                                "description":"Más de 1 años",
+                                "options":[
+                                    {
+                                        "title":"Figma",
+                                        "description":"+1 año"
+                                    },
+                                    {
+                                        "title":"UI",
+                                        "description":"+2 meses"
+                                    },
+                                    {
+                                        "title":"UX",
+                                        "description":"+2 meses"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "progr": {
+                        "name": "Habilidades de programación",
+                        "elements": {
+                            "area": {
+                                "name":"Otras áreas de desarrollo",
+                                "icon":"area",
+                                "description":"Más de 2 años",
+                                "options":[
+                                    {
+                                        "title":"Desarrollo movil",
+                                        "description":"+5 meses"
+                                    },
+                                    {
+                                        "title":"React Native",
+                                        "description":"+5 meses"
+                                    },
+                                    {
+                                        "title":"Desktop development",
+                                        "description":"+8 meses"
+                                    },
+                                    {
+                                        "title":"C#",
+                                        "description":"+4 meses"
+                                    },
+                                    {
+                                        "title":"JAVA",
+                                        "description":"+4 meses"
+                                    },
+                                    {
+                                        "title":"Automatización de tareas",
+                                        "description":"+2 años"
+                                    }
+                                ]
+                            },
+                            "data": {
+                                "name":"Estructura de datos y algoritmos",
+                                "icon":"skills",
+                                "description":"Más de 5 años",
+                                "options":[
+                                    {
+                                        "title":"Temas avanzados",
+                                        "description":"+5 años"
+                                    }
+                                ]
+                            },
+                            "package": {
+                                "name":"Gestoras de paquetes y control de versiones",
+                                "icon":"structure",
+                                "description":"Más de 3 años",
+                                "options":[
+                                    {
+                                        "title":"Pip y PyPI",
+                                        "description":"+3 años"
+                                    },
+                                    {
+                                        "title":"NPM",
+                                        "description":"+3 años"
+                                    },
+                                    {
+                                        "title":"GIT y GitHub",
+                                        "description":"+3 años"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "otherSkill": {
+                        "name": "Otras habilidades",
+                        "elements": {
+                            "conflict": {
+                                "name":"Habilidades blandas",
+                                "icon":"puzzle",
+                                "description":"",
+                                "options":[
+                                    {
+                                        "title":"Manejo de conflictos",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Gestión del tiempo",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Manejo del estrés",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Productividad personal",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Orientado a resultados",
+                                        "description":""
+                                    }
+                                ]
+                            }
                         }
                     }
                 }
-            }
-        },
-        "education":{
-            "name": "Education",
-            "icon":"education",
-            "elements": {
-                "webDev": {
-                    "name": "Web development",
-                    "elements": {
-                        "front": {
-                            "name":"Frontend skills",
-                            "icon":"",
-                            "description":"More than 3 years",
-                            "options":[
-                                {
-                                    "title":"React",
-                                    "description":"More than 3 years"
-                                }
-                            ]
-                        },
-                        "back": {
-                            "name":"Backend Skill",
-                            "icon":"",
-                            "description":"More than 3 years",
-                            "options":[
-                                {
-                                    "title":"React",
-                                    "description":"More than 3 years"
-                                }
-                            ]
-                        }
-                    }
-                },
-                "progr": {
-                    "name": "Programing skills",
-                    "elements": {
-                        "front": {
-                            "name":"Automatización de tareas",
-                            "icon":"",
-                            "description":"More than 3 years",
-                            "options":[
-                                {
-                                    "title":"React",
-                                    "description":"More than 3 years"
-                                }
-                            ]
-                        },
-                        "back": {
-                            "name":"Analisis de datos",
-                            "icon":"",
-                            "description":"More than 3 years",
-                            "options":[
-                                {
-                                    "title":"React",
-                                    "description":"More than 3 years"
-                                }
-                            ]
+            },
+            "education":{
+                "name": "Educación",
+                "icon":"education",
+                "elements": {
+                    "estudies": {
+                        "name": "Estudios realizados",
+                        "elements": {
+                            "uni": {
+                                "name":"Educación universitaria",
+                                "icon":"university",
+                                "description":"1 Carrera universitaria",
+                                "options":[
+                                    {
+                                        "title":"Ingeniería informática - (Actualmente) Último semestre",
+                                        "description":""
+                                    }
+                                ]
+                            },
+                            "cursos": {
+                                "name":"Cursos",
+                                "icon":"",
+                                "description":"Más de 13 cursos realizados",
+                                "options":[
+                                    {
+                                        "title":"Curso Básico de Python",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Curso Básico de C++",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Curso ECMAScript 6+",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Curso Definitivo de HTML y CSS",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Curso de Introducción al Desarrollo Backend",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Curso de Introducción al Pensamiento Computacional con Python",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Curso de POO y Algoritmos con Python",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Curso de trabajo previo: configuración del entorno de desarrollo de Windows",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Curso intermedio de Python: comprensiones, Lambdas y manejo de errores",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Curso Redux",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Curso práctico de React.js",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Curso profesional de Python",
+                                        "description":""
+                                    }
+                                ]
+                            }
                         }
                     }
                 }
-            }
-        },
-        "work":{
-            "name": "Work",
-            "icon":"work",
-            "elements": {
-                "webDev": {
-                    "name": "Web development",
-                    "elements": {
-                        "front": {
-                            "name":"Frontend skills",
-                            "icon":"",
-                            "description":"More than 3 years",
-                            "options":[
-                                {
-                                    "title":"React",
-                                    "description":"More than 3 years"
-                                }
-                            ]
-                        },
-                        "back": {
-                            "name":"Backend Skill",
-                            "icon":"",
-                            "description":"More than 3 years",
-                            "options":[
-                                {
-                                    "title":"React",
-                                    "description":"More than 3 years"
-                                }
-                            ]
-                        }
-                    }
-                },
-                "progr": {
-                    "name": "Programing skills",
-                    "elements": {
-                        "front": {
-                            "name":"Automatización de tareas",
-                            "icon":"",
-                            "description":"More than 3 years",
-                            "options":[
-                                {
-                                    "title":"React",
-                                    "description":"More than 3 years"
-                                }
-                            ]
-                        },
-                        "back": {
-                            "name":"Analisis de datos",
-                            "icon":"",
-                            "description":"More than 3 years",
-                            "options":[
-                                {
-                                    "title":"React",
-                                    "description":"More than 3 years"
-                                }
-                            ]
+            },
+            "work":{
+                "name": "Trabajos",
+                "icon":"work",
+                "elements": {
+                    "freelancer": {
+                        "name": "Freelancer",
+                        "elements": {
+                            "pythonDev": {
+                                "name":"Desarrollador Python",
+                                "icon":"python",
+                                "description":"Más de 3 años",
+                                "options":[
+                                    {
+                                        "title":"Automatización de tareas repetitivas.",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Automatización de informes",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Bots para interactuar con las blockchains de Steem y Blurt",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Creación y mantenimiento de bots de discord.",
+                                        "description":""
+                                    }
+                                ]
+                            },
+                            "javascriptDev": {
+                                "name":"Desarrollador Javascript",
+                                "icon":"js",
+                                "description":"Más de 2 años",
+                                "options":[
+                                    {
+                                        "title":"Bots para interactuar con las blockchains de Steem y Blurt",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Mantenimiento y corrección de páginas web.",
+                                        "description":""
+                                    },
+                                    {
+                                        "title":"Mantenimiento y corrección de servidores.",
+                                        "description":""
+                                    }
+                                ]
+                            }
                         }
                     }
                 }
             }
         }
     }
+    
 }

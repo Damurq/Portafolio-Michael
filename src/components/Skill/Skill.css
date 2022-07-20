@@ -5,10 +5,11 @@
 
 .skills__header {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   margin-bottom: 2.5rem;
   cursor: pointer;
   gap: 0.5rem;
+  justify-content: center;
 }
 
 .skills__icon,
@@ -83,6 +84,12 @@
 .skills__percentage {
   display: block;
   background-color: hsl(198deg, 79%, 50%);
+}
+
+@media screen and (max-width: 1030px) {
+  .skills__title {
+    font-size: 1.15rem;
+  }
 }
 
 /*# sourceMappingURL=Skill.css.map */

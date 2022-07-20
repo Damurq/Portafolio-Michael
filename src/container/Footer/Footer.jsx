@@ -1,18 +1,18 @@
-import { faPhoneAlt, faEnvelope }   from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon }          from '@fortawesome/react-fontawesome'
-import { library }                  from '@fortawesome/fontawesome-svg-core';
-import { Link, useLocation }        from "react-router-dom"
 import { useEffect, useState }      from "react"
+import { Link, useLocation }        from "react-router-dom"
+import { useSelector }              from 'react-redux'
 // Local
-import  CardIcon from "../../components/CardIcon/CardIcon.jsx"
+import  CardIcon                    from "../../components/CardIcon/CardIcon.jsx"
+import IconsComponent               from '../../components/IconsComponent/IconsComponent'
+// Styles
 import "./Footer.css"
 
 const Footer = ({ data }) => {
     /* Hooks */
+    const language = useSelector((state) => state.language.currentLanguage)
     const [footer, setfooter] = useState("theme--1")
     let location = useLocation();
 
-    library.add(faPhoneAlt, faEnvelope)
     const liClass = "menu-options__element menu-options__element--footer "
 
     useEffect(() => {
@@ -43,14 +43,18 @@ const Footer = ({ data }) => {
                     </ul>
                 </div>
                 <div className="footerSection--SocialMedia">
-                    <h3 className="text--center">Social Media</h3>
+                    <h3 className="text--center">
+                        {language === "EN"
+                                ? 'Social Media'
+                                : 'Redes sociales'}
+                    </h3>
                     <CardIcon />
                 </div>
                 <div className="footerSection--contact">
                     {data.info && data.info.map((info, index) => (
                         <div key={`extra-inf-${index}`}>
                         <h3  >
-                            <FontAwesomeIcon className="icon" icon={['fas', info.icon]} />
+                            <IconsComponent className="icon" icon={info.icon} />
                             {info.data}
                         </h3>
                     </div>
@@ -58,7 +62,11 @@ const Footer = ({ data }) => {
                 </div>
             </div>
             <div  >
-                <h3 className="mini-title-2 text--center text-dark">Copyright Michael Montero 2021-Todos los derechos reservados</h3>
+                <h3 className="mini-title-2 text--center text-dark">
+                    {language === "EN" 
+                        ? 'Copyright Michael Montero 2022- All rights reserved'
+                        : 'Copyright Michael Montero 2022-Todos los derechos reservados'}
+                </h3>
             </div>
         </footer>);
 }

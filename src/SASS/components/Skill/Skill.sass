@@ -9,10 +9,11 @@ $clr-bg: hsl(198deg, 22%, 9%)
     
 .skills__header
     display: flex
-    align-items: start
+    align-items: flex-start
     margin-bottom: $mb-2-5
     cursor: pointer
     gap:.5rem
+    justify-content: center
 
 
 .skills__icon,
@@ -83,3 +84,7 @@ $clr-bg: hsl(198deg, 22%, 9%)
 .skills__percentage
     display: block
     background-color: $clr-neon
+
+@media screen and (max-width: 1030px)
+    .skills__title
+        font-size: 1.15rem

@@ -6,7 +6,7 @@ import './Skill.css';
 const Skill = ({ data }) => {
 
   const [open, setOpen] = useState(false)
-
+  
   return (
       <div className={`skills__content ${open ? 'skills__open' : 'skills__close'}`}>
         <div className="skills__header" onClick={() => { setOpen(!open) }}>

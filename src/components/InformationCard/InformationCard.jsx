@@ -1,6 +1,6 @@
-import React from 'react'
-import IconsComponent from '../IconsComponent/IconsComponent'
-
+import React            from 'react'
+import IconsComponent   from '../IconsComponent/IconsComponent'
+// Style
 import './InformationCard.css'
 
 const InformationCard = ({data}) => {

@@ -1,6 +1,9 @@
 @import "../../variables"
 
 /*==================== ABOUT ====================*/
+.about
+    padding-bottom: 3rem
+
 .about__container
     display: flex
     justify-content: space-around
@@ -100,5 +103,24 @@
         justify-content: space-between
     
 @media screen and (max-width: 768px)
+    .about__description
+        font-size: 1.35rem
+    .about__info-title
+        font-size: $h2-font-size
+        font-weight: $font-semi-bold
+    .about__info-name
+        font-size: 1rem
+    .about__buttons
+        font-size: 1.5rem
     .about__buttons
         width: 100%
+
+@media screen and (max-width: 1030px)
+    .about__description
+        font-size: 1.35rem
+    .about__info-title
+        font-size: $h2-font-size
+    .about__info-name
+        font-size: 1rem
+    .about__buttons
+        font-size: 1.5rem

@@ -42,6 +42,10 @@
   margin-left: 0;
   margin-right: auto;
 }
+.content-icon a.social {
+  padding-top: 3px;
+  font-size: 20px;
+}
 
 .line {
   height: 0;

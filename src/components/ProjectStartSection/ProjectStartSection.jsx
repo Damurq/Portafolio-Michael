@@ -1,14 +1,16 @@
-import data from "../../data/Home.json"
+import { useSelector }          from 'react-redux'
+// Style
 import "./ProjectStartSection.css"
 
-const ProjectStartSection = ({id}) => {
-    const project= data.components.ProjectStartSection.filter(project=>project.id===id)[0];
+const ProjectStartSection = ({project}) => {
+    const language = useSelector((state) => state.language.currentLanguage)
     const photo = project.imgsrc 
+    
     return ( 
         <div className="headerProject">
             <h3  >{project.role}</h3>
             <h1  >{project.name}</h1>
-            <h2  >Description</h2>
+            <h2  >{language ==='EN' ? 'Description' : 'Descripción'}</h2>
             <p  >{project.description}</p>
             {photo &&
             (<div className="imgProject">

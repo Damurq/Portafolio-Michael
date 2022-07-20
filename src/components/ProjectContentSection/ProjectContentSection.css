@@ -3,7 +3,7 @@
   flex-direction: column;
   margin: 2rem;
   flex-wrap: wrap;
-  background-color: #ffff;
+  background-color: white;
   border: 1px solid black;
 }
 .colorList .colorList__element {
@@ -76,6 +76,13 @@
   align-items: center;
 }
 
+@media (max-width: 1408px) {
+  .DamageControl .interface .vertical {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+}
 @media (max-width: 1000px) {
   .interface .vertical {
     width: 100%;

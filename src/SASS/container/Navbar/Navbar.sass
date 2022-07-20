@@ -11,11 +11,11 @@ header
     background-color: inherit
     color: inherit
     margin: 0
-    
+
 .logo
     border: none
     display: inline-block
-    font-weight: bold  
+    font-weight: bold
 .logo:focus
     outline: none
 /*navbar style*/
@@ -25,7 +25,7 @@ header
     position: relative
     text-decoration: none
     transition: border-bottom .35s, font-size .20s
-.menu-options__element::before 
+.menu-options__element::before
     content: ''
     position: absolute
     bottom: 0
@@ -38,7 +38,7 @@ header
     transform-origin: left
     transition: transform 0.5s ease-in-out
     transform-origin: right
-.menu-options__element:hover::before 
+.menu-options__element:hover::before
     transform-origin: left
     transform: scaleX(1)
     transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94)
@@ -51,7 +51,7 @@ header
     justify-content: center
     align-items: center
 .menu__bar, .menu__bar::before, .menu__bar::after
-    position: relative 
+    position: relative
     background-color: $second-color
     width: 4rem
     height: 6px
@@ -61,8 +61,8 @@ header
     left: 0
 .menu__bar::before, .menu__bar::after
     content: ""
-    position: absolute 
-    top: -15px 
+    position: absolute
+    top: -15px
     background-color: $second-color
     transition: transform .3s ease
 .menu__bar::after
@@ -75,12 +75,12 @@ header
     height: 4rem
 .open .menu__bar::after
     background-color: $second-color
-    transform: translateY(0px)  rotate(45deg) 
+    transform: translateY(0px) rotate(45deg)
 .open .menu__bar::before
-    transform: translateY(30px)  rotate(-45deg) 
+    transform: translateY(30px) rotate(-45deg)
     background-color: $second-color
 
-.LIGHT 
+.LIGHT
     .menu__bar, .menu__bar::before, .menu__bar::after,.open .menu__bar::after, .open .menu__bar::before
         background-color: #12191C
     .open .menu__bar
@@ -89,11 +89,16 @@ header
 .theme-selector
     cursor: pointer
 
+.language
+    display: flex
+    font-size: 1rem
+    align-items: flex-start
+
 /*media query*/
 @media (min-width: 992px)
     body
         font-size: 20px
-    header 
+    header
         nav
             width: 50%
         .navbar-Container
@@ -105,7 +110,7 @@ header
             flex-direction: row
             .open .menu__bar
                 display: none
-        
+
     .navbar
         margin: 2rem
         margin-bottom: .5rem
@@ -114,7 +119,7 @@ header
         margin: 2rem 0
         margin-bottom: .5rem
     .logo
-        font-size: 25px  
+        font-size: 25px
     .dropdown-menu-button
         display: none
     .menu-options-list
@@ -130,7 +135,9 @@ header
     body
         font-size: 20px
     .logo
-        font-size: $h1-font-size 
+        font-size: $h1-font-size
+    .menu-options__element
+        font-size: 1.15rem
 
 @media (max-width: 992px)
     .LIGHT header div.menu-options
@@ -153,9 +160,9 @@ header
         div.menu-options-list-dropdown--enable
             display: flex
             flex-direction: column
-            ul.menu-options-list 
+            ul.menu-options-list
                 margin: 5rem 0
-        nav.menu-options-list-dropdown--enable 
+        nav.menu-options-list-dropdown--enable
             display: flex
             min-height: inherit
             justify-content: center
@@ -186,7 +193,7 @@ header
         display: inline-block
         height: 4rem
         width: 6rem
-    .menu-options-list 
+    .menu-options-list
         display: flex
         flex-direction: column
         justify-content: center
@@ -211,5 +218,4 @@ header
     nav.menu-options-list-dropdown--enable div.menu-options
         padding: 3rem 20rem
         margin: 5rem 10rem
-
 

@@ -1,6 +1,11 @@
+import { useSelector }          from 'react-redux'
+// Locals
+import db                       from '../../data/Components.json'
 import "./ProjectContentSection.css"
 
 const ProjectContentSection = ({section}) => {
+    const language = useSelector((state) => state.language.currentLanguage)
+
     let generateSection = () => {
         if (section.name === "User types") {
             let photo =""
@@ -120,7 +125,9 @@ const ProjectContentSection = ({section}) => {
     }
     return (
                     <div className="sectionContent">
-                        <h2 className="title--section">{section.name}</h2>
+                        <h2 className="title--section">
+                            {db[language].ProjectContentSection[section.name]}
+                        </h2>
                         <div className="sectionContent--generate">
                             {generateSection()}
                         </div>

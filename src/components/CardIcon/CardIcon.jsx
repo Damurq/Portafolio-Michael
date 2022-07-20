@@ -1,21 +1,19 @@
-import { faFacebookF, faInstagram, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon }                                  from '@fortawesome/react-fontawesome'
-import { library }                                          from '@fortawesome/fontawesome-svg-core';
+import { BsInstagram, BsGithub }    from "react-icons/bs"
+import { FaLinkedinIn }             from "react-icons/fa"
 // Style
 import "./CardIcon.css"
 
 const  CardIcon = () => {
-    library.add(faFacebookF,faInstagram,faLinkedinIn,faGithub)
     return ( 
         <div className="icon--socialMedia">
             <a className="instagram social" href="https://www.instagram.com/mike.0408/" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon className="icon" icon={['fab', 'instagram']}/>
+                <BsInstagram className="icon" />
             </a>
             <a className="linkedin social" href="https://www.linkedin.com/in/michael-montero-urquiola-bb62b61b6" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon className="icon" icon={['fab', 'linkedin-in']}/>
+                <FaLinkedinIn className="icon" />
             </a>
             <a className="github social" href="https://github.com/Damurq?tab=repositories" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon className="icon" icon={['fab', 'github']}/>                
+                <BsGithub className="icon" />                
             </a>
         </div>
     );

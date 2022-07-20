@@ -119,6 +119,12 @@ header {
   cursor: pointer;
 }
 
+.language {
+  display: flex;
+  font-size: 1rem;
+  align-items: flex-start;
+}
+
 /*media query*/
 @media (min-width: 992px) {
   body {
@@ -173,6 +179,9 @@ header {
   }
   .logo {
     font-size: 1.5rem;
+  }
+  .menu-options__element {
+    font-size: 1.15rem;
   }
 }
 @media (max-width: 992px) {

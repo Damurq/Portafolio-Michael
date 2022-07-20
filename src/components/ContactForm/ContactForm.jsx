@@ -1,11 +1,18 @@
-import React from 'react'
-import { Formik } from 'formik';
-import { AiOutlineSend } from 'react-icons/ai'
-import emailjs from 'emailjs-com';
-
+import React                from 'react'
+import { useSelector }      from 'react-redux'
+import { Formik }           from 'formik';
+import { AiOutlineSend }    from 'react-icons/ai'
+import emailjs              from 'emailjs-com';
+// Style
 import './ContactForm.css'
 
 const ContactForm = () => {
+    const language = useSelector((state) => state.language.currentLanguage)
+
+    const selectLanguage = (english, spanish) => {
+      return language === "EN" ? english : spanish
+    }
+    
 
     return (
         <Formik
@@ -13,34 +20,36 @@ const ContactForm = () => {
             validate={values => {
                 const errors = {};
                 if (!values.email) {
-                    errors.email = 'Required';
+                    errors.email = selectLanguage('Required','Requerido');
                 } else if (
                     !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
                 ) {
-                    errors.email = 'Invalid email address';
+                    errors.email = selectLanguage('Invalid email address','Email invalido');
                 }
                 if (!values.project) {
-                    errors.project = 'Required';
+                    errors.project = selectLanguage('Required','Requerido');
                 }
                 if (!values.name) {
-                    errors.name = 'Required';
+                    errors.name = selectLanguage('Required','Requerido');
                 }
                 if (!values.message) {
-                    errors.message = 'Required';
+                    errors.message = selectLanguage('Required','Requerido');
                 }
 
                 return errors;
             }}
             onSubmit={(values, { setSubmitting }) => {
                 //emailjs.send(serviceID, templateID, templateParams, userID);
-                emailjs.send('service_qouvm2v','template_5l5z31s', values, 'user_TycNx2NKdCmd0lwxJRCuz')
+                emailjs.send("service_qouvm2v","template_5l5z31s", values, 'user_TycNx2NKdCmd0lwxJRCuz')
                 .then((response) => {
-                            console.log('SUCCESS!', response.status, response.text);
-                            setSubmitting(true);
+                    alert(selectLanguage('Message sent succesfully','Mensaje enviado con exito'))
+                    console.log('SUCCESS!', response.status, response.text);
+                    setSubmitting(true);
 
                 }, (err) => {
-                        console.log('FAILED...', err);
-                        setSubmitting(false);
+                    alert(selectLanguage('Error sending message','Error al enviar el mensaje'))
+                    console.log('FAILED...', err);
+                    setSubmitting(false);
                 });
             }}
         >
@@ -57,7 +66,7 @@ const ContactForm = () => {
                 <form onSubmit={handleSubmit} className="contact__form grid">
                     <div className="contact__inputs grid">
                         <div className="contact__content theme--3">
-                            <label htmlFor="name" className="contact__label">Name</label>
+                            <label htmlFor="name" className="contact__label">{selectLanguage('Name','Nombre')}</label>
                             <input
                                 onChange={handleChange}
                                 onBlur={handleBlur}
@@ -83,7 +92,7 @@ const ContactForm = () => {
                         </div>
                     </div>
                     <div className="contact__content theme--3">
-                        <label htmlFor="project" className="contact__label">Project</label>
+                        <label htmlFor="project" className="contact__label">{selectLanguage('Project','Proyecto')}</label>
                         <input
                             id="project"
                             onChange={handleChange}
@@ -96,7 +105,7 @@ const ContactForm = () => {
                         </p>
                     </div>
                     <div className="contact__content theme--3">
-                        <label htmlFor="message" className="contact__label">Message</label>
+                        <label htmlFor="message" className="contact__label">{selectLanguage('Message','Mensaje')}</label>
                         <textarea
                             id="message"
                             onChange={handleChange}
@@ -109,7 +118,7 @@ const ContactForm = () => {
                     </div>
                     <div className='container-button--contact'>
                         <button type="submit" className='button button--flex button--contact' disabled={isSubmitting}>
-                            Send Message
+                            {selectLanguage('Send Message', 'Enviar mensaje')}
                             <AiOutlineSend className="uil button__icon" />
                         </button>
                     </div>

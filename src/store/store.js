@@ -5,8 +5,11 @@
  */
 import { configureStore } from '@reduxjs/toolkit'
 import themeReducer from '../features/theme/theme'
+import themeLanguage from '../features/language/language'
+
 export const store = configureStore({
   reducer: {
     theme: themeReducer,
+    language: themeLanguage,
   },
 })

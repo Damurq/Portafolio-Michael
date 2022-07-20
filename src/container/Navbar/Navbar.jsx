@@ -2,26 +2,28 @@
 import { Link, useLocation, useHistory }    from "react-router-dom"
 import { useEffect, useState }              from "react"
 import { useDispatch, useSelector }         from 'react-redux'
-import { faSun, faMoon }                    from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon }                  from '@fortawesome/react-fontawesome'
+import { ImSun }                            from 'react-icons/im'
+import { FaMoon }                           from 'react-icons/fa'
 // Locals
 import { changeTheme }                      from "../../features/theme/theme"
+import { changeLanguage }                   from "../../features/language/language"
 // Components
 import CardIcon                             from "../../components/CardIcon/CardIcon.jsx"
+import SwitchComponent                      from "../../components/SwitchComponent/SwitchComponent.jsx"
 // Styles
 import "./Navbar.css";
 
 const Navbar = ({ data }) => {
     // Declaration of the Hooks
-    const theme = useSelector((state) => state.theme.currentTheme)
+    const {theme, language} = useSelector((state) => state)
     const dispatch = useDispatch()
-    const [navLeft, setNavLeft] = useState("theme--2 navbar-Container")
     const [open, setOpen] = useState(false)
+    const [navLeft, setNavLeft] = useState("theme--2 navbar-Container")
     const [navRight, setNavRight] = useState("theme--1")
     const history = useHistory();
     let location = useLocation();
 
-    //Clase que tendran los li de la barra de navegacion
+    // Class that the li of the navigation bar will have
     const liClass = "menu-options__element"
 
     /**
@@ -64,8 +66,8 @@ const Navbar = ({ data }) => {
         }
     }
 
-    /*  - Añadimos el evento click a todos los link y asignamos la funcion correspondiente
-        - Comprobamos la ubicacion de la pagina para el color del navbar
+    /*  - We add the click event to all the links and assign the corresponding function
+        - We check the location of the page for the color of the navbar
     */
     useEffect(() => {
         const links = document.querySelectorAll('a[href^="#"]'),
@@ -94,7 +96,7 @@ const Navbar = ({ data }) => {
             <div className={navLeft}>
                 <div className="navbar">
                     <button className="dropdown-menu-button" onClick={() => { setOpen(!open) }}>
-                    <div className={`menu menu--X ${open ? "open" : ""}`}>
+                        <div className={`menu menu--X ${open ? "open" : ""}`}>
                             <span className="menu__bar"></span>
                         </div>
                     </button>
@@ -114,18 +116,28 @@ const Navbar = ({ data }) => {
                             return section.type === "Link" ? <li key={"nav-li-" + index} ><Link className={liClass} to={section.href}>{section.name}</Link></li> : <li key={"nav-li-" + index}><a className={liClass} href={section.href}>{section.name}</a></li>
                         })}
                         <li className={"theme-selector"} onClick={() => dispatch(changeTheme())} >
-                            {theme === "DARK"
-                                ? <FontAwesomeIcon icon={faSun} />
-                                : <FontAwesomeIcon icon={faMoon} />}
+                            {theme.currentTheme === "DARK"
+                                ? <FaMoon />
+                                : <ImSun /> }
+                        </li>
+                        <li className="language">
+                            <SwitchComponent tags={language.currentLanguage === "EN"
+                                ? ["EN", "ES"]
+                                : ["ES", "EN"]
+                            } callback={() => dispatch(changeLanguage()) } />
                         </li>
                     </ul>
                     <div className="SocialMedia">
-                        <h3 className="text--center">Social Media</h3>
+                        <h3 className="text--center">
+                            {language.currentLanguage === "EN"
+                                ? 'Social Media'
+                                : 'Redes sociales'}
+                        </h3>
                         <CardIcon />
                     </div>
                 </div>
             </nav>
-        </header>
+        </header >
     );
 }
 

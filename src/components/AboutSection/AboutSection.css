@@ -1,4 +1,8 @@
 /*==================== ABOUT ====================*/
+.about {
+  padding-bottom: 3rem;
+}
+
 .about__container {
   display: flex;
   justify-content: space-around;
@@ -112,8 +116,35 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .about__description {
+    font-size: 1.35rem;
+  }
+  .about__info-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .about__info-name {
+    font-size: 1rem;
+  }
+  .about__buttons {
+    font-size: 1.5rem;
+  }
   .about__buttons {
     width: 100%;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .about__description {
+    font-size: 1.35rem;
+  }
+  .about__info-title {
+    font-size: 1.25rem;
+  }
+  .about__info-name {
+    font-size: 1rem;
+  }
+  .about__buttons {
+    font-size: 1.5rem;
   }
 }
 

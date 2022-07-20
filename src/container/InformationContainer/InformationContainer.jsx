@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import IconsComponent from '../../components/IconsComponent/IconsComponent'
-import Skill from '../../components/Skill/Skill'
+import React, { useState, useEffect }   from 'react'
+// Components
+import IconsComponent                   from '../../components/IconsComponent/IconsComponent'
+import Skill                            from '../../components/Skill/Skill'
+// Style
 import './InformationContainer.css'
 
 const InformationContainer = ({ data }) => {
@@ -13,18 +15,9 @@ const InformationContainer = ({ data }) => {
     const [subList, setSubList] = useState(activeElement
         ? Object.keys(data[activeSection].elements[activeElement].elements)
         : [])
-    const [activeSubElement, setActiveSubElement] = useState(subList.length
-        ? subList[0]
-        : null)
-
-    useEffect(() => {
-        setSubList(Object.keys(data[activeSection].elements[activeElement].elements))
-        setActiveSubElement(Object.keys(data[activeSection].elements[activeElement].elements)[0])
-    }, [activeElement, activeSection, data])
-
 
     return (
-        <div className='theme--2 information-container flex-column'>
+        <div className='theme--1 information-container flex-column'>
             {sections && (<React.Fragment>
                 <div className='information-sections flex-row'>
                     {sections.map((element, index) => (
@@ -34,10 +27,12 @@ const InformationContainer = ({ data }) => {
                             }`}
                             id={element}
                             onClick={e => {
-                                setActiveSection(e.currentTarget.id)
-                                setElementList(Object.keys(data[e.currentTarget.id].elements))
-                                setActiveElement(Object.keys(data[e.currentTarget.id].elements)[0])
-
+                                let section = e.currentTarget.id
+                                let element_list = Object.keys(data[section].elements)
+                                setActiveSection(section)
+                                setElementList(element_list)
+                                setActiveElement(element_list[0])
+                                setSubList(Object.keys(data[section].elements[element_list[0]].elements))
                             }}>
                             <h2 className='section-title'>
                                 <IconsComponent icon={data[element].icon} className={`uil`} />
@@ -55,26 +50,21 @@ const InformationContainer = ({ data }) => {
                                     : ""
                                     }`}
                                     id={ele}
-                                    onClick={e => { setActiveElement(e.currentTarget.id) }}>
+                                    onClick={e => { 
+                                        setActiveElement(e.currentTarget.id)
+                                        setSubList(Object.keys(data[activeSection].elements[e.currentTarget.id].elements))
+                                    }}>
                                     {data[activeSection].elements[ele].name}
                                 </div>
-                                {/* <div>
-                                    <span className='info-element__rounder'></span>
-                                </div> */}
                             </div>
                         ))}
                     </div>
                     <div className="information-sub_elements flex-column">
                         {activeElement && subList.map((el, index) => (
-                            <div key={`${el}-${index}`} className={`custom-button ${activeSubElement === el
-                                ? "active-sub_element"
-                                : ""
-                                }`}
+                            <div key={`${el}-${index}`} className={`custom-button`}
                                 id={el}
-                                onClick={e => { setActiveSubElement(e.currentTarget.id) }}
                             >
                                 <Skill data={data[activeSection].elements[activeElement].elements[el]}></Skill>
-
                             </div>
                         ))}
                     </div>

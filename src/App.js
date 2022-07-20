@@ -1,6 +1,6 @@
 // Third party
 import React                                      from "react"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route, Redirect  } from "react-router-dom"
 import { useSelector }                            from 'react-redux'
 // Local
 import Navbar           from "./container/Navbar/Navbar"
@@ -15,13 +15,13 @@ import data             from "./data/Components.json"
 import "./App.css"
 
 function App() {
-  const theme = useSelector((state) => state.theme.currentTheme)
+  const {theme, language} = useSelector((state) => state)
 
   
   return (
-    <div className={theme} id="theme">
+    <div className={theme.currentTheme} id="theme">
       <Router>
-        <Navbar data={data.Navbar} />
+        <Navbar data={data[language.currentLanguage].Navbar} />
         <Switch>
           <Route path="/Portfolio/:id">
             <Project />
@@ -36,7 +36,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
-        <Footer data={data.Footer} />
+        <Footer data={data[language.currentLanguage].Footer} />
       </Router>
     </div>
   );

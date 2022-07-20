@@ -1,12 +1,14 @@
-import React from 'react'
-import { AiOutlineAntDesign, AiOutlineProfile, AiOutlineHome, AiOutlineSend } from 'react-icons/ai'
-import { BiUser, BiBriefcase } from 'react-icons/bi'
-import { BsBraces, BsFillBriefcaseFill, BsTelephone } from 'react-icons/bs'
-import { FaGraduationCap } from 'react-icons/fa'
-import { FiDatabase } from 'react-icons/fi'
-import { MdOutlineCollections } from 'react-icons/md'
-import { HiOutlineMail, HiOutlineLocationMarker } from 'react-icons/hi'
-import { MdOutlineWeb } from 'react-icons/md'
+import React                                                                    from 'react'
+import { AiOutlineAntDesign, AiOutlineProfile, AiOutlineHome, AiOutlineSend }   from 'react-icons/ai'
+import { BiUser, BiBriefcase }                                                  from 'react-icons/bi'
+import { BsBraces, BsFillBriefcaseFill, BsTelephone }                           from 'react-icons/bs'
+import { FaGraduationCap, FaPuzzlePiece, FaUniversity, FaPython }               from 'react-icons/fa'
+import { FiDatabase }                                                           from 'react-icons/fi'
+import { MdOutlineCollections }                                                 from 'react-icons/md'
+import { HiOutlineMail, HiOutlineLocationMarker }                               from 'react-icons/hi'
+import { MdOutlineWeb }                                                         from 'react-icons/md'
+import { SiMaterialdesignicons, SiAltiumdesigner }                              from 'react-icons/si'
+import { DiJavascript1 }                                                        from 'react-icons/di'
 
 const IconsComponent = ({ icon, className = '' }) => {
 
@@ -58,6 +60,24 @@ const IconsComponent = ({ icon, className = '' }) => {
             case 'send':
                 element = <AiOutlineSend className={className} />
                 break;
+            case 'structure':
+                element = <SiMaterialdesignicons className={className} />
+                break;
+            case 'area':
+                element = <SiAltiumdesigner className={className} />
+                break;    
+            case 'puzzle':
+                element = <FaPuzzlePiece className={className} />
+                break;  
+            case 'university':
+                element = <FaUniversity className={className} />
+                break;    
+            case 'js':
+                element = <DiJavascript1 className={className} />
+                break;    
+            case 'python':
+                element = <FaPython className={className} />
+                break;  
             default:
                 element = <MdOutlineWeb className={className} />
                 break;

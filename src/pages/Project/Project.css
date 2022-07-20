@@ -1,18 +1,24 @@
+[class^=Portfolio-0], [class^=Portfolio-0] .theme--1, [class^=Portfolio-0] .theme--2 {
+  background-color: #434e66;
+  color: white;
+  transition: background-color 0.2, color 0.2s;
+}
+
 .Portfolio-01, .Portfolio-01 .theme--1, .Portfolio-01 .theme--2 {
   background-color: #1E062A;
-  color: #ffff;
+  color: white;
   transition: background-color 0.2, color 0.2s;
 }
 
 .Portfolio-02, .Portfolio-02 .theme--1, .Portfolio-02 .theme--2 {
   background-color: #2478cc;
-  color: #ffff;
+  color: white;
   transition: background-color 0.2, color 0.2s;
 }
 
 .Portfolio-03, .Portfolio-03 .theme--1, .Portfolio-03 .theme--2 {
   background-color: #8c34a3;
-  color: #ffff;
+  color: white;
   transition: background-color 0.2, color 0.2s;
 }
 
@@ -24,7 +30,7 @@
 
 .Portfolio-05, .Portfolio-05 .theme--1, .Portfolio-05 .theme--2 {
   background-color: #434e66;
-  color: #ffff;
+  color: white;
   transition: background-color 0.2, color 0.2s;
 }
 
@@ -62,7 +68,7 @@
 .DamageControl {
   padding: 4rem;
   background-color: #532768;
-  color: #ffff;
+  color: white;
 }
 .DamageControl .title--section {
   text-decoration: underline #2cfafa solid;
@@ -75,7 +81,7 @@
 .Tuiphone {
   padding: 4rem;
   background-color: #053769;
-  color: #ffff;
+  color: white;
 }
 .Tuiphone .link {
   color: #FFFFFF;
@@ -85,7 +91,7 @@
 .Cines_de_Venezuela {
   padding: 4rem;
   background-color: #280340;
-  color: #ffff;
+  color: white;
 }
 .Cines_de_Venezuela .title--section {
   text-decoration: underline #2c93fb solid;
@@ -118,7 +124,7 @@
 .Data_exploration_and_projection {
   padding: 4rem;
   background-color: #637395;
-  color: #ffff;
+  color: white;
 }
 .Data_exploration_and_projection .verticalContainer {
   display: flex;
@@ -141,7 +147,6 @@
   .Data_exploration_and_projection .sectionContent--generate .horizontal {
     width: 80%;
   }
-
   .projectDetail .absolute img {
     height: 525px;
     object-fit: cover;
