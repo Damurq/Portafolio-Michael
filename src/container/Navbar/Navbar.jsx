@@ -104,7 +104,6 @@ const Navbar = ({ data }) => {
                         {data.name}
                     </p>
                 </div>
-
             </div>
             <nav className={`${navRight} ${open ? "menu-options-list-dropdown--enable" : ""}`}>
                 <div className={`menu-options ${open ? "menu-options-list-dropdown--enable" : "menu-options-list-dropdown--disable"}`}>
