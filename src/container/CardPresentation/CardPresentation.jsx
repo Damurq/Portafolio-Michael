@@ -1,24 +1,17 @@
 import React        from "react"
 import CardIcon     from "../../components/CardIcon/CardIcon.jsx"
-import AOS          from 'aos';
 // Style
-import 'aos/dist/aos.css'; 
 import "./CardPresentation.css"
 
 const CardPresentation = ({data}) => {
     const photo = "presentation/Michael_Montero_Dark.png"
-
-    React.useEffect(() => { 
-        AOS.init({duration:2000});
-
-     },[])
 
     return (
         <div className="cardPresentation">
             { data && (
                 <React.Fragment>
                     <div className={"cardPresentation-info theme--2"}>
-                        <div data-aos="fade-right" className="child-flex">
+                        <div className="child-flex">
                             <h1 className={"title"}>{data.title}</h1>
                             <h2 className="subtitle-yelow">{data.subtitle}</h2>
                             <p className={" mini-title"}>
@@ -28,7 +21,7 @@ const CardPresentation = ({data}) => {
                         </div>
                     </div>
                     <div  className={"cardPresentation-image theme--1"}>
-                        <div data-aos="fade-left" className="child-flex">
+                        <div className="child-flex">
                             <div className="content-image">
                                 <img src={photo} alt="Michael_Montero" />
                             </div>
