@@ -86,8 +86,8 @@
                     "stop-color":"#532768"
                 },
                 "02" : {
-                    "start-color":"#6e57e0",
-                    "stop-color":"#FFF"
+                    "start-color":"#191627",
+                    "stop-color":"#3c3366"
                 },
                 "03" : {
                     "start-color":"#2478cc",
@@ -244,7 +244,7 @@
                             "name": "Website and repository",
                             "repository": "Repository link.",
                             "link": "https://github.com/TemaHunter/DamegeControl",
-                            "website": "Repository link.",
+                            "website": "Website link.",
                             "page": "https://yurisbellys-portafolio-damurq.vercel.app/"
                         }
                     ]
@@ -605,8 +605,8 @@
                     "stop-color":"#532768"
                 },
                 "02" : {
-                    "start-color":"#6e57e0",
-                    "stop-color":"#FFF"
+                    "start-color":"#191627",
+                    "stop-color":"#3c3366"
                 },
                 "03" : {
                     "start-color":"#2478cc",

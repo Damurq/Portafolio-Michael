@@ -11,7 +11,7 @@
 }
 
 .Portfolio-02, .Portfolio-02 .theme--1, .Portfolio-02 .theme--2 {
-  background-color: #6e57e0;
+  background-color: #191627;
   color: white;
   transition: background-color 0.2, color 0.2s;
 }
@@ -70,8 +70,8 @@
 
 .Portfolio {
   padding: 4rem;
-  background-color: #FFFFFF;
-  color: #191627;
+  background-color: #3c3366;
+  color: #FFF;
 }
 .Portfolio .title--section {
   text-decoration: underline #6e57e0 solid;

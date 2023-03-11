@@ -11,7 +11,7 @@
                 {
                     "name": "About me",
                     "type": "Link",
-                    "href": "/AboutMe"
+                    "href": "/About-me"
                 },
                 {
                     "name": "Portfolio",
