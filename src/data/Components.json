@@ -10,8 +10,8 @@
                 },
                 {
                     "name": "About me",
-                    "type": "a",
-                    "href": "#AboutMe"
+                    "type": "Link",
+                    "href": "/AboutMe"
                 },
                 {
                     "name": "Portfolio",

@@ -7,7 +7,7 @@
                     {
                         "icon": "phone",
                         "label": "Call Me",
-                        "info": "0412-646-0129"
+                        "info": "+58 416 6541676"
                     },
                     {
                         "icon": "email",
@@ -24,7 +24,7 @@
             "CardPresentation": {
                 "title": "Michael Montero",
                 "subtitle": "Web Developer",
-                "description": "Specialized as Frontend Developer",
+                "description": "Specialized as Full-stack Developer",
                 "button": "start"
             },
             "CardAboutMe": {
@@ -32,11 +32,11 @@
                 "content": [
                     {
                         "title": "Hi, I am Michael Montero",
-                        "description": "A web developer specialized as a frontend developer, I am passionate about the world of programming and the search for optimal solutions. An organized person, problem solver and with high attention to detail. "
+                        "description": "A web developer specialized as a Full-stack developer, I am passionate about the world of programming and the search for optimal solutions. An organized person, problem solver and with high attention to detail. "
                     },
                     {
                         "title": "Academic training",
-                        "description": "I am a student in the last semester of the Informatics Engineering career at the “Universidad Centroccidental Lisandro Alvarado”."
+                        "description": "Software Engineer - “Universidad Centroccidental Lisandro Alvarado”."
                     }
                 ]
             },
@@ -52,11 +52,17 @@
                 {
                     "id": "02",
                     "type": "web-site",
-                    "photosrc": "/portfolio/tuiphone.png",
+                    "photosrc": "/portfolio/portfolio.png",
                     "path": ""
                 },
                 {
                     "id": "03",
+                    "type": "web-site",
+                    "photosrc": "/portfolio/tuiphone.png",
+                    "path": ""
+                },
+                {
+                    "id": "04",
                     "type": "app-desk",
                     "photosrc": "/portfolio/cinesVenezuela.png",
                     "path": ""
@@ -68,7 +74,7 @@
                     "path": ""
                 },
                 {
-                    "id": "04",
+                    "id": "06",
                     "type": "app-desk",
                     "photosrc": "/portfolio/damageControlDesk.png",
                     "path": ""
@@ -80,18 +86,22 @@
                     "stop-color":"#532768"
                 },
                 "02" : {
+                    "start-color":"#6e57e0",
+                    "stop-color":"#FFF"
+                },
+                "03" : {
                     "start-color":"#2478cc",
                     "stop-color":"#053769"
                 },
-                "03" : {
+                "04" : {
                     "start-color":"#8c34a3",
                     "stop-color":"#280340"
                 },
-                "04" : {
+                "05" : {
                     "start-color":"#bbb6b6",
                     "stop-color":"#FFFFFF"
                 },
-                "05" : {
+                "06" : {
                     "start-color":"#434e66",
                     "stop-color":"#637395"
                 }
@@ -103,40 +113,42 @@
                     "role": "Front-end | Back-end | Scrum Master",
                     "name": "DamageControl",
                     "description": "A website designed as an e-learning platform. This will allow the creation and administration of courses for later sale, with different types of user.",
-                    "imgsrc": "/ProjectStartSection/DamageControl/DamageControl.png",
-                    "imgvector": "/ProjectStartSection/Vectores/DamageControl.png"
+                    "imgsrc": "/ProjectStartSection/DamageControl/DamageControl.png"
                 },
                 {
                     "id": "02",
-                    "role": "Front-end | Back-end | Scrum Master",
-                    "name": "Tuiphone",
-                    "description": "A website designed as an e-commerce platform. This will allow the management and sale of new and used phones by the Tuiphone store, greatly expanding the sales margin.",
-                    "imgsrc": "/ProjectStartSection/Tuiphone/Tuiphone.png",
-                    "imgvector": "/ProjectStartSection/Vectores/Tuiphone.png"
+                    "role": "Front-end",
+                    "name": "Portfolio",
+                    "description": "Landing page to be used as a web portfolio for a fellow computer engineer named Yurisbellys Brizuela.",
+                    "imgsrc": "/ProjectStartSection/Portfolio/Portfolio.png"
                 },
                 {
                     "id": "03",
-                    "role": "Member of a development team | Desktop developer",
-                    "name": "Cines de Venezuela",
-                    "description": "A desktop application created in Java that allows the management of employees, users, sweets, movies, clients and rooms of the different branches of Cines de Venezuela, allowing invoicing both sweets and tickets as well as generating reports.",
-                    "imgsrc": "/ProjectStartSection/CinesVenezuela/CinesVenezuela.png",
-                    "imgvector": "/ProjectStartSection/Vectores/CinesVenezuela.png"
+                    "role": "Front-end | Back-end | Scrum Master",
+                    "name": "Tuiphone",
+                    "description": "A website designed as an e-commerce platform. This will allow the management and sale of new and used phones by the Tuiphone store, greatly expanding the sales margin.",
+                    "imgsrc": "/ProjectStartSection/Tuiphone/Tuiphone.png"
                 },
                 {
                     "id": "04",
-                    "role": "Scrum Master | Desktop developer",
-                    "name": "DamageControl - Desk",
-                    "description": "A desktop application developed to manage the courses, students and professors of an institution, as well as generate reports.",
-                    "imgsrc": "/ProjectStartSection/DamageControlDesk/DamageControlDesk.png",
-                    "imgvector": "/ProjectStartSection/Vectores/DamageControlDesk.png"
+                    "role": "Member of a development team | Desktop developer",
+                    "name": "Cines de Venezuela",
+                    "description": "A desktop application created in Java that allows the management of employees, users, sweets, movies, clients and rooms of the different branches of Cines de Venezuela, allowing invoicing both sweets and tickets as well as generating reports.",
+                    "imgsrc": "/ProjectStartSection/CinesVenezuela/CinesVenezuela.png"
                 },
                 {
                     "id": "05",
+                    "role": "Scrum Master | Desktop developer",
+                    "name": "DamageControl - Desk",
+                    "description": "A desktop application developed to manage the courses, students and professors of an institution, as well as generate reports.",
+                    "imgsrc": "/ProjectStartSection/DamageControlDesk/DamageControlDesk.png"
+                },
+                {
+                    "id": "06",
                     "role": "Project leader and organizer",
                     "name": "Data exploration and projection",
                     "description": "A script developed in python that takes a set of data from an excel file to perform an exploration of the data, analyzing each of the variables using different statistical tools, an analysis of the relationship of the variables, in addition to making a model of linear regression and future projections.",
-                    "imgsrc": "",
-                    "imgvector": "/ProjectStartSection/Vectores/DataExploration.png"
+                    "imgsrc": ""
                 }
             ],
             "ProjectContentSection": [
@@ -215,6 +227,32 @@
                     "id": "02",
                     "content": [
                         {
+                            "name": "Colors",
+                            "content": [
+                                {
+                                    "color": "#6e57e0"
+                                },
+                                {
+                                    "color": "#191627"
+                                },
+                                {
+                                    "color": "#fbfbfe"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Website and repository",
+                            "repository": "Repository link.",
+                            "link": "https://github.com/TemaHunter/DamegeControl",
+                            "website": "Repository link.",
+                            "page": "https://yurisbellys-portafolio-damurq.vercel.app/"
+                        }
+                    ]
+                },
+                {
+                    "id": "03",
+                    "content": [
+                        {
                             "name": "User types",
                             "content": [
                                 {
@@ -265,7 +303,7 @@
                     ]
                 },
                 {
-                    "id": "03",
+                    "id": "04",
                     "content": [
                         {
                             "name": "User types",
@@ -359,7 +397,7 @@
                     ]
                 },
                 {
-                    "id": "04",
+                    "id": "05",
                     "content": [
                         {
                             "name": "User types",
@@ -448,7 +486,7 @@
                     ]
                 },
                 {
-                    "id": "05",
+                    "id": "06",
                     "content": [
                         {
                             "name": "Results obtained",
@@ -488,7 +526,7 @@
                     {
                         "icon": "phone",
                         "label": "Telefono",
-                        "info": "0412-646-0129"
+                        "info": "+58 416 6541676"
                     },
                     {
                         "icon": "email",
@@ -505,7 +543,7 @@
             "CardPresentation": {
                 "title": "Michael Montero",
                 "subtitle": "Desarrollador Web",
-                "description": "Especializado como Desarrollador Frontend",
+                "description": "Especializado como Desarrollador Full-stack",
                 "button": "Inicio"
             },
             "CardAboutMe": {
@@ -513,11 +551,11 @@
                 "content": [
                     {
                         "title": "Hola, yo soy Michael Montero",
-                        "description": "Desarrollador web especializado como desarrollador frontend, me apasiona el mundo de la programación y la búsqueda de soluciones óptimas. Soy una persona organizada, solucionadora de problemas y con alta atención al detalle. "
+                        "description": "Desarrollador web especializado como desarrollador Full-stack, me apasiona el mundo de la programación y la búsqueda de soluciones óptimas. Soy una persona organizada, solucionadora de problemas y con alta atención al detalle. "
                     },
                     {
                         "title": "Nivel academico",
-                        "description": "Soy estudiante del último semestre de la carrera de Ingeniería Informática en la “Universidad Centroccidental Lisandro Alvarado” (UCLA)."
+                        "description": "Ingeniero en informática - “Universidad Centroccidental Lisandro Alvarado” (UCLA)."
                     }
                 ]
             },
@@ -533,11 +571,17 @@
                 {
                     "id": "02",
                     "type": "web-site",
-                    "photosrc": "/portfolio/tuiphone.png",
+                    "photosrc": "/portfolio/portfolio.png",
                     "path": ""
                 },
                 {
                     "id": "03",
+                    "type": "web-site",
+                    "photosrc": "/portfolio/tuiphone.png",
+                    "path": ""
+                },
+                {
+                    "id": "04",
                     "type": "app-desk",
                     "photosrc": "/portfolio/cinesVenezuela.png",
                     "path": ""
@@ -549,7 +593,7 @@
                     "path": ""
                 },
                 {
-                    "id": "04",
+                    "id": "06",
                     "type": "app-desk",
                     "photosrc": "/portfolio/damageControlDesk.png",
                     "path": ""
@@ -561,18 +605,22 @@
                     "stop-color":"#532768"
                 },
                 "02" : {
+                    "start-color":"#6e57e0",
+                    "stop-color":"#FFF"
+                },
+                "03" : {
                     "start-color":"#2478cc",
                     "stop-color":"#053769"
                 },
-                "03" : {
+                "04" : {
                     "start-color":"#8c34a3",
                     "stop-color":"#280340"
                 },
-                "04" : {
+                "05" : {
                     "start-color":"#bbb6b6",
                     "stop-color":"#FFFFFF"
                 },
-                "05" : {
+                "06" : {
                     "start-color":"#434e66",
                     "stop-color":"#637395"
                 }
@@ -589,6 +637,13 @@
                 },
                 {
                     "id": "02",
+                    "role": "Front-end",
+                    "name": "Portfolio",
+                    "description": "Landing page to be used as a web portfolio for a fellow computer engineer named Yurisbellys Brizuela.",
+                    "imgsrc": "/ProjectStartSection/Portfolio/Portfolio.png"
+                },
+                {
+                    "id": "03",
                     "role": "Front-end | Back-end | Scrum Master",
                     "name": "Tuiphone",
                     "description": "Un sitio web diseñado como una plataforma de comercio electrónico. Esto permitirá la gestión y venta de teléfonos nuevos y usados por parte de la tienda Tuiphone, ampliando mucho el margen de venta.",
@@ -596,7 +651,7 @@
                     "imgvector": "/ProjectStartSection/Vectores/Tuiphone.png"
                 },
                 {
-                    "id": "03",
+                    "id": "04",
                     "role": "Miembro del equipo de desarrollo | Desktop developer",
                     "name": "Cines de Venezuela",
                     "description": "Una aplicación de escritorio creada en Java que permite la gestión de empleados, usuarios, dulces, películas, clientes y salas de las diferentes sucursales de Cines de Venezuela, permitiendo facturar tanto dulces como boletas así como generar reportes.",
@@ -604,7 +659,7 @@
                     "imgvector": "/ProjectStartSection/Vectores/CinesVenezuela.png"
                 },
                 {
-                    "id": "04",
+                    "id": "05",
                     "role": "Scrum Master | Desktop developer",
                     "name": "DamageControl - Desk",
                     "description": "Una aplicación de escritorio desarrollada para gestionar los cursos, alumnos y profesores de una institución, así como generar informes.",
@@ -612,9 +667,9 @@
                     "imgvector": "/ProjectStartSection/Vectores/DamageControlDesk.png"
                 },
                 {
-                    "id": "05",
+                    "id": "06",
                     "role": "Líder de proyecto y organizador",
-                    "name": "Exploración y proyección de datos",
+                    "name": "Data exploration and projection",
                     "description": "Un script desarrollado en python que toma un conjunto de datos de un archivo de excel para realizar una exploración de los datos, analizando cada una de las variables utilizando diferentes herramientas estadísticas, un análisis de la relación de las variables, además de realizar un modelo de lineal regresión y proyecciones futuras.",
                     "imgsrc": "",
                     "imgvector": "/ProjectStartSection/Vectores/DataExploration.png"
@@ -696,6 +751,32 @@
                     "id": "02",
                     "content": [
                         {
+                            "name": "Colors",
+                            "content": [
+                                {
+                                    "color": "#6e57e0"
+                                },
+                                {
+                                    "color": "#191627"
+                                },
+                                {
+                                    "color": "#fbfbfe"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Website and repository",
+                            "repository": "Enlace del repositorio.",
+                            "link": "https://github.com/TemaHunter/DamegeControl",
+                            "website": "Enlace del sitio web.",
+                            "page": "https://yurisbellys-portafolio-damurq.vercel.app/"
+                        }
+                    ]
+                },
+                {
+                    "id": "03",
+                    "content": [
+                        {
                             "name": "User types",
                             "content": [
                                 {
@@ -746,7 +827,7 @@
                     ]
                 },
                 {
-                    "id": "03",
+                    "id": "04",
                     "content": [
                         {
                             "name": "User types",
@@ -840,7 +921,7 @@
                     ]
                 },
                 {
-                    "id": "04",
+                    "id": "05",
                     "content": [
                         {
                             "name": "User types",
@@ -929,7 +1010,7 @@
                     ]
                 },
                 {
-                    "id": "05",
+                    "id": "06",
                     "content": [
                         {
                             "name": "Results obtained",

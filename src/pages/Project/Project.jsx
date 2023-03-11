@@ -29,6 +29,7 @@ const Project = () => {
                     <stop offset="0.359375" stopColor={svgHeader["start-color"]} />
                     <stop offset="1" stopColor={svgHeader["stop-color"]} />
                 </linearGradient>
+                
             </defs>
         </svg>
         </div>

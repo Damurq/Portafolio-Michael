@@ -120,10 +120,12 @@ const Navbar = ({ data }) => {
                                 : <ImSun /> }
                         </li>
                         <li className="language">
-                            <SwitchComponent tags={language.currentLanguage === "EN"
-                                ? ["EN", "ES"]
-                                : ["ES", "EN"]
-                            } callback={() => dispatch(changeLanguage()) } />
+                            <input id="toggle" className="toggle" type="checkbox" role="switch" name="toggle" value="on" onClick={() => dispatch(changeLanguage())}/>
+                            <label htmlFor="toggle" className="slot">
+                                <span className="slot__label">{language.currentLanguage}</span>
+                                <span className="slot__label">{language.currentLanguage}</span>
+                            </label>
+                            <div className="curtain"></div>
                         </li>
                     </ul>
                     <div className="SocialMedia">

@@ -1,16 +1,22 @@
 import React    from 'react'
+import AOS              from 'aos';
 // Locals
 import SeeMore  from '../../components/SeeMore/SeeMore'
 // Style
+import 'aos/dist/aos.css'; 
 import "./CardAboutMe.css"
 
 const CardAboutMe = ({ sectionPage, data }) => {
     const photosrcUCLA = "aboutMe/ucla.png"
 
+    React.useEffect(() => { 
+        AOS.init({duration:2000});
+     },[])
+ 
     return (
         <div id="AboutMe" className={"CardAboutMe theme--1 " + sectionPage}>
             <h2 className="title">{data.title}</h2>
-            <div  className="CardAboutMe-content">
+            <div data-aos="fade-down" className="CardAboutMe-content">
                 {data.content && data.content.map((section, index) => {
                     return (<div key={"section-" + index} className={"CardAboutMe__section--" + index}>
                         <div className="CardAboutMe__section--first">

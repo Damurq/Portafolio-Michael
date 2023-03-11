@@ -43,7 +43,7 @@ const ProjectContentSection = ({section}) => {
             return (
             <div  > 
                 <div  >
-                    <a href={section.link}  target="_blank" className="link">{section.repository}</a>
+                    <a href={section.link}  target="_blank" rel="noreferrer" className="link">{section.repository}</a>
                 </div>
                 <div  >
                     <p  >{section.interface}</p>
@@ -59,12 +59,23 @@ const ProjectContentSection = ({section}) => {
                 </div>
             </div>);
         }
+        else if (section.name === "Website and repository") {
+            return (
+            <div className="group-links"> 
+                <div  >
+                    <a href={section.link}  target="_blank" rel="noreferrer" className="link">{section.repository}</a>
+                </div>
+                <div  >
+                    <a href={section.page}  target="_blank" rel="noreferrer" className="link">{section.website}</a>
+                </div>
+            </div>);
+        }
         else if (section.name === "Repository") {
             return (
                 <div className="repository">
                     <p>{section.repository}</p>
                     {section.links.map((link,i)=>{ 
-                        return (<div key={link.name+i}><a href={link.href} target="_blank" className="link">{link.name}</a><br/><br/></div>)
+                        return (<div key={link.name+i}><a href={link.href} target="_blank" rel="noreferrer" className="link">{link.name}</a><br/><br/></div>)
                     })}
                 </div>
             );

@@ -2,6 +2,8 @@ import React from 'react'
 import './SwitchComponent.css'
 
 const SwitchComponent = ({tags , callback}) => {
+
+    console.log(tags);
     return (
         <React.Fragment>
             <input id="toggle" className="toggle" type="checkbox" role="switch" name="toggle" value="on" onClick={callback}/>
