@@ -6,7 +6,7 @@
                 "subtitle": "My introduction"
             },
             "header": "Hi I'm Michael Montero",
-            "description": "Web developer, with extensive knowledge working in web technologies and delivering quality work. Specialized as a frontend developer, I am passionate about the world of programming and the search for optimal solutions.",
+            "description": "Web developer, with extensive knowledge working in web technologies and delivering quality work. Specialized as a Full-stack developer, I am passionate about the world of programming and the search for optimal solutions.",
             "experience": [
                 {
                     "amount": "4+",
@@ -27,7 +27,7 @@
                         "name": "Web development",
                         "elements": {
                             "front": {
-                                "name":"Frontend developer",
+                                "name":"Full-stack developer",
                                 "icon":"brackets",
                                 "description":"More than 4 years",
                                 "options":[
@@ -222,7 +222,7 @@
                                 "description":"1 University Career",
                                 "options":[
                                     {
-                                        "title":"Software Engineer",
+                                        "title":"Informatics Engineer",
                                         "description":""
                                     }
                                 ]
@@ -348,7 +348,7 @@
                 "subtitle": "Mi introducción"
             },
             "header": "Hola, soy Michael Montero",
-            "description": "Desarrollador web, con amplio conocimiento trabajando en tecnologías web y entregando un trabajo de calidad. Especializado como desarrollador frontend, me apasiona el mundo de la programación y la búsqueda de soluciones óptimas.",
+            "description": "Desarrollador web, con amplio conocimiento trabajando en tecnologías web y entregando un trabajo de calidad. Especializado como desarrollador Full-stack, me apasiona el mundo de la programación y la búsqueda de soluciones óptimas.",
             "experience": [
                 {
                     "amount": "4+",
@@ -369,7 +369,7 @@
                         "name": "Desarrollo web",
                         "elements": {
                             "front": {
-                                "name":"Desarrollador Frontend",
+                                "name":"Desarrollador Full-stack",
                                 "icon":"brackets",
                                 "description":"Más de 4 años",
                                 "options":[

@@ -12,7 +12,7 @@ const  CardIcon = () => {
             <a className="linkedin social" href="https://www.linkedin.com/in/damurq/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedinIn className="icon" />
             </a>
-            <a className="github social" href="https://github.com/Damurq?tab=repositories" target="_blank" rel="noopener noreferrer">
+            <a className="github social" href="https://github.com/Damurq" target="_blank" rel="noopener noreferrer">
                 <BsGithub className="icon" />                
             </a>
         </div>

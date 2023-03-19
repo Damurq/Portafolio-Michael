@@ -12,7 +12,7 @@
                     {
                         "icon": "email",
                         "label": "Email",
-                        "info": "michaeldamurq@gmail.com"
+                        "info": "michaelmontero.idb@gmail.com"
                     },
                     {
                         "icon": "location",
@@ -36,7 +36,7 @@
                     },
                     {
                         "title": "Academic training",
-                        "description": "Software Engineer - “Universidad Centroccidental Lisandro Alvarado”."
+                        "description": "Informatics Engineer - “Universidad Centroccidental Lisandro Alvarado”."
                     }
                 ]
             },
@@ -68,13 +68,13 @@
                     "path": ""
                 },
                 {
-                    "id": "05",
+                    "id": "06",
                     "type": "app",
                     "photosrc": "/portfolio/dataExploration.png",
                     "path": ""
                 },
                 {
-                    "id": "06",
+                    "id": "05",
                     "type": "app-desk",
                     "photosrc": "/portfolio/damageControlDesk.png",
                     "path": ""
@@ -531,7 +531,7 @@
                     {
                         "icon": "email",
                         "label": "Email",
-                        "info": "michaeldamurq@gmail.com"
+                        "info": "michaelmontero.idb@gmail.com"
                     },
                     {
                         "icon": "location",
